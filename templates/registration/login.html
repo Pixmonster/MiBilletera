@@ -1,0 +1,28 @@
+{% extends 'test1/base.html' %}
+
+{% block title %} Iniciar sección {% endblock  %}
+
+<head>
+    <h1>Inicio de sección requerido</h1>
+
+    <div class="login-container" >
+        {% if form.errors %}
+            <div class="alert-danger"><p>Tu usuario y contraseñan no coinciden. Por favor intenta otra vez</p>
+
+            </div>
+        {% endif %}
+        <form method="post">
+            {% csrf_token %}
+            <label>
+                Usuario
+                <input type="text" name="username">
+            </label>
+            <label>
+                Contraseña
+                <input type="password" name="password">
+                <button type='submit'>Iniciar sesión</button>
+            </label>       
+        </form>
+
+    </div>
+</head>

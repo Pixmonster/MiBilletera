@@ -1,0 +1,61 @@
+
+@font-face {
+	font-family: 'Quicksand-Bold';
+	src: url('../fonts/Quicksand-Bold.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Quicksand-Regular';
+	src: url('../fonts/Quicksand-Regular.ttf') format('truetype');
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	border: none;
+	outline: none;
+}
+
+nav {
+    background-color: #74BC94;
+}
+
+nav ul li a {
+	font-family: Quicksand-Regular;
+	color: azure !important;
+	font-size: 1.4rem;
+	padding: 20px !important;
+}
+
+nav ul {
+    display: flex;
+    padding-left: 250px !important; /* Elimina el padding izquierdo */
+}
+
+.logo-nav {
+    padding: 20px 280px;
+	vertical-align: middle;
+}
+
+body {
+	background-color: #F1FFF6; /* Color de fondo sólido */
+}
+
+.seccion1 {
+	position: relative;
+    background-image: url('../img/background-index.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 1000px; /* Ajusta la altura mínima según tus necesidades */
+    color: azure; /* Ajusta el color del texto según tu diseño */
+    text-align: center; /* Alinea el contenido al centro */
+    font-family: Quicksand-Regular;
+    font-size: 24px;
+
+}
+
+.prueba_text {
+	font-family: Quicksand-Bold;
+	font-size: 45px;
+}
