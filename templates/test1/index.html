@@ -12,7 +12,7 @@
 <body>
     <nav class="navbar navbar-expand-lg bs5">
         <div class="container-fluid">
-          <a class="logo-nav" href="#"><img src="{% static 'img/cartera-logo.png' %}" alt="Mi Logo" width="80"></a>
+          <a class="navbar-brand logo-nav" href="#"><img src="{% static 'img/cartera-logo.png' %}" alt="Mi Logo" width="80"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -34,18 +34,70 @@
       </nav>
 
     <main>
-      <div class="seccion1 container-fluid">
-        <h1 class="titulo-principal"> El control total de tu dinero </h1>
-        <p class="parrafo-seccion1"> Ten un control real de tus finanzas,<br> disfruta tu dinero sin preocupaciones <br>y gestiona tus ahorros. <p>
-        <img class="grafico-seccion1" src="{% static 'img/grafico-seccion1.png' %}" width="500px">
-      </div>
+      <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
 
-      <div class="seccion2 container">
-        <h1 class="titulo-principal"> Analiza tus gastos </h1>
-      </div>
+          <div class="carousel-item">
+            <div class="seccion1 py-3">
+              <div class="container">
+                <h1 class="titulo-principal">El control total de tu dinero</h1>
+                <p class="parrafo-seccion1">Ten un control real de tus finanzas,<br>disfruta tu dinero sin preocupaciones<br>y gestiona tus ahorros.</p>
+                <img class="grafico-seccion1 img-fluid" src="{% static 'img/grafico-seccion1.png' %}" alt="Gráfico" width="400">
+              </div>
+            </div>
+          </div>
 
+          <div class="carousel-item active">
+            <div class="seccion1 py-3">
+              <div class="container">
+                <h1 class="titulo-principal text-center">Analiza tus gastos</h1>
+                <p class="parrafo-seccion1"> Analisis de tendencias a largo plazo <br> Analisis de patrones de gasto <br> Alertas de gastos inusuales <br> Integración con herramientas de contabilidad <br>
+                <img class="grafico-seccion2 img-fluid" src="{% static 'img/grafico-de-barras.png' %}" alt="Gráfico" width="300">
+              </div>
+            </div>
+          </div>
+          
+
+        </div>
+        <a class="carousel-control-prev" href="#carouselExample" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExample" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </a>
+      </div>
     </main>
-    <footer></footer>
+      <footer class="footer text-center text-white">
+        <div class="container p-4 pb-0">
+          <!-- Section: Social media -->
+          <section class="mb-4">
+            <!-- Facebook -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+              ><img class="fab fa-facebook-f" src="{% static 'img/facebook.png' %}" width="30"></img
+            ></a>
+            <!-- Twitter -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+              ><img class="fab fa-twitter" src="{% static 'img/twitter.png' %}" width="30"></img
+            ></a>
+            <!-- Instagram -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+              ><img class="fab fa-instagram" src="{% static 'img/instagram.png' %}" width="30"</img
+            ></a>
+          </section>
+          <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2023 Copyright:
+          <a class="text-white" href="#">MiBilletera.com</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+        </footer>
+      </div>
 
     <script src="{% static 'js/bootstrap.js' %}"></script>
     <script src=" {% static 'js/bootstrap.min.js' %} "></script>
