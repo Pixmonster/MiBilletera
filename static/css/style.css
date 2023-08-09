@@ -40,16 +40,6 @@ nav ul li a {
 	padding: 20px !important;
 }
 
-nav ul li a {
-	text-decoration: none;
-	color: #333;
-	transition: color 0.3s ease-in-out;
-}
-
-nav ul li a:hover {
-	color: #007bff;
-}
-
 .logo-nav {
     padding: 20px 280px;
 	vertical-align: middle;
@@ -63,7 +53,7 @@ body {
 	position: relative;
     background-image: url('../img/background-index.png');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 80%;
     min-height: 1000px; /* Ajusta la altura mínima según tus necesidades */
     color: azure; /* Ajusta el color del texto según tu diseño */
     text-align: center; /* Alinea el contenido al centro */
