@@ -85,3 +85,26 @@ body {
 footer {
 	background-color: #88c660;
 }
+
+
+@media (max-width: 991px) {
+    nav ul.navbar-nav {
+        display: none;
+    }
+    
+    .navbar-toggler {
+        display: block;
+    }
+    
+    .logo-nav {
+        padding: 10px;
+    }
+    
+    .navbar-collapse.collapse.show {
+        display: block !important;
+    }
+    
+    .navbar-collapse.collapse {
+        display: none !important;
+    }
+}
