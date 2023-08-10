@@ -1,16 +1,18 @@
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, redirect
-from django.contrib.auth import logout
+from django.contrib.auth import logout, login, authenticate
+from django.contrib import messages
 from django.contrib.auth.forms import UserCreationForm
-from django.contrib.auth import login
 from django.http import HttpResponse
+from . models import *
+
 
 def index(request):
     return render(request, 'test1/index.html')
 
-@login_required
+
 def panel(request):
-    return render (request,'test1/login.html')
+    return render (request,'test1/home.html')
 
 def exit(request):
     logout(request)
@@ -18,12 +20,39 @@ def exit(request):
 
 def register(request):
     if request.method == 'POST':
-        form = UserCreationForm(request.POST)
-        if form.is_valid():
-            user = form.save()
-            login(request, user)  # Iniciar sesión automáticamente después del registro
-            return redirect('panel')  # Cambia 'home' por la URL a la que quieres redirigir después del registro
-    else:
-        form = UserCreationForm()
-    return render(request, 'test1/register.html', {'form': form})
+        username = request.POST.get('username')
+        email = request.POST.get('email')
+        password = request.POST.get('password')
+        
+        # Verificar si el nombre de usuario ya existe
+        if Usuario.objects.filter(username=username).exists():
+            # Manejar el error de nombre de usuario duplicado aquí
+            # Por ejemplo, podrías mostrar un mensaje de error en la plantilla.
+            error_message = "El nombre de usuario ya está en uso."
+            return render(request, 'test1/register.html', {'error_message': error_message})
+        
+        # Crear y guardar el usuario en la base de datos
+        nuevo_usuario = Usuario(username=username, email=email, password=password)
+        nuevo_usuario.save()
+        
+        return redirect('login')  # Redirigir a la página de inicio
+
+    return render(request, 'test1/register.html')
+
+
+
+def login(request):
+    if request.method == 'POST':
+        email = request.POST.get('email')
+        password = request.POST.get('password')
+        
+        user = authenticate(request, email=email, password=password)
+        if user is not None:
+            login(request, user)
+            messages.success(request, 'Inicio de sesión exitoso.')
+            return redirect('panel')  # Redirigir a la página de inicio después del inicio de sesión
+        else:
+            messages.error(request, 'Credenciales inválidas. Por favor, verifica tus datos.')
+            
+    return render(request, 'login.html')
 

@@ -47,14 +47,24 @@
                                         <h1 class="h4 text-gray-900 mb-4">Inicia sesión</h1>
                                     </div>
                                     <form class="user">
+                                        {% csrf_token %}
+                                        {% if messages %}
+                                            <ul class="messages">
+                                                {% for message in messages %}
+                                                    <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+                                                {% endfor %}
+                                            </ul>
+                                        {% endif %}
                                         <div class="form-group">
-                                            <input type="email" class="form-control form-control-user"
-                                                id="exampleInputEmail" aria-describedby="emailHelp"
+                                            <label for="email">Ingresa tu correo</label>
+                                            <input type="email" name='email' class="form-control form-control-user"
+                                                id="email"
                                                 placeholder="Ingresa tu Email">
                                         </div>
                                         <div class="form-group">
-                                            <input type="password" class="form-control form-control-user"
-                                                id="exampleInputPassword" placeholder="Ingresa tu contraseña">
+                                            <label for="password">Ingresa tu contraseña</label>       
+                                            <input type="password" name='password' class="form-control form-control-user"
+                                                id="password" placeholder="Ingresa tu contraseña">
                                         </div>
                                         <div class="form-group">
                                             <div class="custom-control custom-checkbox small">
@@ -62,8 +72,7 @@
                                                 <label class="custom-control-label" for="customCheck">Recuerdame</label>
                                             </div>
                                         </div>
-                                        <a href="index.html" class="btn btn-success btn-user btn-block">
-                                            Ingresar
+                                        <button type="submit" class="btn btn-success btn-user btn-block">Ingresar</button>
                                         </a>
                                         <hr>
                                         <a href="index.html" class="btn btn-google btn-user btn-block">
