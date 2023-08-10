@@ -44,6 +44,11 @@
                                     <div class="text-center">
                                         <h1 class="h4 text-gray-900 mb-4">Registrate</h1>
                                     </div>
+                                    {% if error_message %}
+                                    <div class="alert alert-danger">
+                                        {{ error_message }}
+                                    </div>
+                                    {% endif %}
                                     <form class="user" method="post" action="{% url 'register' %}">
                                         {% csrf_token %}
                                         <div class="form-group row">

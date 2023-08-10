@@ -25,10 +25,10 @@ def register(request):
         password = request.POST.get('password')
         
         # Verificar si el nombre de usuario ya existe
-        if Usuario.objects.filter(username=username).exists():
+        if Usuario.objects.filter(email=email).exists():
             # Manejar el error de nombre de usuario duplicado aquí
             # Por ejemplo, podrías mostrar un mensaje de error en la plantilla.
-            error_message = "El nombre de usuario ya está en uso."
+            error_message = ("El correo ya está en uso.")
             return render(request, 'test1/register.html', {'error_message': error_message})
         
         # Crear y guardar el usuario en la base de datos
