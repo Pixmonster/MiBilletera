@@ -20,6 +20,7 @@
 
     <!-- Custom styles for this template-->
     <link href= "{% static 'css/sb-admin-2.min.css' %}" rel="stylesheet">
+    <link href= "{% static 'css/style.css' %}" rel="stylesheet">
 
 </head>
 
@@ -46,25 +47,27 @@
                                     <div class="text-center">
                                         <h1 class="h4 text-gray-900 mb-4">Inicia sesión</h1>
                                     </div>
-                                    <form class="user">
+                                    {% if messages %}
+                                    <ul class="messages">
+                                        {% for message in messages %}
+                                            <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+                                        {% endfor %}
+                                    </ul>
+                                    {% endif %}               
+                                 
+                                    <form class="formlogin" method="post" action="{% url 'logear' %}">
                                         {% csrf_token %}
-                                        {% if messages %}
-                                            <ul class="messages">
-                                                {% for message in messages %}
-                                                    <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
-                                                {% endfor %}
-                                            </ul>
-                                        {% endif %}
+
                                         <div class="form-group">
                                             <label for="email">Ingresa tu correo</label>
                                             <input type="email" name='email' class="form-control form-control-user"
                                                 id="email"
-                                                placeholder="Ingresa tu Email">
+                                                placeholder="Ingresa tu Email" required>
                                         </div>
                                         <div class="form-group">
                                             <label for="password">Ingresa tu contraseña</label>       
                                             <input type="password" name='password' class="form-control form-control-user"
-                                                id="password" placeholder="Ingresa tu contraseña">
+                                                id="password" placeholder="Ingresa tu contraseña" required>
                                         </div>
                                         <div class="form-group">
                                             <div class="custom-control custom-checkbox small">

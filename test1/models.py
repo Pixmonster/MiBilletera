@@ -6,6 +6,8 @@ class Usuario(AbstractUser):
     # Agrega los atributos 'related_name' en las relaciones
     username = models.CharField(max_length=60, unique=False)
     email = models.EmailField(unique=True)
+    USERNAME_FIELD='email'
+    REQUIRED_FIELDS = ['username', 'password']
     groups = models.ManyToManyField(
         'auth.Group',
         verbose_name='groups',
@@ -20,6 +22,11 @@ class Usuario(AbstractUser):
         help_text='Specific permissions for this user.',
         related_name='usuarios_permissions'  # Cambio de 'user_set' a 'usuarios_permissions'
     )
+    
+    def __str__(self):
+        return self.email
+    
+    
 
 class Ingresos (models.Model):
     cantidad_ingreso = models.IntegerField(blank=False, null= False)

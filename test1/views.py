@@ -1,15 +1,15 @@
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, redirect
 from django.contrib.auth import logout, login, authenticate
+from django.contrib.auth.views import LoginView
 from django.contrib import messages
-from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth.forms import AuthenticationForm, UserCreationForm
 from django.http import HttpResponse
 from . models import *
 
 
 def index(request):
     return render(request, 'test1/index.html')
-
 
 def panel(request):
     return render (request,'test1/home.html')
@@ -24,10 +24,8 @@ def register(request):
         email = request.POST.get('email')
         password = request.POST.get('password')
         
-        # Verificar si el nombre de usuario ya existe
         if Usuario.objects.filter(email=email).exists():
             # Manejar el error de nombre de usuario duplicado aquí
-            # Por ejemplo, podrías mostrar un mensaje de error en la plantilla.
             error_message = ("El correo ya está en uso.")
             return render(request, 'test1/register.html', {'error_message': error_message})
         
@@ -41,10 +39,10 @@ def register(request):
 
 
 
-def login(request):
-    if request.method == 'POST':
-        email = request.POST.get('email')
-        password = request.POST.get('password')
+def logear(request):
+    if request.method=='POST':
+        email=request.POST('email')
+        password=request.POST('password')
         
         user = authenticate(request, email=email, password=password)
         if user is not None:
@@ -54,5 +52,5 @@ def login(request):
         else:
             messages.error(request, 'Credenciales inválidas. Por favor, verifica tus datos.')
             
-    return render(request, 'login.html')
+    return render(request, 'registration/login.html')
 
