@@ -4,6 +4,7 @@ from django.contrib.auth.models import AbstractUser
 
 class Usuario(AbstractUser):
     # Agrega los atributos 'related_name' en las relaciones
+    username = models.CharField(max_length=60, unique=False)
     email = models.EmailField(unique=True)
     groups = models.ManyToManyField(
         'auth.Group',
