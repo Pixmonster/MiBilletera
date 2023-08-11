@@ -59,10 +59,10 @@
                                         {% csrf_token %}
 
                                         <div class="form-group">
-                                            <label for="username">Ingresa tu correo</label>
+                                            <label for="username">Ingresa tu nombre de usuario</label>
                                             <input type="username" name='username' id="username" class="form-control form-control-user"
                                                 id="username"
-                                                placeholder="Ingresa tu Email" required>
+                                                placeholder="Ingresa tu usuario" required>
                                         </div>
                                         <div class="form-group">
                                             <label for="password">Ingresa tu contraseña</label>       
@@ -87,10 +87,10 @@
                                     </form>
                                     <hr>
                                     <div class="text-center">
-                                        <a class="small" href="forgot-password.html">Olvidaste tu contraseña?</a>
+                                        <a class="small" href="{% url 'reset_password' %}">Olvidaste tu contraseña?</a>
                                     </div>
                                     <div class="text-center">
-                                        <a class="small" href="register.html">Crea una nueva cuenta!</a>
+                                        <a class="small" href="{% url 'register' %}">Crea una nueva cuenta!</a>
                                     </div>
                                 </div>
                             </div>
