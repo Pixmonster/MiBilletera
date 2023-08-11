@@ -257,9 +257,11 @@
                         <li class="nav-item dropdown no-arrow">
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">User</span>
+                                {% if user.is_authenticated %}
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">{{ user.username }}</span>
+                                {% endif %}
                                 <img class="img-profile rounded-circle"
-                                    src="img/undraw_profile.svg">
+                                    src="{% static 'img/icon-user.png' %}">
                             </a>
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
@@ -391,7 +393,7 @@
                                 <!-- Card Header - Dropdown -->
                                 <div
                                     class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                    <h6 class="m-0 font-weight-bold text-primary">Resumen Ingresos</h6>
+                                    <h6 class="m-0 font-weight-bold text-success">Resumen Ingresos</h6>
                                     <div class="dropdown no-arrow">
                                         <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
                                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -414,7 +416,7 @@
                                 <!-- Card Header - Dropdown -->
                                 <div
                                     class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                    <h6 class="m-0 font-weight-bold text-primary">Fuentes de ingresos</h6>
+                                    <h6 class="m-0 font-weight-bold text-success">Fuentes de ingresos</h6>
                                     <div class="dropdown no-arrow">
                                         <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
                                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -441,7 +443,7 @@
                             <!-- Project Card Example -->
                             <div class="card shadow mb-4">
                                 <div class="card-header py-3">
-                                    <h6 class="m-0 font-weight-bold text-primary">Metas</h6>
+                                    <h6 class="m-0 font-weight-bold text-success">Metas</h6>
                                 </div>
                                 <div class="card-body">
                                     <h4 class="small font-weight-bold">Ahorro Casa <span
@@ -504,8 +506,8 @@
                     </button>
                 </div>
                 <div class="modal-footer">
-                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>
-                    <a class="btn btn-primary" href="{% url 'exit' %}">Cerrar Sesión</a>
+                    <button class="btn btn-danger" type="button" data-dismiss="modal">Cancelar</button>
+                    <a class="btn btn-success" href="{% url 'exit' %}">Cerrar Sesión</a>
                 </div>
             </div>
         </div>
