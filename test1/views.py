@@ -1,9 +1,8 @@
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib.auth import logout, login, authenticate
-from django.contrib.auth.views import LoginView
+from django.views.decorators.cache import never_cache
 from django.contrib import messages
-from django.contrib.auth.forms import AuthenticationForm, UserCreationForm
 from django.http import HttpResponse
 from . models import *
 
@@ -11,13 +10,14 @@ from . models import *
 def index(request):
     return render(request, 'test1/index.html')
 
+@never_cache
 @login_required
 def panel(request):
     return render (request,'test1/home.html')
 
 def exit(request):
     logout(request)
-    return redirect('/')
+    return redirect('logear')
 
 def register(request):
     if request.method == 'POST':
