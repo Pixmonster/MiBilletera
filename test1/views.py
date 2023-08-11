@@ -1,5 +1,5 @@
 from django.contrib.auth.decorators import login_required
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib.auth import logout, login, authenticate
 from django.contrib.auth.views import LoginView
 from django.contrib import messages
@@ -11,6 +11,7 @@ from . models import *
 def index(request):
     return render(request, 'test1/index.html')
 
+@login_required
 def panel(request):
     return render (request,'test1/home.html')
 
@@ -24,10 +25,11 @@ def register(request):
         email = request.POST.get('email')
         password = request.POST.get('password')
         
-        if Usuario.objects.filter(email=email).exists():
+        if Usuario.objects.filter(username=username).exists():
             # Manejar el error de nombre de usuario duplicado aquí
-            error_message = ("El correo ya está en uso.")
+            error_message = ("El usuario ya está en uso.")
             return render(request, 'test1/register.html', {'error_message': error_message})
+        
         
         # Crear y guardar el usuario en la base de datos
         nuevo_usuario = Usuario(username=username, email=email, password=password)
@@ -38,13 +40,16 @@ def register(request):
     return render(request, 'test1/register.html')
 
 
-
 def logear(request):
-    if request.method=='POST':
-        email=request.POST('email')
-        password=request.POST('password')
+    if request.method == 'POST':
+        username = request.POST['username']
+        password = request.POST['password']
         
-        user = authenticate(request, email=email, password=password)
+        try:
+            user = Usuario.objects.get(username=username, password=password)
+        except Usuario.DoesNotExist:
+            user = None
+        
         if user is not None:
             login(request, user)
             messages.success(request, 'Inicio de sesión exitoso.')
