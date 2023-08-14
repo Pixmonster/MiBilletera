@@ -1,3 +1,4 @@
+{% load widget_tweaks %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,10 +29,25 @@
                         <div class="d-sm-flex align-items-center justify-content-between mb-4">
                             <h1 class="h3 mb-0 text-gray-800">Registar Ingreso</h1>
                         </div>
-    <form action="{% url 'index' %}" method='POST'>
+
+    <form method='POST'>
         {% csrf_token %}
         {{ form.as_p }}
         <button type="submit" class="btn btn-success btn-user btn-block">Ingresar</button>
+        {% if messages %}
+        <ul class="messages">
+            {% for message in messages %}
+                <li{% if message.tags %} class="{{ message.tags }}alert alert-success "{% endif %}>{{ message }}</li>
+            {% endfor %}
+        </ul>
+        {% endif %} 
     </form>
+
+<script>    
+$(function() {
+    $('.datepicker').datepicker();
+});
+</script>
+
 </body>
 </html>

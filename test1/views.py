@@ -53,7 +53,6 @@ def logear(request):
         
         if user is not None:
             login(request, user)
-            messages.success(request, 'Inicio de sesión exitoso.')
             return redirect('panel')  # Redirigir a la página de inicio después del inicio de sesión
         else:
             messages.error(request, 'Credenciales inválidas. Por favor, verifica tus datos.')
@@ -65,7 +64,8 @@ def nuevo_ingreso(request):
         form = TransaccionesForm(request.POST)
         if form.is_valid():
             form.save()
-            return render(request, 'test1/nuevo_ingreso.html', {'form': form})
+            messages.success(request, 'Ingreso guardado correctamente')
+            return redirect('nuevo_ingreso') # Usar redirect para que cuando el formulario se envíe no se recargue con todos los campos llenos
     else:
         form = TransaccionesForm()
-        return render(request, 'test1/nuevo_ingreso.html', {'form': form})
+    return render(request, 'test1/nuevo_ingreso.html', {'form': form})

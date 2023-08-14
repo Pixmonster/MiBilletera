@@ -32,8 +32,9 @@ class Cuentas (models.Model):
 class Transacciones (models.Model):
     fecha = models.DateField (default=datetime.now())
     monto = models.IntegerField (blank=False, null=False)
-    fuente = models.CharField(max_length=100)
+    fuente = models.CharField(max_length=20)
     categoria = models.CharField(max_length=50)
 
     def __str__(self):
         return self.fuente
+    
