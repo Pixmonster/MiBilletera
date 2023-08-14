@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Billetera | Ingresos</title>
+</head>
+<body>
+    <body id="page-top">
+
+        <!-- Page Wrapper -->
+        <div id="wrapper">
+    
+    {% include 'layout/partials/togler.html' %}
+    
+            <!-- Content Wrapper -->
+            <div id="content-wrapper" class="d-flex flex-column">
+    
+                <!-- Main Content -->
+                <div id="content">
+    
+    {% include 'layout/partials/topnavbar.html' %}
+    
+                    <!-- Begin Page Content -->
+                    <div class="container-fluid">
+    
+                        <!-- Page Heading -->
+                        <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                            <h1 class="h3 mb-0 text-gray-800">Registar Ingreso</h1>
+                        </div>
+    <form action="{% url 'index' %}" method='POST'>
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-success btn-user btn-block">Ingresar</button>
+    </form>
+</body>
+</html>

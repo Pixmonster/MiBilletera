@@ -4,7 +4,8 @@ from django.contrib.auth import logout, login, authenticate
 from django.views.decorators.cache import never_cache
 from django.contrib import messages
 from django.http import HttpResponse
-from . models import *
+from .models import *
+from .forms import *
 
 
 def index(request):
@@ -59,3 +60,12 @@ def logear(request):
             
     return render(request, 'registration/login.html')
 
+def nuevo_ingreso(request):
+    if request.method == 'POST':
+        form = TransaccionesForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return render(request, 'test1/nuevo_ingreso.html', {'form': form})
+    else:
+        form = TransaccionesForm()
+        return render(request, 'test1/nuevo_ingreso.html', {'form': form})

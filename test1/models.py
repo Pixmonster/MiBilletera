@@ -1,5 +1,5 @@
 from django.db import models
-from datetime import date
+from datetime import datetime
 from django.contrib.auth.models import AbstractUser
 
 class Usuario(AbstractUser):
@@ -21,29 +21,19 @@ class Usuario(AbstractUser):
     
     def __str__(self):
         return self.email
-    
-    
 
-class Ingresos (models.Model):
-    cantidad_ingreso = models.IntegerField(blank=False, null= False)
-    fuente_ingreso = models.CharField(max_length=50, blank=True, null=True)
-    fecha_ingreso = models.DateField()
+class Cuentas (models.Model):
+    tipo = models.CharField(max_length=50, blank=False, null=False)
+    saldo = models.IntegerField(blank=False, null=False) # Se va a llenar o restar con un trigger desde Transacciones
 
     def __str__(self):
-        return self.fuente_ingreso
+        return self.tipo
 
-class Ahorros (models.Model):
-    monto_ahorro = models.IntegerField(blank=False, null=False)
-    fecha_ini_ahorro = models.DateField()
-    fecha_fin_ahorro = models.DateField()
-    ingresos = models.ForeignKey(Ingresos, on_delete=models.CASCADE)
-
-    def __str__(self):
-        return self.monto_ahorro
-
-class Gastos (models.Model):
-    monto_gasto = models.IntegerField(blank=False, null=False)
+class Transacciones (models.Model):
+    fecha = models.DateField (default=datetime.now())
+    monto = models.IntegerField (blank=False, null=False)
+    fuente = models.CharField(max_length=100)
+    categoria = models.CharField(max_length=50)
 
     def __str__(self):
-        return self.monto_gasto
-
+        return self.fuente
