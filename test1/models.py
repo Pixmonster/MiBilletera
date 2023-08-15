@@ -31,7 +31,7 @@ class Transacciones (models.Model):
     fecha = models.DateField ()
     monto = models.IntegerField (blank=False, null=False)
     fuente = models.CharField(max_length=50)
-    fk_categoria = models.ForeignKey(Categoria, on_delete=models.CASCADE, default=None )
+    fk_categoria = models.ForeignKey(Categoria, on_delete=models.CASCADE, default=None, null=True )
 
     def __str__(self):
         return self.fuente
