@@ -71,6 +71,7 @@ def eliminar_usuario(request, user_id):
         messages.error(request, 'No tienes permiso para eliminar esta cuenta.')
         return redirect('panel')
 
+@login_required
 def nuevo_ingreso(request):
     if request.method == 'POST':
         form = TransaccionesForm(request.POST)
@@ -82,9 +83,26 @@ def nuevo_ingreso(request):
         form = TransaccionesForm()
     return render(request, 'test1/nuevo_ingreso.html', {'form': form})
 
+@login_required
 def ver_ingreso(request):
     transacciones = Transacciones.objects.all()
     context = {
         'transacciones': transacciones
     }
     return render(request, 'test1/ver_ingresos.html', context)
+
+@login_required
+def borrar_ingreso(request, id):
+    transacciones = Transacciones.objects.get(id=id)
+    transacciones.delete()
+    return redirect('/ver_ingreso/')
+
+@login_required
+def editar_ingreso(request, id):
+    if(request.method == 'GET'):
+        transacciones = Transacciones.objects.get(id=id)
+        form = TransaccionesForm(transacciones)
+        context = {
+            'form': form
+        }
+        return render(request, 'test1/editar_ingreso.html', context)

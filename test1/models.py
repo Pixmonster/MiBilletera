@@ -1,5 +1,4 @@
 from django.db import models
-from datetime import datetime
 from django.contrib.auth.models import AbstractUser
 
 class Usuario(AbstractUser):
@@ -21,20 +20,26 @@ class Usuario(AbstractUser):
     
     def __str__(self):
         return self.email
+    
+class Categoria (models.Model):
+    nombre_categoria = models.CharField(max_length=50, null=False, blank=False)
+
+    def __str__(self):
+        return self.nombre_categoria
+
+class Transacciones (models.Model):
+    fecha = models.DateField ()
+    monto = models.IntegerField (blank=False, null=False)
+    fuente = models.CharField(max_length=50)
+    fk_categoria = models.ForeignKey(Categoria, on_delete=models.CASCADE, default=None )
+
+    def __str__(self):
+        return self.fuente
 
 class Cuentas (models.Model):
     tipo = models.CharField(max_length=50, blank=False, null=False)
     saldo = models.IntegerField(blank=False, null=False) # Se va a llenar o restar con un trigger desde Transacciones
+    transacciones_fk = models.ForeignKey(Transacciones, on_delete=models.CASCADE, default=None)
 
     def __str__(self):
         return self.tipo
-
-class Transacciones (models.Model):
-    fecha = models.DateField (default=datetime.now())
-    monto = models.IntegerField (blank=False, null=False)
-    fuente = models.CharField(max_length=20)
-    categoria = models.CharField(max_length=50)
-
-    def __str__(self):
-        return self.fuente
-    
