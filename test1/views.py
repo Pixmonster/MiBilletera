@@ -4,7 +4,8 @@ from django.contrib.auth import logout, login, authenticate
 from django.views.decorators.cache import never_cache
 from django.contrib import messages
 from django.http import HttpResponse
-from . models import *
+from .models import *
+from .forms import *
 
 
 def index(request):
@@ -52,13 +53,22 @@ def logear(request):
         
         if user is not None:
             login(request, user)
-            messages.success(request, 'Inicio de sesión exitoso.')
             return redirect('panel')  # Redirigir a la página de inicio después del inicio de sesión
         else:
             messages.error(request, 'Credenciales inválidas. Por favor, verifica tus datos.')
             
     return render(request, 'registration/login.html')
 
+def nuevo_ingreso(request):
+    if request.method == 'POST':
+        form = TransaccionesForm(request.POST)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Ingreso guardado correctamente')
+            return redirect('nuevo_ingreso') # Usar redirect para que cuando el formulario se envíe no se recargue con todos los campos llenos
+    else:
+        form = TransaccionesForm()
+    return render(request, 'test1/nuevo_ingreso.html', {'form': form})
 @login_required
 def eliminar_usuario(request, user_id):
     usuario = get_object_or_404(Usuario, id=user_id)
