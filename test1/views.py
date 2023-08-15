@@ -59,3 +59,14 @@ def logear(request):
             
     return render(request, 'registration/login.html')
 
+@login_required
+def eliminar_usuario(request, user_id):
+    usuario = get_object_or_404(Usuario, id=user_id)
+    
+    if usuario == request.user:
+        usuario.delete()
+        messages.success(request, 'Tu cuenta ha sido eliminada correctamente.')
+        return redirect('index')
+    else:
+        messages.error(request, 'No tienes permiso para eliminar esta cuenta.')
+        return redirect('panel')
