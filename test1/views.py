@@ -69,6 +69,20 @@ def nuevo_ingreso(request):
     else:
         form = TransaccionesForm()
     return render(request, 'test1/nuevo_ingreso.html', {'form': form})
+<<<<<<< HEAD
 
 def ver_ingreso(request):
     return render(request, 'test1/ver_ingresos.html')
+=======
+@login_required
+def eliminar_usuario(request, user_id):
+    usuario = get_object_or_404(Usuario, id=user_id)
+    
+    if usuario == request.user:
+        usuario.delete()
+        messages.success(request, 'Tu cuenta ha sido eliminada correctamente.')
+        return redirect('index')
+    else:
+        messages.error(request, 'No tienes permiso para eliminar esta cuenta.')
+        return redirect('panel')
+>>>>>>> 24d48cf74de3e5d4980629a970a095f7838468d5
