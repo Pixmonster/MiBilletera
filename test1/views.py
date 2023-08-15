@@ -69,3 +69,6 @@ def nuevo_ingreso(request):
     else:
         form = TransaccionesForm()
     return render(request, 'test1/nuevo_ingreso.html', {'form': form})
+
+def ver_ingreso(request):
+    return render(request, 'test1/ver_ingresos.html')

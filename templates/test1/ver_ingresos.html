@@ -1,0 +1,51 @@
+{% load widget_tweaks %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/ingresos.css' %}">
+    <title>Mi Billetera | Ver Ingresos</title>
+</head>
+<body>
+    <body id="page-top">
+
+        <!-- Page Wrapper -->
+        <div id="wrapper">
+    
+    {% include 'layout/partials/togler.html' %}
+    
+            <!-- Content Wrapper -->
+            <div id="content-wrapper" class="d-flex flex-column">
+    
+                <!-- Main Content -->
+                <div id="content">
+    
+    {% include 'layout/partials/topnavbar.html' %}
+    
+                    <!-- Begin Page Content -->
+                    <div class="container-fluid">
+    
+                        <!-- Page Heading -->
+                        <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                            <h1 class="h3 mb-0 text-gray-800">Ver Ingresos</h1>
+                        </div>
+
+<ul class="table">
+    <li>hola</li>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+</ul>
+
+<script>    
+$(function() {
+    $('.datepicker').datepicker();
+});
+</script>
+
+</body>
+</html>
