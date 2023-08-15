@@ -59,21 +59,6 @@ def logear(request):
             
     return render(request, 'registration/login.html')
 
-def nuevo_ingreso(request):
-    if request.method == 'POST':
-        form = TransaccionesForm(request.POST)
-        if form.is_valid():
-            form.save()
-            messages.success(request, 'Ingreso guardado correctamente')
-            return redirect('nuevo_ingreso') # Usar redirect para que cuando el formulario se envíe no se recargue con todos los campos llenos
-    else:
-        form = TransaccionesForm()
-    return render(request, 'test1/nuevo_ingreso.html', {'form': form})
-<<<<<<< HEAD
-
-def ver_ingreso(request):
-    return render(request, 'test1/ver_ingresos.html')
-=======
 @login_required
 def eliminar_usuario(request, user_id):
     usuario = get_object_or_404(Usuario, id=user_id)
@@ -85,4 +70,21 @@ def eliminar_usuario(request, user_id):
     else:
         messages.error(request, 'No tienes permiso para eliminar esta cuenta.')
         return redirect('panel')
->>>>>>> 24d48cf74de3e5d4980629a970a095f7838468d5
+
+def nuevo_ingreso(request):
+    if request.method == 'POST':
+        form = TransaccionesForm(request.POST)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Ingreso guardado correctamente')
+            return redirect('nuevo_ingreso') # Usar redirect para que cuando el formulario se envíe no se recargue con todos los campos llenos
+    else:
+        form = TransaccionesForm()
+    return render(request, 'test1/nuevo_ingreso.html', {'form': form})
+
+def ver_ingreso(request):
+    transacciones = Transacciones.objects.all()
+    context = {
+        'transacciones': transacciones
+    }
+    return render(request, 'test1/ver_ingresos.html', context)

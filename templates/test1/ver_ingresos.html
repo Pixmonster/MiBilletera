@@ -32,14 +32,24 @@
                             <h1 class="h3 mb-0 text-gray-800">Ver Ingresos</h1>
                         </div>
 
-<ul class="table">
-    <li>hola</li>
-    <li>1</li>
-    <li>2</li>
-    <li>3</li>
-    <li>4</li>
-    <li>5</li>
-</ul>
+<table class="table table-striped">
+    <thead>
+        <tr>
+        <th scope="col">Fecha</th>
+        <th scope="col">Monto</th>
+        <th scope="col">Fuente</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for transaccion in transacciones %}
+        <tr>
+        <td>{{ transaccion.fecha}}</td>
+        <td>{{ transaccion.monto}}</td>
+        <td>{{ transaccion.fuente}}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
 
 <script>    
 $(function() {

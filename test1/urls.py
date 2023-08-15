@@ -33,6 +33,6 @@ urlpatterns = [
      auth_views.PasswordResetConfirmView.as_view(template_name='registration/password_reset_confirm.html'),name='password_reset_confirm'),
      path('reset/done/',auth_views.PasswordResetCompleteView.as_view(template_name='registration/password_reset_complete.html'),name='password_reset_complete'),
      path('nuevo_ingreso/', views.nuevo_ingreso, name="nuevo_ingreso"),
-     path('ver_ingreso/', views.ver_ingreso, name="ver_ingreo")
+     path('ver_ingreso/', views.ver_ingreso, name="ver_ingreso")
 
 ]
