@@ -6,11 +6,13 @@ from django.contrib import messages
 from django.http import HttpResponse
 from .models import *
 from .forms import *
+from datetime import datetime
 
 
 def index(request):
     return render(request, 'test1/index.html')
 
+#region PANEL
 @never_cache
 @login_required
 def panel(request):
@@ -19,7 +21,9 @@ def panel(request):
 def exit(request):
     logout(request)
     return redirect('logear')
+#endregion
 
+#region USUARIO
 def register(request):
     if request.method == 'POST':
         username = request.POST.get('username')
@@ -70,7 +74,10 @@ def eliminar_usuario(request, user_id):
     else:
         messages.error(request, 'No tienes permiso para eliminar esta cuenta.')
         return redirect('panel')
+    
+#endregion
 
+#region INGRESOS
 @login_required
 def nuevo_ingreso(request):
     if request.method == 'POST':
@@ -99,10 +106,27 @@ def borrar_ingreso(request, id):
 
 @login_required
 def editar_ingreso(request, id):
+    transacciones = Transacciones.objects.get(id=id)
+
     if(request.method == 'GET'):
-        transacciones = Transacciones.objects.get(id=id)
-        form = TransaccionesForm(transacciones)
+        formatted_fecha = transacciones.fecha.strftime('%Y-%m-%d')  # Formatear la fecha
+        form = TransaccionesForm(instance = transacciones, initial={'fecha': formatted_fecha})
         context = {
-            'form': form
+            'form': form,
+            'id': id,
+            'fecha_actual': transacciones.fecha, 
         }
-        return render(request, 'test1/editar_ingreso.html', context)
+        return render(request, 'test1/editar_ingresos.html', context)
+    
+    if(request.method == 'POST'):
+        form = TransaccionesForm(request.POST, instance = transacciones)
+        if form.is_valid():
+            form.save()
+        context = {
+            'form': form,
+            'id': id,
+            'fecha_actual': transacciones.fecha,
+        }
+        return redirect('/ver_ingreso/')
+    
+#endregion

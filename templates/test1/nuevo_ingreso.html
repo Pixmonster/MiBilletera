@@ -27,12 +27,14 @@
     
                         <!-- Page Heading -->
                         <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                            <h1 class="h3 mb-0 text-gray-800">Registar Ingreso</h1>
+                            <h1 class="h3 mb-0 text-gray-800">Registrar Ingreso</h1>
                         </div>
 
     <form method='POST'>
         {% csrf_token %}
-        {{ form.as_p }}
+        <p> Fecha del ingreso: {{ form.fecha }} </p>
+        <p> Cantidad o monto del ingreso: {{ form.monto }} </p>
+        <p> Fuente de ingreso: {{ form.fuente }} </p>
         <button type="submit" class="btn btn-success btn-user btn-block">Ingresar</button>
         {% if messages %}
         <ul class="messages">

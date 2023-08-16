@@ -12,9 +12,9 @@ class UsuarioForm(UserCreationForm):
 class TransaccionesForm(ModelForm):
     class Meta:
         model = Transacciones
-        fields = ['fecha','monto','fuente']
+        fields = ['fecha','monto']
     #   extra_fields = ['']
+    #   exclude = ('')
         widgets = {
             'fecha': DateInput(attrs={'type': 'date'}),
-            'fuente': forms.Select(choices=[('', 'Seleccione una fuente de ingreso'), ('Trabajo', 'Trabajo'), ('Ventas', 'Ventas'), ('Actividades Secundarias', 'Actividades Secundarias'), ('Otros Ingresos', 'Otros Ingresos')]),        
             }

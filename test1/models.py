@@ -21,17 +21,23 @@ class Usuario(AbstractUser):
     def __str__(self):
         return self.email
     
-class Categoria (models.Model):
-    nombre_categoria = models.CharField(max_length=50, null=False, blank=False)
+class CategoriaGasto (models.Model):
+    nombre_categoria = models.CharField (max_length=50, null=False, blank=False)
 
     def __str__(self):
         return self.nombre_categoria
 
+class FuenteIngreso (models.Model):
+    nombre_fuente = models.CharField (max_length=50, null=False, blank=False)
+
+    def __str__(self):
+        return self.nombre_fuente
+
 class Transacciones (models.Model):
     fecha = models.DateField ()
     monto = models.IntegerField (blank=False, null=False)
-    fuente = models.CharField(max_length=50)
-    fk_categoria = models.ForeignKey(Categoria, on_delete=models.CASCADE, default=None, null=True )
+    fk_categoria = models.ForeignKey(CategoriaGasto, on_delete=models.CASCADE, null=True)
+    fk_fuente = models.ForeignKey(FuenteIngreso, on_delete=models.CASCADE, null=True)
 
     def __str__(self):
         return self.fuente
