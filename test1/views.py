@@ -88,6 +88,9 @@ def nuevo_ingreso(request):
             return redirect('nuevo_ingreso') # Usar redirect para que cuando el formulario se envíe no se recargue con todos los campos llenos
     else:
         form = TransaccionesForm()
+
+    fuentes_ingreso = FuenteIngreso.objects.all()
+    form.fields['fk_fuente'].queryset = fuentes_ingreso
     return render(request, 'test1/nuevo_ingreso.html', {'form': form})
 
 @login_required

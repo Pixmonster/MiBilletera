@@ -1,4 +1,5 @@
 {% load widget_tweaks %}
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -30,19 +31,36 @@
                             <h1 class="h3 mb-0 text-gray-800">Registrar Ingreso</h1>
                         </div>
 
-    <form method='POST'>
-        {% csrf_token %}
-        <p> Fecha del ingreso: {{ form.fecha }} </p>
-        <p> Cantidad o monto del ingreso: {{ form.monto }} </p>
-        <p> Fuente de ingreso: {{ form.fuente }} </p>
-        <button type="submit" class="btn btn-success btn-user btn-block">Ingresar</button>
-        {% if messages %}
-        <ul class="messages">
-            {% for message in messages %}
-                <li{% if message.tags %} class="{{ message.tags }}alert alert-success "{% endif %}>{{ message }}</li>
-            {% endfor %}
-        </ul>
-        {% endif %} 
-    </form>
+<form method="POST">
+    {% csrf_token %}
+    <p> Fecha del ingreso: {{ form.fecha }} </p>
+    <p> Cantidad o monto del ingreso: {{ form.monto }} 
+        
+    </p>
+    <p> Fuente de ingreso: {{ form.fk_fuente }} </p>
+    <button type="submit" class="btn btn-success btn-user btn-block">Ingresar</button>
+    {% if messages %}
+    <ul class="messages">
+        {% for message in messages %}
+            <li{% if message.tags %} class="{{ message.tags }} alert alert-success"{% endif %}>{{ message }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+</form>
+
+<script src="https://cdn.jsdelivr.net/npm/autonumeric@4.3.0/dist/autoNumeric.min.js"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        new AutoNumeric('.autonumeric', {
+            allowDecimalPadding: false,
+            currencySymbol: '',
+            decimalCharacter: ',',
+            digitGroupSeparator: '.',
+            unformatOnSubmit: true
+        });
+    });
+</script>
+
 </body>
 </html>

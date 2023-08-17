@@ -35,16 +35,16 @@ class FuenteIngreso (models.Model):
 
 class Transacciones (models.Model):
     fecha = models.DateField ()
-    monto = models.IntegerField (blank=False, null=False)
-    fk_categoria = models.ForeignKey(CategoriaGasto, on_delete=models.CASCADE, null=True)
-    fk_fuente = models.ForeignKey(FuenteIngreso, on_delete=models.CASCADE, null=True)
+    monto = models.DecimalField (max_digits=15, decimal_places=2, blank=False, null=False)
+    fk_categoria = models.ForeignKey(CategoriaGasto, on_delete=models.CASCADE, null=True, blank=True)
+    fk_fuente = models.ForeignKey(FuenteIngreso, on_delete=models.CASCADE, null=True, blank=True)
 
     def __str__(self):
-        return self.fuente
+        return self.fecha
 
 class Cuentas (models.Model):
     tipo = models.CharField(max_length=50, blank=False, null=False)
-    saldo = models.IntegerField(blank=False, null=False) # Se va a llenar o restar con un trigger desde Transacciones
+    saldo = models.DecimalField(max_digits=15, decimal_places=2, blank=False, null=False) # Se va a llenar o restar con un trigger desde Transacciones
     transacciones_fk = models.ForeignKey(Transacciones, on_delete=models.CASCADE, default=None)
 
     def __str__(self):

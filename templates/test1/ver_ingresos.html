@@ -1,5 +1,6 @@
 {% load widget_tweaks %}
 {% load static %}
+{% load humanize %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -46,8 +47,8 @@
         {% for transaccion in transacciones %}
         <tr>
         <td>{{ transaccion.fecha}}</td>
-        <td>{{ transaccion.monto}}</td>
-        <td>{{ transaccion.fuente}}</td>
+        <td>{{ transaccion.monto|floatformat:"2"|intcomma}}</td>
+        <td>{{ transaccion.fk_fuente}}</td>
         <td><button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Borrar</button>
         <a href="{% url 'editar_ingreso' id=transaccion.id %}" type="button" class="btn btn-primary">Actualizar</a>
         </td>   

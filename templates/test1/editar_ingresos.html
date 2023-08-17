@@ -34,7 +34,7 @@
                             {% csrf_token %}
                             <p> Fecha del ingreso: {{ form.fecha }} </p>
                             <p> Cantidad o monto del ingreso: {{ form.monto }} </p>
-                            <p> Fuente de ingreso: {{ form.fuente }} </p>
+                            <p> Fuente de ingreso: {{ form.fk_fuente }} </p>
 
                             <!-- {{ form.fecha.label_tag }} Se usa para traer el nombre del atributo desde la base de datos-->
                             <button type="submit" class="btn btn-success btn-user btn-block">Actualizar</button>
