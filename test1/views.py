@@ -7,6 +7,7 @@ from django.http import HttpResponse
 from .models import *
 from .forms import *
 from datetime import datetime
+from django.db.models import Sum
 
 
 def index(request):
@@ -16,7 +17,11 @@ def index(request):
 @never_cache
 @login_required
 def panel(request):
-    return render (request,'test1/home.html')
+    total_ingresos = Transacciones.objects.filter(es_ingreso=True).aggregate(Sum('monto'))['monto__sum'] or 0
+    context = {
+        'total_ingresos': total_ingresos
+    }
+    return render (request,'test1/home.html', context)
 
 def exit(request):
     logout(request)
@@ -33,6 +38,11 @@ def register(request):
         if Usuario.objects.filter(username=username).exists():
             # Manejar el error de nombre de usuario duplicado aquí
             error_message = ("El usuario ya está en uso.")
+            return render(request, 'test1/register.html', {'error_message': error_message})
+        
+        if Usuario.objects.filter(email=email).exists():
+            # Manejar el error de nombre de usuario duplicado aquí
+            error_message = ("Email ya está en uso.")
             return render(request, 'test1/register.html', {'error_message': error_message})
         
         
