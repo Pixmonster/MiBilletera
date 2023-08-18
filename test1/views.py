@@ -39,6 +39,10 @@ def register(request):
             # Manejar el error de nombre de usuario duplicado aquí
             error_message = ("El usuario ya está en uso.")
             return render(request, 'test1/register.html', {'error_message': error_message})
+        if Usuario.objects.filter(email=email).exists():
+            # Manejar el error de nombre de usuario duplicado aquí
+            error_message = ("El email ya está en uso.")
+            return render(request, 'test1/register.html', {'error_message': error_message})
         
         if Usuario.objects.filter(email=email).exists():
             # Manejar el error de nombre de usuario duplicado aquí
@@ -57,11 +61,11 @@ def register(request):
 
 def logear(request):
     if request.method == 'POST':
-        username = request.POST['username']
+        email = request.POST['email']
         password = request.POST['password']
         
         try:
-            user = Usuario.objects.get(username=username, password=password)
+            user = Usuario.objects.get(email=email, password=password)
         except Usuario.DoesNotExist:
             user = None
         
