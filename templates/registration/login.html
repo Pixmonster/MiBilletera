@@ -31,13 +31,14 @@
 <body class="bg-success">
 
     <div class="container">
-
+        <div class="dollar-container text-center">
+            <img src="{% static 'img/dollar-open-eyes.png' %}" alt="Dollar with Eyes Open" id="dollar-image">
+        </div>
         <!-- Outer Row -->
         <div class="row justify-content-center">
-
             <div class="col-xl-10 col-lg-12 col-md-9">
 
-                <div class="card o-hidden border-0 shadow-lg my-5">
+                <div class="card o-hidden border-0 shadow-lg my-2">
                     <div class="card-body p-0">
                         <!-- Nested Row within Card Body -->
                         <div class="row">
@@ -117,6 +118,20 @@
     <!-- Custom scripts for all pages-->
     <script src= "{% static 'js/sb-admin-2.min.js' %}"></script>
 
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const passwordInput = document.getElementById('password');
+        const dollarImage = document.getElementById('dollar-image');
+        
+        passwordInput.addEventListener('focus', () => {
+            dollarImage.src = "{% static 'img/dollar-close-eyes.png' %}";
+        });
+        
+        passwordInput.addEventListener('blur', () => {
+            dollarImage.src = "{% static 'img/dollar-open-eyes.png' %}";
+        });
+    });
+    </script>
 </body>
 
 </html>
