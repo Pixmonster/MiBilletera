@@ -45,6 +45,5 @@ class Transacciones (models.Model):
             cuenta.actualizar_saldo(self.monto)
         else:
             cuenta.actualizar_saldo(-self.monto)
-
     def __str__(self):
-        return str(self.fecha)
+        return f"{self.fecha.strftime('%Y-%m-%d')} - {self.monto}"

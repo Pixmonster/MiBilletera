@@ -10,6 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
 
     <title>Mi Billetera | Panel</title>
 
@@ -57,8 +58,8 @@
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-2">
                                             <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
-                                                Ingresos (Mes Actual)</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">$0</div>
+                                                Ingresos Mes Actual ({{ mes_actual }})</div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800">{{ filter_mes|floatformat:"2"|intcomma }}</div>
                                         </div>
                                         <div class="col-auto">
                                             <i class="fas fa-calendar fa-2x text-gray-300"></i>
@@ -163,12 +164,12 @@
                         </div>
 
                         <!-- Pie Chart -->
-                        <div class="col-xl-4 col-lg-5">
+                        <div class="col-xl-2 col-lg-3">
                             <div class="card shadow mb-4">
                                 <!-- Card Header - Dropdown -->
                                 <div
                                     class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                    <h6 class="m-0 font-weight-bold text-success">Fuentes de ingresos</h6>
+                                    <h6 class="m-0 font-weight-bold text-success">Gastos más recientes</h6>
                                     <div class="dropdown no-arrow">
                                         <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
                                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -179,7 +180,55 @@
                                 <!-- Card Body -->
                                 <div class="card-body">
                                     <div class="chart-pie pt-4 pb-2">
-                                        <canvas id="myPieChart"></canvas>
+                                        <ul>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-3">
+                            <div class="card shadow mb-4">
+                                <!-- Card Header - Dropdown -->
+                                <div
+                                    class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                    <h6 class="m-0 font-weight-bold text-success">Seguimiento de Divisas frente al Dólar</h6>
+                                    <div class="dropdown no-arrow">
+                                        <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- Card Body -->
+                                <div class="card-body card-divisa h-100">
+                                    <div class="chart-pie">
+                                        <ul>
+                                            <li>
+                                                <span>EUR / USD</span>
+                                                <span><strong>{{ rates.EUR|floatformat:"2"|safe }}</strong></span>
+                                                <span>EUR</span>
+                                            </li> 
+                                            <li>
+                                                <span>JPY / USD</span>
+                                                <span><strong>{{ rates.JPY|floatformat:"2" }}</strong></span>
+                                                <span>JPY</span>
+                                            </li>
+                                            <li>
+                                                <span>GBP / USD</span>
+                                                <span><strong>{{ rates.GBP|floatformat:"2" }}</strong></span>
+                                                <span>GBP</span>
+                                            </li>
+                                            <li>
+                                                <span>AUD / USD</span>
+                                                <span><strong>{{ rates.AUD|floatformat:"3" }}</strong></span>
+                                                <span>AUD</span>
+                                            </li>
+                                            <li>
+                                                <span>COP / USD</span>
+                                                <span><strong>{{ rates.COP|floatformat:"3" }}</strong></span>
+                                                <span>COP</span>
+                                            </li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
