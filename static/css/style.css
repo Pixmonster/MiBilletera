@@ -91,6 +91,31 @@ footer {
     height: auto;
 }
 
+.card-divisa ul {
+    list-style: none;
+}
+
+.card-divisa ul li {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.8em;
+    color: black;
+    border: solid 1px rgba(0, 0, 0, 0.231);
+    border-radius: 6px;
+    margin: 3px;
+    padding: 2px;
+}
+
+.card-divisa ul li:hover {
+    background-color: rgba(128, 128, 128, 0.121);
+}
+
+.card-body.card-divisa {
+    height: 370px !important;
+}
+
 @media (max-width: 991px) {
     nav ul.navbar-nav {
         display: none;

@@ -6,20 +6,68 @@ from django.contrib import messages
 from django.http import HttpResponse
 from .models import *
 from .forms import *
-from datetime import datetime
+from datetime import datetime, timedelta
 from django.db.models import Sum
-
+import locale
+import requests
+import cachetools
 
 def index(request):
     return render(request, 'test1/index.html')
 
+# Crea un caché con una política de expiración (por ejemplo, 1 hora)
+cache = cachetools.TTLCache(maxsize=100, ttl=3600)  # 1 hora en segundos
+
+def get_exchange_rate(from_currency, to_currency):
+    cache_key = f"exchange_rate_{from_currency}_{to_currency}"
+    cached_rate = cache.get(cache_key)
+    
+    if cached_rate:
+        return cached_rate
+    
+    api_key = 'R4FODY1WJFVUIAM6'
+    endpoint = 'https://www.alphavantage.co/query'
+
+    params = {
+        'function': 'CURRENCY_EXCHANGE_RATE',
+        'from_currency': from_currency,
+        'to_currency': to_currency,
+        'apikey': api_key
+    }
+
+    response = requests.get(endpoint, params=params)
+    data = response.json()
+
+    if 'Realtime Currency Exchange Rate' in data:
+        exchange_rate_data = data['Realtime Currency Exchange Rate']
+        exchange_rate = exchange_rate_data.get('5. Exchange Rate', 'No disponible')
+        cache[cache_key] = exchange_rate
+        return exchange_rate
+    else:
+        return 'No disponible'
+
 #region PANEL
-@never_cache
 @login_required
 def panel(request):
+    fecha_actual = datetime.now()
+    locale.setlocale(locale.LC_ALL, ("es_ES", "UTF-8"))
+    filter_mes = Transacciones.objects.filter(fecha__month=fecha_actual.month).aggregate(Sum('monto'))['monto__sum'] or 0
     total_ingresos = Transacciones.objects.filter(es_ingreso=True).aggregate(Sum('monto'))['monto__sum'] or 0
+    mes_actual = fecha_actual.strftime("%b")
+    
+    from_currency = 'USD'  # Moneda base (USD)
+    to_currencies = ['EUR', 'JPY', 'GBP', 'AUD', 'COP']  # Monedas a convertir
+
+    rates = {}
+
+    for currency in to_currencies:
+        rates[currency] = get_exchange_rate(from_currency, currency)
+
     context = {
-        'total_ingresos': total_ingresos
+        'total_ingresos': total_ingresos,
+        'filter_mes': filter_mes,
+        'mes_actual': mes_actual,
+        'rates': rates  # Agrega las tasas de cambio al contexto
     }
     return render (request,'test1/home.html', context)
 
