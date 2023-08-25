@@ -51,9 +51,11 @@ def register(request):
         
         
         # Crear y guardar el usuario en la base de datos
+        
         nuevo_usuario = Usuario(username=username, email=email, password=password)
         nuevo_usuario.save()
-        
+        nueva_cuenta = Cuentas(saldo=0, fk_user=nuevo_usuario)
+        nueva_cuenta.save()
         return redirect('login')  # Redirigir a la página de inicio
 
     return render(request, 'test1/register.html')
@@ -109,7 +111,8 @@ def nuevo_ingreso(request):
 
 @login_required
 def ver_ingreso(request):
-    transacciones = Transacciones.objects.all()
+    transacciones = Transacciones.objects.filter(fk_cuenta__fk_user=request.user, es_ingreso=True)
+    
     context = {
         'transacciones': transacciones
     }

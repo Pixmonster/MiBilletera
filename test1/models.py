@@ -4,27 +4,12 @@ from django.contrib.auth.models import AbstractUser
 class Usuario(AbstractUser):
     email = models.EmailField(max_length=254, unique=True)
     # Agrega los atributos 'related_name' en las relaciones
-    groups = models.ManyToManyField(
-        'auth.Group',
-        verbose_name='groups',
-        blank=True,
-        help_text='The groups this user belongs to. A user will get all permissions granted to each of their groups.',
-        related_name='usuarios_groups'  # Cambio de 'user_set' a 'usuarios_groups'
-    )
-    user_permissions = models.ManyToManyField(
-        'auth.Permission',
-        verbose_name='user permissions',
-        blank=True,
-        help_text='Specific permissions for this user.',
-        related_name='usuarios_permissions'  # Cambio de 'user_set' a 'usuarios_permissions'
-    )
-    
     def __str__(self):
-        return self.email
+        return str(self.id)
 
 class Cuentas (models.Model):
-    tipo = models.CharField(max_length=50, blank=False, null=False)
     saldo = models.DecimalField(max_digits=15, decimal_places=2, blank=False, null=False)
+    fk_user = models.ForeignKey(Usuario, on_delete=models.CASCADE, null=True, blank=True, limit_choices_to={'is_superuser': False})
 
     def actualizar_saldo(self, monto):
         self.saldo += monto
@@ -62,4 +47,4 @@ class Transacciones (models.Model):
             cuenta.actualizar_saldo(-self.monto)
 
     def __str__(self):
-        return self.fecha
+        return str(self.fecha)
