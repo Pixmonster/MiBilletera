@@ -99,9 +99,9 @@ def register(request):
         
         
         # Crear y guardar el usuario en la base de datos
-        
         nuevo_usuario = Usuario(username=username, email=email, password=password)
         nuevo_usuario.save()
+        # Crear y guardar la cuenta en la base de datos
         nueva_cuenta = Cuentas(saldo=0, fk_user=nuevo_usuario)
         nueva_cuenta.save()
         return redirect('login')  # Redirigir a la página de inicio
@@ -147,7 +147,13 @@ def nuevo_ingreso(request):
     if request.method == 'POST':
         form = TransaccionesForm(request.POST)
         if form.is_valid():
-            form.save()
+            ingreso = form.save(commit=False)# Guarda el formulario pero no en la base de datos todavía
+            usuario = request.user
+            cuenta_usuario = Cuentas.objects.get(fk_user=usuario)
+
+            ingreso.fk_cuenta = cuenta_usuario
+            ingreso.save()  # Ahora sí guarda la transacción en la base de datos
+            
             messages.success(request, 'Ingreso guardado correctamente')
             return redirect('nuevo_ingreso') # Usar redirect para que cuando el formulario se envíe no se recargue con todos los campos llenos
     else:
