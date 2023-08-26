@@ -11,7 +11,7 @@ from django.db.models import Sum
 import locale
 import requests
 import cachetools
-
+from django.views.decorators.cache import cache_control
 def index(request):
     return render(request, 'test1/index.html')
 
@@ -47,6 +47,7 @@ def get_exchange_rate(from_currency, to_currency):
         return 'No disponible'
 
 #region PANEL
+@cache_control(no_cache=True, must_revalidate=True, no_store=True)
 @login_required
 def panel(request):
     fecha_actual = datetime.now()
@@ -142,6 +143,7 @@ def eliminar_usuario(request, user_id):
 #endregion
 
 #region INGRESOS
+@cache_control(no_cache=True, must_revalidate=True, no_store=True)
 @login_required
 def nuevo_ingreso(request):
     if request.method == 'POST':
@@ -163,6 +165,7 @@ def nuevo_ingreso(request):
     form.fields['fk_fuente'].queryset = fuentes_ingreso
     return render(request, 'test1/nuevo_ingreso.html', {'form': form})
 
+@cache_control(no_cache=True, must_revalidate=True, no_store=True)
 @login_required
 def ver_ingreso(request):
     transacciones = Transacciones.objects.filter(fk_cuenta__fk_user=request.user, es_ingreso=True)
@@ -172,12 +175,14 @@ def ver_ingreso(request):
     }
     return render(request, 'test1/ver_ingresos.html', context)
 
+@cache_control(no_cache=True, must_revalidate=True, no_store=True)
 @login_required
 def borrar_ingreso(request, id):
     transacciones = Transacciones.objects.get(id=id)
     transacciones.delete()
     return redirect('/ver_ingreso/')
 
+@cache_control(no_cache=True, must_revalidate=True, no_store=True)
 @login_required
 def editar_ingreso(request, id):
     transacciones = Transacciones.objects.get(id=id)
