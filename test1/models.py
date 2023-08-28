@@ -16,7 +16,7 @@ class Cuentas (models.Model):
         self.save()
 
     def __str__(self):
-        return self.tipo
+        return str(self.fk_user)
 
 class CategoriaGasto (models.Model):
     nombre_categoria = models.CharField (max_length=50, null=False, blank=False)
