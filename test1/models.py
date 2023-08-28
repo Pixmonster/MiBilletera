@@ -36,7 +36,7 @@ class Transacciones (models.Model):
     es_ingreso = models.BooleanField(default=True)
     fk_categoria = models.ForeignKey(CategoriaGasto, on_delete=models.CASCADE, null=True, blank=True)
     fk_fuente = models.ForeignKey(FuenteIngreso, on_delete=models.CASCADE, null=True, blank=True)
-    fk_cuenta = models.ForeignKey(Cuentas, on_delete=models.CASCADE, default=1) 
+    fk_cuenta = models.ForeignKey(Cuentas, on_delete=models.CASCADE) 
 
     def save(self, *args, **kwargs):
         super(Transacciones, self).save(*args, **kwargs)

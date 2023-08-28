@@ -12,8 +12,11 @@ import locale
 import requests
 import cachetools
 from django.views.decorators.cache import cache_control
+
 def index(request):
     return render(request, 'test1/index.html')
+
+#region PANEL
 
 # Crea un caché con una política de expiración (por ejemplo, 1 hora)
 cache = cachetools.TTLCache(maxsize=100, ttl=3600)  # 1 hora en segundos
@@ -46,7 +49,6 @@ def get_exchange_rate(from_currency, to_currency):
     else:
         return 'No disponible'
 
-#region PANEL
 @cache_control(no_cache=True, must_revalidate=True, no_store=True)
 @login_required
 def panel(request):
