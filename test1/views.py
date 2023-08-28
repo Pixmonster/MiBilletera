@@ -52,10 +52,20 @@ def get_exchange_rate(from_currency, to_currency):
 @cache_control(no_cache=True, must_revalidate=True, no_store=True)
 @login_required
 def panel(request):
+    usuario_actual = request.user  # Usuario actualmente autenticado
     fecha_actual = datetime.now()
     locale.setlocale(locale.LC_ALL, ("es_ES", "UTF-8"))
-    filter_mes = Transacciones.objects.filter(fecha__month=fecha_actual.month).aggregate(Sum('monto'))['monto__sum'] or 0
-    total_ingresos = Transacciones.objects.filter(es_ingreso=True).aggregate(Sum('monto'))['monto__sum'] or 0
+
+    filter_mes = Transacciones.objects.filter(
+        fk_cuenta__fk_user=usuario_actual,
+        fecha__month=fecha_actual.month
+    ).aggregate(Sum('monto'))['monto__sum'] or 0
+    
+    total_ingresos = Transacciones.objects.filter(
+        fk_cuenta__fk_user=usuario_actual,
+        es_ingreso=True
+    ).aggregate(Sum('monto'))['monto__sum'] or 0
+
     mes_actual = fecha_actual.strftime("%b")
     
     from_currency = 'USD'  # Moneda base (USD)
@@ -149,7 +159,7 @@ def eliminar_usuario(request, user_id):
 @login_required
 def nuevo_ingreso(request):
     if request.method == 'POST':
-        form = TransaccionesForm(request.POST)
+        form = IngresosForm(request.POST)
         if form.is_valid():
             ingreso = form.save(commit=False)# Guarda el formulario pero no en la base de datos todavía
             usuario = request.user
@@ -161,7 +171,7 @@ def nuevo_ingreso(request):
             messages.success(request, 'Ingreso guardado correctamente')
             return redirect('nuevo_ingreso') # Usar redirect para que cuando el formulario se envíe no se recargue con todos los campos llenos
     else:
-        form = TransaccionesForm()
+        form = IngresosForm()
 
     fuentes_ingreso = FuenteIngreso.objects.all()
     form.fields['fk_fuente'].queryset = fuentes_ingreso
@@ -191,7 +201,7 @@ def editar_ingreso(request, id):
 
     if(request.method == 'GET'):
         formatted_fecha = transacciones.fecha.strftime('%Y-%m-%d')  # Formatear la fecha
-        form = TransaccionesForm(instance = transacciones, initial={'fecha': formatted_fecha})
+        form = IngresosForm(instance = transacciones, initial={'fecha': formatted_fecha})
         context = {
             'form': form,
             'id': id,
@@ -200,7 +210,7 @@ def editar_ingreso(request, id):
         return render(request, 'test1/editar_ingresos.html', context)
     
     if(request.method == 'POST'):
-        form = TransaccionesForm(request.POST, instance = transacciones)
+        form = IngresosForm(request.POST, instance = transacciones)
         if form.is_valid():
             form.save()
         context = {
@@ -210,4 +220,38 @@ def editar_ingreso(request, id):
         }
         return redirect('/ver_ingreso/')
     
+#endregion
+
+#region GASTOS
+@cache_control(no_cache=True, must_revalidate=True, no_store=True)
+@login_required
+def nuevo_gasto (request):
+    if request.method == 'POST':
+        form = GastosForm(request.POST)
+        if form.is_valid():
+            gasto = form.save(commit=False)
+            usuario = request.user
+            cuenta_usuario = Cuentas.objects.get(fk_user=usuario)
+
+            gasto.fk_cuenta = cuenta_usuario
+            gasto.es_ingreso = False  # Establecer es_ingreso en False para los gastos
+            gasto.save()
+
+            messages.success(request, 'Gasto guardado correctamente')
+            return redirect('nuevo_gasto')
+    else:
+        form = GastosForm()
+    categoria_gasto = CategoriaGasto.objects.all()
+    form.fields['fk_categoria'].queryset = categoria_gasto
+    return render (request, 'test1/nuevo_gasto.html', {'form': form})
+
+@cache_control(no_cache=True, must_revalidate=True, no_store=True)
+@login_required
+def ver_gastos(request):
+    transacciones = Transacciones.objects.filter(fk_cuenta__fk_user=request.user,es_ingreso=False)
+
+    context = {
+        'transacciones': transacciones
+    }
+    return render(request, 'test1/ver_gastos.html', context)
 #endregion

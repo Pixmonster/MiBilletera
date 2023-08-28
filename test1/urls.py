@@ -26,4 +26,6 @@ urlpatterns = [
      path('ver_ingreso/', views.ver_ingreso, name="ver_ingreso"),
      path('borrar_ingreso/<int:id>', views.borrar_ingreso, name="borrar_ingreso"),
      path('editar_ingreso/<int:id>', views.editar_ingreso, name="editar_ingreso"),
+     path('nuevo_gasto/', views.nuevo_gasto, name="nuevo_gasto"),
+     path('ver_gasto/', views.ver_gastos, name="ver_gasto")
 ]

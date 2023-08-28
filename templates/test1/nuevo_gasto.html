@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Billetera | Ingresos</title>
+    <title>Mi Billetera | Gastos</title>
 </head>
 <body>
     <body id="page-top">
@@ -28,16 +28,16 @@
     
                         <!-- Page Heading -->
                         <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                            <h1 class="h3 mb-0 text-gray-800">Registrar Ingreso</h1>
+                            <h1 class="h3 mb-0 text-gray-800">Registrar Gasto</h1>
                         </div>
 
 <form method="POST">
     {% csrf_token %}
-    <p> Fecha del ingreso: {{ form.fecha }} </p>
-    <p> Cantidad o monto del ingreso: {{ form.monto }} 
+    <p> Fecha del  gasto: {{ form.fecha }} </p>
+    <p> Cantidad o monto del gasto: {{ form.monto }} 
         
     </p>
-    <p> Fuente de ingreso: {{ form.fk_fuente }} {% if form.fk_fuente.errors %}{{ form.fk_fuente.errors }}{% endif %}</p>
+    <p> Categoria del gasto: {{ form.fk_categoria }} {% if form.fk_categoria.errors %}{{ form.fk_categoria.errors }}{% endif %}</p>
     <button type="submit" class="btn btn-success btn-user btn-block">Ingresar</button>
     {% if messages %}
     <ul class="messages">
