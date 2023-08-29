@@ -15,18 +15,21 @@ class Cuentas (models.Model):
         self.saldo += monto
         self.save()
     
-
     def __str__(self):
         return str(self.fk_user)
 
 class CategoriaGasto (models.Model):
     nombre_categoria = models.CharField (max_length=50, null=False, blank=False)
+    fk_user = models.ForeignKey(Usuario, on_delete=models.CASCADE, null=True, blank=True, limit_choices_to={'is_superuser': False}, related_name='categorias_personalizadas')
+
 
     def __str__(self):
         return self.nombre_categoria
 
 class FuenteIngreso (models.Model):
     nombre_fuente = models.CharField (max_length=50, null=False, blank=False)
+    fk_user = models.ForeignKey(Usuario, on_delete=models.CASCADE, null=True, blank=True, limit_choices_to={'is_superuser': False}, related_name='fuentes_personalizadas')
+
 
     def __str__(self):
         return self.nombre_fuente

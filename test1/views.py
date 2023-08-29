@@ -56,15 +56,30 @@ def panel(request):
     fecha_actual = datetime.now()
     locale.setlocale(locale.LC_ALL, ("es_ES", "UTF-8"))
 
-    filter_mes = Transacciones.objects.filter(
+    filter_mes_ingresos = Transacciones.objects.filter(
         fk_cuenta__fk_user=usuario_actual,
-        fecha__month=fecha_actual.month
+        fecha__month=fecha_actual.month,
+        es_ingreso = True
+    ).aggregate(Sum('monto'))['monto__sum'] or 0
+
+    filter_mes_gastos = Transacciones.objects.filter(
+        fk_cuenta__fk_user=usuario_actual,
+        fecha__month=fecha_actual.month,
+        es_ingreso = False
     ).aggregate(Sum('monto'))['monto__sum'] or 0
     
     total_ingresos = Transacciones.objects.filter(
         fk_cuenta__fk_user=usuario_actual,
         es_ingreso=True
     ).aggregate(Sum('monto'))['monto__sum'] or 0
+
+    total_gastos = Transacciones.objects.filter(
+        fk_cuenta__fk_user=usuario_actual,
+        es_ingreso=False
+    ).aggregate(Sum('monto'))['monto__sum'] or 0
+
+    cuenta = Cuentas.objects.get(fk_user=usuario_actual)
+    monto_actual = cuenta.saldo
 
     mes_actual = fecha_actual.strftime("%b")
     
@@ -78,7 +93,10 @@ def panel(request):
 
     context = {
         'total_ingresos': total_ingresos,
-        'filter_mes': filter_mes,
+        'total_gastos': total_gastos,
+        'monto_actual': monto_actual,
+        'filter_mes_ingresos': filter_mes_ingresos,
+        'filter_mes_gastos': filter_mes_gastos,
         'mes_actual': mes_actual,
         'rates': rates  # Agrega las tasas de cambio al contexto
     }
