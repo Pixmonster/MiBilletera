@@ -12,6 +12,8 @@ import locale
 import requests
 import cachetools
 from django.views.decorators.cache import cache_control
+from django.http import JsonResponse
+from django.urls import reverse
 
 def index(request):
     return render(request, 'test1/index.html')
@@ -241,6 +243,7 @@ def editar_ingreso(request, id):
 #endregion
 
 #region GASTOS
+
 @cache_control(no_cache=True, must_revalidate=True, no_store=True)
 @login_required
 def nuevo_gasto (request):
@@ -261,7 +264,8 @@ def nuevo_gasto (request):
         form = GastosForm()
     categoria_gasto = CategoriaGasto.objects.all()
     form.fields['fk_categoria'].queryset = categoria_gasto
-    return render (request, 'test1/nuevo_gasto.html', {'form': form})
+    form_categoria = CategoriaPersonalizadaForm()  # Agrega esta línea para el formulario de categoría
+    return render (request, 'test1/nuevo_gasto.html', {'form': form, 'form_categoria': form_categoria})
 
 @cache_control(no_cache=True, must_revalidate=True, no_store=True)
 @login_required
@@ -272,4 +276,38 @@ def ver_gastos(request):
         'transacciones': transacciones
     }
     return render(request, 'test1/ver_gastos.html', context)
+#endregion
+
+#region CATEGORIA Y FUENTE PERSONALIZADOS
+
+@login_required
+def crear_categoria_personalizada(request):
+    if request.method == 'POST':
+        form_categoria = CategoriaPersonalizadaForm(request.POST)
+        if form_categoria.is_valid():
+            categoria = form_categoria.save(commit=False)
+            categoria.fk_user = request.user  # Asigna el usuario actual
+            categoria.save()
+
+            return redirect('nuevo_gasto')
+        
+        # Resto del código en caso de formulario no válido
+    else:
+        form_categoria = CategoriaPersonalizadaForm()
+    return render(request, 'test1/form_categoria_personalizada.html', {'form_categoria': form_categoria})
+
+@login_required
+def crear_fuente_personalizada(request):
+    if request.method == 'POST':
+        form_fuente = FuentePersonalizadaForm(request.POST)
+        if form_fuente.is_valid():
+            fuente = form_fuente.save(commit=False)
+            fuente.fk_user = request.user  # Asigna el usuario actual
+            fuente.save()
+            messages.success(request, 'Fuente nueva guardada correctamente')
+            return redirect('nuevo_ingreso')
+    else:
+        form_fuente = FuentePersonalizadaForm()
+    return render(request, 'nuevo_ingreso.html', {'form_categoria': form_fuente})
+
 #endregion

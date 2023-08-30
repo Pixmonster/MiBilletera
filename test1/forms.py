@@ -45,3 +45,18 @@ class GastosForm(ModelForm):
             raise forms.ValidationError("Debes seleccionar una categoría.")
         return categoria
 
+class CategoriaPersonalizadaForm(forms.ModelForm):
+    class Meta:
+        model = CategoriaGasto
+        fields = ['nombre_categoria']
+        widgets = {
+            'nombre_categoria': forms.TextInput(attrs={'class': 'form-control '}),
+        }
+
+class FuentePersonalizadaForm(forms.ModelForm):
+    class Meta:
+        model = FuenteIngreso
+        fields = ['nombre_fuente']
+        widgets = {
+            'nombre_fuente': forms.TextInput(attrs={'class': 'form-control '}),
+        }
