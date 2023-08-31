@@ -12,8 +12,7 @@ import locale
 import requests
 import cachetools
 from django.views.decorators.cache import cache_control
-from django.http import JsonResponse
-from django.urls import reverse
+from django.db.models import Q
 
 def index(request):
     return render(request, 'test1/index.html')
@@ -247,12 +246,12 @@ def editar_ingreso(request, id):
 @cache_control(no_cache=True, must_revalidate=True, no_store=True)
 @login_required
 def nuevo_gasto (request):
+    usuario_actual = request.user
     if request.method == 'POST':
         form = GastosForm(request.POST)
         if form.is_valid():
             gasto = form.save(commit=False)
-            usuario = request.user
-            cuenta_usuario = Cuentas.objects.get(fk_user=usuario)
+            cuenta_usuario = Cuentas.objects.get(fk_user=usuario_actual)
 
             gasto.fk_cuenta = cuenta_usuario
             gasto.es_ingreso = False  # Establecer es_ingreso en False para los gastos
@@ -262,9 +261,12 @@ def nuevo_gasto (request):
             return redirect('nuevo_gasto')
     else:
         form = GastosForm()
-    categoria_gasto = CategoriaGasto.objects.all()
+        categoria_gasto = CategoriaGasto.objects.filter(
+            Q(fk_user=usuario_actual) | Q(fk_user__isnull=True)
+        )
+
     form.fields['fk_categoria'].queryset = categoria_gasto
-    form_categoria = CategoriaPersonalizadaForm()  # Agrega esta línea para el formulario de categoría
+    form_categoria = CategoriaPersonalizadaForm()  # formulario de categoría
     return render (request, 'test1/nuevo_gasto.html', {'form': form, 'form_categoria': form_categoria})
 
 @cache_control(no_cache=True, must_revalidate=True, no_store=True)
@@ -288,7 +290,7 @@ def crear_categoria_personalizada(request):
             categoria = form_categoria.save(commit=False)
             categoria.fk_user = request.user  # Asigna el usuario actual
             categoria.save()
-
+            messages.success(request, 'Nueva categoria  guardada correctamente')
             return redirect('nuevo_gasto')
         
         # Resto del código en caso de formulario no válido
@@ -304,7 +306,7 @@ def crear_fuente_personalizada(request):
             fuente = form_fuente.save(commit=False)
             fuente.fk_user = request.user  # Asigna el usuario actual
             fuente.save()
-            messages.success(request, 'Fuente nueva guardada correctamente')
+            messages.success(request, 'Nueva fuente guardada correctamente')
             return redirect('nuevo_ingreso')
     else:
         form_fuente = FuentePersonalizadaForm()
