@@ -177,12 +177,12 @@ def eliminar_usuario(request, user_id):
 @cache_control(no_cache=True, must_revalidate=True, no_store=True)
 @login_required
 def nuevo_ingreso(request):
+    usuario_actual = request.user
     if request.method == 'POST':
         form = IngresosForm(request.POST)
         if form.is_valid():
             ingreso = form.save(commit=False)# Guarda el formulario pero no en la base de datos todavía
-            usuario = request.user
-            cuenta_usuario = Cuentas.objects.get(fk_user=usuario)
+            cuenta_usuario = Cuentas.objects.get(fk_user=usuario_actual)
 
             ingreso.fk_cuenta = cuenta_usuario
             ingreso.save()  # Ahora sí guarda la transacción en la base de datos
@@ -191,10 +191,14 @@ def nuevo_ingreso(request):
             return redirect('nuevo_ingreso') # Usar redirect para que cuando el formulario se envíe no se recargue con todos los campos llenos
     else:
         form = IngresosForm()
+        
+    fuente_ingreso = FuenteIngreso.objects.filter(
+        Q(fk_user=usuario_actual) | Q(fk_user__isnull=True)
+    )
 
-    fuentes_ingreso = FuenteIngreso.objects.all()
-    form.fields['fk_fuente'].queryset = fuentes_ingreso
-    return render(request, 'test1/nuevo_ingreso.html', {'form': form})
+    form.fields['fk_fuente'].queryset = fuente_ingreso
+    form_fuente = FuentePersonalizadaForm()
+    return render(request, 'test1/nuevo_ingreso.html', {'form': form, 'form_fuente': form_fuente})
 
 @cache_control(no_cache=True, must_revalidate=True, no_store=True)
 @login_required
@@ -242,7 +246,6 @@ def editar_ingreso(request, id):
 #endregion
 
 #region GASTOS
-
 @cache_control(no_cache=True, must_revalidate=True, no_store=True)
 @login_required
 def nuevo_gasto (request):
@@ -261,9 +264,10 @@ def nuevo_gasto (request):
             return redirect('nuevo_gasto')
     else:
         form = GastosForm()
-        categoria_gasto = CategoriaGasto.objects.filter(
-            Q(fk_user=usuario_actual) | Q(fk_user__isnull=True)
-        )
+        
+    categoria_gasto = CategoriaGasto.objects.filter(
+        Q(fk_user=usuario_actual) | Q(fk_user__isnull=True)
+    )
 
     form.fields['fk_categoria'].queryset = categoria_gasto
     form_categoria = CategoriaPersonalizadaForm()  # formulario de categoría
@@ -281,7 +285,6 @@ def ver_gastos(request):
 #endregion
 
 #region CATEGORIA Y FUENTE PERSONALIZADOS
-
 @login_required
 def crear_categoria_personalizada(request):
     if request.method == 'POST':

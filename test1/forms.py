@@ -17,7 +17,7 @@ class IngresosForm(ModelForm):
     #   exclude = ('')
         widgets = {
             'fecha': DateInput(attrs={'type': 'date'}),
-            'fk_fuente': forms.Select(attrs={'class': 'form-control'}),
+            'fk_fuente': forms.Select(attrs={'class': 'form-control w-75 mr-2'}),
             'monto': forms.TextInput(attrs={'class': 'form-control autonumeric', 'data-a-sign': '', 'data-a-dec': ',', 'data-a-sep': '.'}),
             }
 

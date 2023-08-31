@@ -29,5 +29,6 @@ urlpatterns = [
      path('nuevo_gasto/', views.nuevo_gasto, name="nuevo_gasto"),
      path('ver_gasto/', views.ver_gastos, name="ver_gasto"),
      path('crear_categoria_personalizada/', views.crear_categoria_personalizada, name='crear_categoria_personalizada'),
+     path('crear_fuente_personalizada/', views.crear_fuente_personalizada, name='crear_fuente_personalizada'),
 
 ]
