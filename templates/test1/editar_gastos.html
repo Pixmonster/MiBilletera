@@ -31,9 +31,9 @@
 
                         <!-- Page Heading -->
                         <div class="d-flex flex-column w-50 mx-auto">
-                            <h1 class="h2 text-success bg-body p-3 mt-5 text-center mx-auto w-50 shadow"><b>REGISTRAR GASTO</b></h1>
+                            <h1 class="h2 text-success bg-body p-3 mt-5 text-center mx-auto w-50 shadow"><b>ACTUALIZAR GASTO</b></h1>
 
-                            <form method="POST" class="my form w-75 mx-auto px-5 my-5 shadow-lg" style="border-radius: 10px; padding: 80px 0 80px 0;">
+                            <form action="{% url 'editar_gasto' id=id %}" method="POST" class="my form w-75 mx-auto px-5 my-5 shadow-lg" style="border-radius: 10px; padding: 80px 0 80px 0;">
                                 {% csrf_token %}
                                 <div class="form-group">
                                     <label for="{{ form.fecha.id_for_label }}">Fecha del gasto:</label> {{ form.fecha }}
@@ -48,9 +48,6 @@
                                         {{ form.fk_categoria }} {% if form.fk_categoria.errors %}
                                         <div class="alert alert-danger">{{ form.fk_categoria.errors }}</div>
                                         {% endif %}
-                                        <!-- Botón para abrir el modal -->
-                                        <button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#formularioModal"> Nueva Categoria </button>
-
                                     </div>
 
                                 </div>
@@ -63,25 +60,6 @@
                                 </ul>
                                 {% endif %}
                             </form>
-                        </div>
-
-                        <!-- Modal -->
-                        <div class="modal fade" id="formularioModal" tabindex="-1" role="dialog" aria-labelledby="formularioModalLabel" aria-hidden="true">
-                            <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="formularioModalLabel">Creación de una nueva categoria</h5>
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar"><span aria-hidden="true">&times;</span></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <form id="formCategoriaModal" method="post" action="{% url 'crear_categoria_personalizada' %}">
-                                            {% csrf_token %} {{ form_categoria.as_p }}
-                                            <button type="submit" class="btn btn-primary">Guardar</button>
-                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
 
                         <script src="https://cdn.jsdelivr.net/npm/autonumeric@4.3.0/dist/autoNumeric.min.js"></script>

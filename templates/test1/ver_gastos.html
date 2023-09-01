@@ -51,7 +51,7 @@
         <td>{{ transaccion.monto|floatformat:"2"|intcomma}}</td>
         <td>{{ transaccion.fk_categoria}}</td>
         <td><button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Borrar</button>
-        <a href="{% url 'editar_ingreso' id=transaccion.id %}" type="button" class="btn btn-primary">Actualizar</a>
+        <a href="{% url 'editar_gasto' id=transaccion.id %}" type="button" class="btn btn-primary">Actualizar</a>
         </td>   
         </tr>
         {% endfor %}
@@ -69,7 +69,7 @@
             </div>
             <div class="modal-footer">
             <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
-            <a href="{% url 'borrar_ingreso' id=transaccion.id %}" class="btn btn-success">Confirmar</a>
+            <a href="{% url 'borrar_gasto' id=transaccion.id %}" class="btn btn-success">Confirmar</a>
             </div>
         </div>
         </div>

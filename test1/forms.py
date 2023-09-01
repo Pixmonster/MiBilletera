@@ -35,7 +35,7 @@ class GastosForm(ModelForm):
         fields = ['fecha', 'monto', 'fk_categoria']
         widgets = {
             'fecha': DateInput(attrs={'type': 'date'}),
-            'fk_categoria': forms.Select(attrs={'class': 'form-control'}),
+            'fk_categoria': forms.Select(attrs={'class': 'form-control w-75 mr-2'}),
             'monto': forms.TextInput(attrs={'class': 'form-control autonumeric', 'data-a-sign': '', 'data-a-dec': ',', 'data-a-sep': '.'}),
         }
 

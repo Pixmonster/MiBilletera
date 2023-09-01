@@ -282,6 +282,39 @@ def ver_gastos(request):
         'transacciones': transacciones
     }
     return render(request, 'test1/ver_gastos.html', context)
+
+@cache_control(no_cache=True, must_revalidate=True, no_store=True)
+@login_required
+def borrar_gasto(request, id):
+    transacciones = Transacciones.objects.get(id=id)
+    transacciones.delete()
+    return redirect('ver_gasto')
+
+@cache_control(no_cache=True, must_revalidate=True, no_store=True)
+@login_required
+def editar_gasto(request, id):
+    transacciones = Transacciones.objects.get(id=id)
+
+    if(request.method == 'GET'):
+        formatted_fecha = transacciones.fecha.strftime('%Y-%m-%d')  # Formatear la fecha
+        form = GastosForm(instance = transacciones, initial={'fecha': formatted_fecha})
+        context = {
+            'form': form,
+            'id': id,
+            'fecha_actual': transacciones.fecha,
+        }
+        return render(request, 'test1/editar_gastos.html', context)
+    
+    if(request.method == 'POST'):
+        form = GastosForm(request.POST, instance = transacciones)
+        if form.is_valid():
+            form.save()
+        context = {
+            'form': form,
+            'id': id,
+            'fecha_actual': transacciones.fecha,
+        }
+        return redirect('/ver_gasto/')
 #endregion
 
 #region CATEGORIA Y FUENTE PERSONALIZADOS

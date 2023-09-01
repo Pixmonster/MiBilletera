@@ -28,6 +28,8 @@ urlpatterns = [
      path('editar_ingreso/<int:id>', views.editar_ingreso, name="editar_ingreso"),
      path('nuevo_gasto/', views.nuevo_gasto, name="nuevo_gasto"),
      path('ver_gasto/', views.ver_gastos, name="ver_gasto"),
+     path('borrar_gasto/<int:id>/', views.borrar_gasto, name="borrar_gasto"),
+     path('editar_gasto/<int:id>', views.editar_gasto, name="editar_gasto"),
      path('crear_categoria_personalizada/', views.crear_categoria_personalizada, name='crear_categoria_personalizada'),
      path('crear_fuente_personalizada/', views.crear_fuente_personalizada, name='crear_fuente_personalizada'),
 
