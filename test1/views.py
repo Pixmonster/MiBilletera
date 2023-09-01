@@ -57,6 +57,8 @@ def panel(request):
     fecha_actual = datetime.now()
     locale.setlocale(locale.LC_ALL, ("es_ES", "UTF-8"))
 
+# FILTROS DE MOVIMIENTOS
+
     filter_mes_ingresos = Transacciones.objects.filter(
         fk_cuenta__fk_user=usuario_actual,
         fecha__month=fecha_actual.month,
@@ -83,7 +85,9 @@ def panel(request):
     monto_actual = cuenta.saldo
 
     mes_actual = fecha_actual.strftime("%b")
-    
+
+# USO API DE CAMBIOS DE MONEDA
+
     from_currency = 'USD'  # Moneda base (USD)
     to_currencies = ['EUR', 'JPY', 'GBP', 'AUD', 'COP']  # Monedas a convertir
 
@@ -99,7 +103,8 @@ def panel(request):
         'filter_mes_ingresos': filter_mes_ingresos,
         'filter_mes_gastos': filter_mes_gastos,
         'mes_actual': mes_actual,
-        'rates': rates  # Agrega las tasas de cambio al contexto
+        'rates': rates,  # Agrega las tasas de cambio al contexto
+        'usuarios': usuarios
     }
     return render (request,'test1/home.html', context)
 
@@ -158,6 +163,15 @@ def logear(request):
             messages.error(request, 'Credenciales inválidas. Por favor, verifica tus datos.')
             
     return render(request, 'registration/login.html')
+
+def ver_perfil (request, user_id):
+
+    usuarios = get_object_or_404(Usuario, id=user_id)
+
+    context = {
+        'usuarios': usuarios
+    }
+    return render(request, 'test1/ver_perfil.html', context)
 
 @login_required
 def eliminar_usuario(request, user_id):

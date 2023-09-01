@@ -32,5 +32,6 @@ urlpatterns = [
      path('editar_gasto/<int:id>', views.editar_gasto, name="editar_gasto"),
      path('crear_categoria_personalizada/', views.crear_categoria_personalizada, name='crear_categoria_personalizada'),
      path('crear_fuente_personalizada/', views.crear_fuente_personalizada, name='crear_fuente_personalizada'),
+     path('ver_perfil/', views.ver_perfil, name="ver_perfil")
 
 ]
