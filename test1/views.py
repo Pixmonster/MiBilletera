@@ -104,7 +104,6 @@ def panel(request):
         'filter_mes_gastos': filter_mes_gastos,
         'mes_actual': mes_actual,
         'rates': rates,  # Agrega las tasas de cambio al contexto
-        'usuarios': usuarios
     }
     return render (request,'test1/home.html', context)
 
@@ -164,14 +163,8 @@ def logear(request):
             
     return render(request, 'registration/login.html')
 
-def ver_perfil (request, user_id):
-
-    usuarios = get_object_or_404(Usuario, id=user_id)
-
-    context = {
-        'usuarios': usuarios
-    }
-    return render(request, 'test1/ver_perfil.html', context)
+def ver_perfil (request):
+    return render(request, 'test1/ver_perfil.html')
 
 @login_required
 def eliminar_usuario(request, user_id):
