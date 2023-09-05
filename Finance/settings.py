@@ -145,7 +145,7 @@ LOGOUT_REDIRECT_URL = "index"
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_PORT = 465
+EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-EMAIL_HOST_USER = 'mibilletera3@gmail.com'
-EMAIL_HOST_PASSWORD = 'CONTRA_BILLETERA'
+EMAIL_HOST_USER = 'mibilletera2@gmail.com'
+EMAIL_HOST_PASSWORD = 'mqnmjahovulrlmkp'

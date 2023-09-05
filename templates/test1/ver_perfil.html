@@ -11,7 +11,6 @@
 
     <title>Perfil</title>
 </head>
-<body>
     <body id="page-top">
 
         <!-- Page Wrapper -->
@@ -25,4 +24,24 @@
                 <!-- Main Content -->
                 <div id="content">
     
-    {% include 'layout/partials/topnavbar.html' %}
+
+    <div class='row'>
+        <div class='container-sm 12'>
+            <div class="float-center">             
+                <h1>Hola!! {{ usuario.username }}</h1>
+                <p>Nombre de usuario: {{ usuario.username }}</p>
+                <p>Correo electrónico: {{ usuario.email }}</p>
+                <a href="#" data-toggle="modal" data-target="#passwordResetModal">Olvidé mi contraseña</a>
+
+                    <!-- Define la ventana modal -->
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    
+    </body>

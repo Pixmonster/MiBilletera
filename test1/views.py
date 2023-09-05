@@ -163,8 +163,13 @@ def logear(request):
             
     return render(request, 'registration/login.html')
 
-def ver_perfil (request):
-    return render(request, 'test1/ver_perfil.html')
+@login_required
+def ver_perfil(request):
+    usuario = request.user  # Obtener el usuario autenticado
+    return render(request, 'test1/ver_perfil.html', {'usuario': usuario})
+
+    
+
 
 @login_required
 def eliminar_usuario(request, user_id):
