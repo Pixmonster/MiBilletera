@@ -13,6 +13,8 @@ import requests
 import cachetools
 from django.views.decorators.cache import cache_control
 from django.db.models import Q
+from django.contrib.auth.hashers import check_password
+from django.contrib.auth.hashers import make_password
 
 def index(request):
     return render(request, 'test1/index.html')
@@ -135,7 +137,8 @@ def register(request):
         
         
         # Crear y guardar el usuario en la base de datos
-        nuevo_usuario = Usuario(username=username, email=email, password=password)
+        hashed_password = make_password(password)  # Encripta la contraseña
+        nuevo_usuario = Usuario(username=username, email=email, password=hashed_password)
         nuevo_usuario.save()
         # Crear y guardar la cuenta en la base de datos
         nueva_cuenta = Cuentas(saldo=0, fk_user=nuevo_usuario)
@@ -151,14 +154,16 @@ def logear(request):
         password = request.POST['password']
         
         try:
-            user = Usuario.objects.get(email=email, password=password)
+            user = Usuario.objects.get(email=email)
         except Usuario.DoesNotExist:
             user = None
         
-        if user is not None:
+        if user is not None and check_password(password, user.password):
+            # La contraseña es válida, inicia sesión
             login(request, user)
-            return redirect('panel')  # Redirigir a la página de inicio después del inicio de sesión
+            return redirect('panel')  # Redirige a la página de inicio después del inicio de sesión
         else:
+            # Las credenciales son inválidas, muestra un mensaje de error
             messages.error(request, 'Credenciales inválidas. Por favor, verifica tus datos.')
             
     return render(request, 'registration/login.html')
