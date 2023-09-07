@@ -2,38 +2,29 @@
 
 <!-- Custom fonts for this template-->
 <link href="{% static 'vendor/fontawesome-free/css/all.min.css' %}" rel="stylesheet" type="text/css">
-<link
-        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
-        rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
 <!-- Custom styles for this template-->
 <link href="{% static 'css/sb-admin-2.min.css' %}" rel="stylesheet">
 
 
 <!-- Sidebar -->
-<ul
-  class="navbar-nav bg-gradient-success sidebar sidebar-dark accordion"
-  id="accordionSidebar"
->
-  <!-- Sidebar - Brand -->
-  <a
-    class="sidebar-brand d-flex align-items-center justify-content-center"
-    href="{% url 'panel' %}"
-  >
-    <div class="sidebar-brand-icon">
-      <i
-        ><img src="{% static 'img/cartera-logo-verde.png' %}" width="35px"
+<ul class="navbar-nav bg-gradient-success sidebar sidebar-dark accordion" id="accordionSidebar">
+    <!-- Sidebar - Brand -->
+    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="{% url 'panel' %}">
+        <div class="sidebar-brand-icon">
+            <i><img src="{% static 'img/cartera-logo-verde.png' %}" width="35px"
       /></i>
-    </div>
-    <div class="sidebar-brand-text mx-3">Mi Billetera <sup></sup></div>
-  </a>
+        </div>
+        <div class="sidebar-brand-text mx-3">Mi Billetera <sup></sup></div>
+    </a>
 
-  <!-- Divider -->
-  <hr class="sidebar-divider my-0" />
+    <!-- Divider -->
+    <hr class="sidebar-divider my-0" />
 
-  <!-- Nav Item - Dashboard -->
-  <li class="nav-item active">
-    <a class="nav-link" href="{% url 'panel' %}">
+    <!-- Nav Item - Dashboard -->
+    <li class="nav-item active">
+        <a class="nav-link" href="{% url 'panel' %}">
       <i class="fas fa-fw fa-tachometer-alt"></i>
       <span>Panel</span></a
     >
@@ -58,49 +49,32 @@
       <i class="fas fa-fw fa-cog"></i>
       <span>Ingresos</span>
     </a>
-    <div
-      id="collapseTwo"
-      class="collapse"
-      aria-labelledby="headingTwo"
-      data-parent="#accordionSidebar"
-    >
-      <div class="bg-white py-2 collapse-inner rounded">
-        <h6 class="collapse-header">Administrar Ingresos</h6>
-        <a class="collapse-item" href="{% url 'nuevo_ingreso' %}">Registrar ingreso</a>
-        <a class="collapse-item" href="{% url 'ver_ingreso' %}">Ver ingresos</a>
-      </div>
-    </div>
-  </li>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+                <h6 class="collapse-header">Administrar Ingresos</h6>
+                <a class="collapse-item" href="{% url 'nuevo_ingreso' %}">Registrar ingreso</a>
+                <a class="collapse-item" href="{% url 'ver_ingreso' %}">Ver ingresos</a>
+            </div>
+        </div>
+    </li>
 
-  <!-- Nav Item - Utilities Collapse Menu -->
-  <li class="nav-item">
-    <a
-      class="nav-link collapsed"
-      href="#"
-      data-toggle="collapse"
-      data-target="#collapseUtilities"
-      aria-expanded="true"
-      aria-controls="collapseUtilities"
-    >
+    <!-- Nav Item - Utilities Collapse Menu -->
+    <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
       <i class="fas fa-fw fa-wrench"></i>
       <span>Gastos</span>
     </a>
-    <div
-      id="collapseUtilities"
-      class="collapse"
-      aria-labelledby="headingUtilities"
-      data-parent="#accordionSidebar"
-    >
-      <div class="bg-white py-2 collapse-inner rounded">
-        <h6 class="collapse-header">Administrar gastos:</h6>
-        <a class="collapse-item" href="{% url 'nuevo_gasto' %}">Registrar gasto</a>
-        <a class="collapse-item" href="{% url 'ver_gasto' %}">Ver gastos</a>
-      </div>
-    </div>
-  </li>
+        <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+                <h6 class="collapse-header">Administrar gastos:</h6>
+                <a class="collapse-item" href="{% url 'nuevo_gasto' %}">Registrar gasto</a>
+                <a class="collapse-item" href="{% url 'ver_gasto' %}">Ver gastos</a>
+            </div>
+        </div>
+    </li>
 
-  <li class="nav-item">
-    <a class="nav-link" href="charts.html">
+    <li class="nav-item">
+        <a class="nav-link" href="charts.html">
       <i class="fas fa-fw fa-chart-area"></i>
       <span>ChatBot</span></a
     >
@@ -125,29 +99,24 @@
       <i class="fas fa-fw fa-folder"></i>
       <span>Pending</span>
     </a>
-    <div
-      id="collapsePages"
-      class="collapse"
-      aria-labelledby="headingPages"
-      data-parent="#accordionSidebar"
-    >
-      <div class="bg-white py-2 collapse-inner rounded">
-        <h6 class="collapse-header">Login Screens:</h6>
-        <a class="collapse-item" href="login.html">Login</a>
-        <a class="collapse-item" href="register.html">Register</a>
-        <a class="collapse-item" href="forgot-password.html">Forgot Password</a>
-        <div class="collapse-divider"></div>
-        <h6 class="collapse-header">Other Pages:</h6>
-        <a href="{% url 'eliminar_usuario' user.id %}" onclick="return confirm('¿Estás seguro de eliminar tu cuenta?')">Eliminar Cuenta</a>
+        <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+                <h6 class="collapse-header">Login Screens:</h6>
+                <a class="collapse-item" href="login.html">Login</a>
+                <a class="collapse-item" href="register.html">Register</a>
+                <a class="collapse-item" href="forgot-password.html">Forgot Password</a>
+                <div class="collapse-divider"></div>
+                <h6 class="collapse-header">Other Pages:</h6>
+                <a href="{% url 'eliminar_usuario' user.id %}" onclick="return confirm('¿Estás seguro de eliminar tu cuenta?')">Eliminar Cuenta</a>
 
-        <a class="collapse-item" href="blank.html">Blank Page</a>
-      </div>
-    </div>
-  </li>
+                <a class="collapse-item" href="blank.html">Blank Page</a>
+            </div>
+        </div>
+    </li>
 
-  <!-- Nav Item - Tables -->
-  <li class="nav-item">
-    <a class="nav-link" href="tables.html">
+    <!-- Nav Item - Tables -->
+    <li class="nav-item">
+        <a class="nav-link" href="tables.html">
       <i class="fas fa-fw fa-table"></i>
       <span>Pending</span></a
     >
@@ -172,10 +141,3 @@
 
     <!-- Custom scripts for all pages-->
     <script src="{% static 'js/sb-admin-2.min.js' %}"></script>
-
-    <!-- Page level plugins -->
-    <script src="{% static 'vendor/chart.js/Chart.min.js' %}"></script>
-
-    <!-- Page level custom scripts -->
-    <script src="{% static 'js/demo/chart-area-demo.js' %}"></script>
-    <script src="{% static 'js/demo/chart-pie-demo.js' %}"></script>

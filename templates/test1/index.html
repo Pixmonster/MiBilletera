@@ -1,62 +1,63 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/jpg" href="{% static 'img/favicon.png' %}"/>
+    <link rel="icon" type="image/jpg" href="{% static 'img/favicon.png' %}" />
     <title>Mi Billetera</title>
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
     <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
 </head>
+
 <body>
-{% block 'header' %}
-  {% include 'layout/partials/headerbase.html' %}
-{% endblock %}
+    {% block 'header' %} {% include 'layout/partials/headerbase.html' %} {% endblock %}
 
-    <main >
+    <main>
 
-      <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
 
-          <div class="carousel-item " >
-            <div class="seccion1 py-3">
-              <div class="container">
-                <h1 class="titulo-principal">El control total de tu dinero</h1>
-                <p class="parrafo-seccion1">Ten un control real de tus finanzas,<br>disfruta tu dinero sin preocupaciones<br>y gestiona tus ahorros.</p>
-                <img class="grafico-seccion1 img-fluid" src="{% static 'img/grafico-seccion1.png' %}" alt="Gráfico" width="400">
-              </div>
+                <div class="carousel-item ">
+                    <div class="seccion1 py-3">
+                        <div class="container">
+                            <h1 class="titulo-principal">El control total de tu dinero</h1>
+                            <p class="parrafo-seccion1">Ten un control real de tus finanzas,<br>disfruta tu dinero sin preocupaciones<br>y gestiona tus ahorros.</p>
+                            <img class="grafico-seccion1 img-fluid" src="{% static 'img/grafico-seccion1.png' %}" alt="Gráfico" width="400">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item active">
+                    <div class="seccion1 py-3">
+                        <div class="container">
+                            <h1 class="titulo-principal text-center">Analiza tus gastos</h1>
+                            <p class="parrafo-seccion1"> Analisis de tendencias a largo plazo <br> Analisis de patrones de gasto <br> Alertas de gastos inusuales <br> Integración con herramientas de contabilidad <br>
+                                <img class="grafico-seccion2 img-fluid" src="{% static 'img/grafico-de-barras.png' %}" alt="Gráfico" width="300">
+                        </div>
+                    </div>
+                </div>
+
+
             </div>
-          </div>
-
-          <div class="carousel-item active">
-            <div class="seccion1 py-3">
-              <div class="container">
-                <h1 class="titulo-principal text-center">Analiza tus gastos</h1>
-                <p class="parrafo-seccion1"> Analisis de tendencias a largo plazo <br> Analisis de patrones de gasto <br> Alertas de gastos inusuales <br> Integración con herramientas de contabilidad <br>
-                <img class="grafico-seccion2 img-fluid" src="{% static 'img/grafico-de-barras.png' %}" alt="Gráfico" width="300">
-              </div>
-            </div>
-          </div>
-          
-
-        </div>
-        <a class="carousel-control-prev" href="#carouselExample" role="button" data-bs-slide="prev">
+            <a class="carousel-control-prev" href="#carouselExample" role="button" data-bs-slide="prev">
           <span class="visually-hidden">Previous</span>
         </a>
-        <a class="carousel-control-next" href="#carouselExample" role="button" data-bs-slide="next">
+            <a class="carousel-control-next" href="#carouselExample" role="button" data-bs-slide="next">
           <span class="visually-hidden">Next</span>
         </a>
-      </div>
+        </div>
 
     </main>
 
     <footer>
-      {% include 'layout/partials/footer.html' %}
+        {% include 'layout/partials/footer.html' %}
     </footer>
-    
+
     <script src="{% static 'js/bootstrap.js' %}"></script>
     <script src=" {% static 'js/bootstrap.min.js' %} "></script>
 </body>
+
 </html>

@@ -24,14 +24,16 @@ urlpatterns = [
      path('eliminar_usuario/<int:user_id>/', views.eliminar_usuario, name='eliminar_usuario'),
      path('nuevo_ingreso/', views.nuevo_ingreso, name="nuevo_ingreso"),
      path('ver_ingreso/', views.ver_ingreso, name="ver_ingreso"),
+     path('list_ingreso/', views.list_ingresos, name="list_ingreso"),
      path('borrar_ingreso/<int:id>', views.borrar_ingreso, name="borrar_ingreso"),
      path('editar_ingreso/<int:id>', views.editar_ingreso, name="editar_ingreso"),
      path('nuevo_gasto/', views.nuevo_gasto, name="nuevo_gasto"),
      path('ver_gasto/', views.ver_gastos, name="ver_gasto"),
+     path('list_gasto/', views.list_gastos, name="list_gasto"),
      path('borrar_gasto/<int:id>/', views.borrar_gasto, name="borrar_gasto"),
      path('editar_gasto/<int:id>', views.editar_gasto, name="editar_gasto"),
      path('crear_categoria_personalizada/', views.crear_categoria_personalizada, name='crear_categoria_personalizada'),
      path('crear_fuente_personalizada/', views.crear_fuente_personalizada, name='crear_fuente_personalizada'),
      path('ver_perfil/', views.ver_perfil, name="ver_perfil")
-
+     
 ]

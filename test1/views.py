@@ -4,6 +4,7 @@ from django.contrib.auth import logout, login, authenticate
 from django.views.decorators.cache import never_cache
 from django.contrib import messages
 from django.http import HttpResponse
+from django.http.response import JsonResponse
 from .models import *
 from .forms import *
 from datetime import datetime, timedelta
@@ -13,6 +14,8 @@ import requests
 import cachetools
 from django.views.decorators.cache import cache_control
 from django.db.models import Q
+from django.urls import reverse
+
 
 def index(request):
     return render(request, 'test1/index.html')
@@ -209,6 +212,19 @@ def nuevo_ingreso(request):
 
 @cache_control(no_cache=True, must_revalidate=True, no_store=True)
 @login_required
+def list_ingresos(request):
+    transacciones = Transacciones.objects.filter(fk_cuenta__fk_user=request.user, es_ingreso=True).values('id', 'fecha', 'monto', 'fk_fuente__nombre_fuente')
+
+    for transaccion in transacciones:
+        transaccion['url_edicion'] = reverse('editar_ingreso', args=[transaccion['id']])
+
+    context = {
+        'transacciones': list(transacciones)
+    }
+    return JsonResponse(context, safe=False)
+
+@cache_control(no_cache=True, must_revalidate=True, no_store=True)
+@login_required
 def ver_ingreso(request):
     transacciones = Transacciones.objects.filter(fk_cuenta__fk_user=request.user, es_ingreso=True)
     
@@ -216,6 +232,7 @@ def ver_ingreso(request):
         'transacciones': transacciones
     }
     return render(request, 'test1/ver_ingresos.html', context)
+
 
 @cache_control(no_cache=True, must_revalidate=True, no_store=True)
 @login_required
@@ -279,6 +296,19 @@ def nuevo_gasto (request):
     form.fields['fk_categoria'].queryset = categoria_gasto
     form_categoria = CategoriaPersonalizadaForm()  # formulario de categoría
     return render (request, 'test1/nuevo_gasto.html', {'form': form, 'form_categoria': form_categoria})
+
+@cache_control(no_cache=True, must_revalidate=True, no_store=True)
+@login_required
+def list_gastos(request):
+    transacciones = Transacciones.objects.filter(fk_cuenta__fk_user=request.user, es_ingreso=False).values('id', 'fecha', 'monto', 'fk_categoria__nombre_categoria')
+
+    for transaccion in transacciones:
+        transaccion['url_edicion'] = reverse('editar_gasto', args=[transaccion['id']])
+
+    context = {
+        'transacciones': list(transacciones)
+    }
+    return JsonResponse(context, safe=False)
 
 @cache_control(no_cache=True, must_revalidate=True, no_store=True)
 @login_required
