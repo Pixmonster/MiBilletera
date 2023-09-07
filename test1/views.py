@@ -14,13 +14,8 @@ import requests
 import cachetools
 from django.views.decorators.cache import cache_control
 from django.db.models import Q
-<<<<<<< HEAD
-from django.urls import reverse
-
-=======
 from django.contrib.auth.hashers import check_password
 from django.contrib.auth.hashers import make_password
->>>>>>> 6dc3ca417040d9c49ad63429cbc03546a9c8cf08
 
 def index(request):
     return render(request, 'test1/index.html')
