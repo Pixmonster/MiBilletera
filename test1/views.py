@@ -14,8 +14,13 @@ import requests
 import cachetools
 from django.views.decorators.cache import cache_control
 from django.db.models import Q
+<<<<<<< HEAD
 from django.urls import reverse
 
+=======
+from django.contrib.auth.hashers import check_password
+from django.contrib.auth.hashers import make_password
+>>>>>>> 6dc3ca417040d9c49ad63429cbc03546a9c8cf08
 
 def index(request):
     return render(request, 'test1/index.html')
@@ -138,7 +143,8 @@ def register(request):
         
         
         # Crear y guardar el usuario en la base de datos
-        nuevo_usuario = Usuario(username=username, email=email, password=password)
+        hashed_password = make_password(password)  # Encripta la contraseña
+        nuevo_usuario = Usuario(username=username, email=email, password=hashed_password)
         nuevo_usuario.save()
         # Crear y guardar la cuenta en la base de datos
         nueva_cuenta = Cuentas(saldo=0, fk_user=nuevo_usuario)
@@ -154,20 +160,27 @@ def logear(request):
         password = request.POST['password']
         
         try:
-            user = Usuario.objects.get(email=email, password=password)
+            user = Usuario.objects.get(email=email)
         except Usuario.DoesNotExist:
             user = None
         
-        if user is not None:
+        if user is not None and check_password(password, user.password):
+            # La contraseña es válida, inicia sesión
             login(request, user)
-            return redirect('panel')  # Redirigir a la página de inicio después del inicio de sesión
+            return redirect('panel')  # Redirige a la página de inicio después del inicio de sesión
         else:
+            # Las credenciales son inválidas, muestra un mensaje de error
             messages.error(request, 'Credenciales inválidas. Por favor, verifica tus datos.')
             
     return render(request, 'registration/login.html')
 
-def ver_perfil (request):
-    return render(request, 'test1/ver_perfil.html')
+@login_required
+def ver_perfil(request):
+    usuario = request.user  # Obtener el usuario autenticado
+    return render(request, 'test1/ver_perfil.html', {'usuario': usuario})
+
+    
+
 
 @login_required
 def eliminar_usuario(request, user_id):
