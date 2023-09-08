@@ -174,6 +174,19 @@ def ver_perfil(request):
     usuario = request.user  # Obtener el usuario autenticado
     return render(request, 'test1/ver_perfil.html', {'usuario': usuario})
 
+
+@login_required
+def actualizar_imagen(request, id):
+    image = Usuario.objects.get(id=id)
+    if request.method == 'POST':
+        form = UsuarioForm(request.POST, instance=image)
+        if form.is_valid():
+            form.save()
+            return redirect("ver_perfil")
+    else:
+        form = UsuarioForm(instance=image)
+    context = {"form": form}
+    return render(request, "test1/verperfil.html", context)
     
 
 

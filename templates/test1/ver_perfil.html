@@ -1,15 +1,19 @@
 {% load widget_tweaks %}
 {% load static %}
-{% load humanize %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static 'css/ingresos.css' %}">
-    <link rel="icon" type="image/jpg" href="{% static 'img/favicon.png' %}"/>
-
     <title>Perfil</title>
+    <link rel="stylesheet" href="{% static 'css/ingresos.css' %}">
+    <link rel="stylesheet" href="{% static 'css/estilo.css' %}" type="text/css"/>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="icon" href="{% static 'img/favicon.png' %}" type="image/jpg"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
     <body id="page-top">
 
@@ -24,21 +28,102 @@
                 <!-- Main Content -->
                 <div id="content">
     
+    {% include 'layout/partials/topnavbar.html' %}
 
-    <div class='row'>
-        <div class='container-sm 12'>
-            <div class="float-center">             
-                <h1>Hola!! {{ usuario.username }}</h1>
-                <p>Nombre de usuario: {{ usuario.username }}</p>
-                <p>Correo electrónico: {{ usuario.email }}</p>
-                <a href="#" data-toggle="modal" data-target="#passwordResetModal">Olvidé mi contraseña</a>
+    <div class="container">
+        <h2>Mi Perfil</h2>
+        <p>Nombre de usuario: {{ usuario.username }}</p>
+        <p>Correo electrónico: {{ usuario.email }}</p>
+     
+        <h3>Imagen de Perfil</h3>
+            <img src="#" alt="Imagen de perfil">
+        <br>
+        <br>
+        <button id="abrir-modal-imagen-perfil" class="btn btn-primary">Cambiar Imagen de Perfil</button>
+        <button id="abrir-modal-contraseña" class="btn btn-primary">Cambiar Contraseña</button>
 
-                    <!-- Define la ventana modal -->
-
+        <!-- modal_cambiar_imagen_perfil.html -->
+        <div id="modal-cambiar-imagen-perfil" class="modal">
+            <div class="modal-content">
+                <h3>Cambiar Imagen de Perfil</h3>
+                <form method="post" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    {{ form.non_field_errors }}
+                    
+                    <div class="form-group">
+                        <label for="{{ form.image.id_for_label }}">Selecciona una nueva imagen:</label>
+                        <input type="file" name="{{ form.image.name }}" accept="image/*">
+                        {{ form.image.errors }}
+                    </div>
+                    <button type="submit">Guardar Cambios</button>
+                </form>
+                <button id="close-modal" class="btn btn-secondary" data-dismiss="modal" >Cerrar</button>
             </div>
-
         </div>
-    </div>
+        
+        <!-- modal_cambiar_contraseña.html -->
+        <div id="modal-cambiar-contraseña" class="modal">
+            <div class="modal-content">
+                <h3>Cambiar Contraseña</h3>
+                <form method="post">
+                    {% csrf_token %}
+                    {{ form.non_field_errors }}
+                    
+                    <div class="form-group">
+                        <label for="{{ form.old_password.id_for_label }}">Contraseña actual:</label>
+                        <input type="password" name="{{ form.old_password.name }}">
+                        {{ form.old_password.errors }}
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="{{ form.new_password1.id_for_label }}">Nueva contraseña:</label>
+                        <input type="password" name="{{ form.new_password1.name }}">
+                        {{ form.new_password1.errors }}
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="{{ form.new_password2.id_for_label }}">Confirmar nueva contraseña:</label>
+                        <input type="password" name="{{ form.new_password2.name }}">
+                        {{ form.new_password2.errors }}
+                    </div>
+                    <button type="submit">Guardar Cambios</button>
+                </form>
+                <button id="close-modal" class="btn btn-secondary">Cerrar</button>
+            </div>
+        </div>
+        
+        <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+        <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+        <script src="{% static 'js/demo/chart-area-demo.js' %}"></script>
+        <script src="{% static 'js/demo/chart-pie-demo.js' %}"></script>
+
+        <script>
+            // Configura el botón para abrir la ventana modal de imagen de perfil
+            document.addEventListener("DOMContentLoaded", function () {
+                const modalCambiarImagenPerfil = document.getElementById("modal-cambiar-imagen-perfil");
+                const modalCambiarContraseña = document.getElementById("modal-cambiar-contraseña");
+                const abrirModalImagenPerfilButton = document.getElementById("abrir-modal-imagen-perfil");
+                const abrirModalContraseñaButton = document.getElementById("abrir-modal-contraseña");
+                const closeModalButtons = document.querySelectorAll("#close-modal");
+
+                abrirModalImagenPerfilButton.addEventListener("click", () => {
+                    modalCambiarImagenPerfil.style.display = "block";
+                });
+
+                abrirModalContraseñaButton.addEventListener("click", () => {
+                    modalCambiarContraseña.style.display = "block";
+                });
+
+                closeModalButtons.forEach(button => {
+                    button.addEventListener("click", () => {
+                        modalCambiarImagenPerfil.style.display = "none";
+                        modalCambiarContraseña.style.display = "none";
+                    });
+                });
+            });
+         </script>
+
+    </body>
 
 
 
