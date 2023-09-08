@@ -14,8 +14,10 @@ import requests
 import cachetools
 from django.views.decorators.cache import cache_control
 from django.db.models import Q
+from django.urls import reverse
 from django.contrib.auth.hashers import check_password
 from django.contrib.auth.hashers import make_password
+from django.db import transaction
 
 def index(request):
     return render(request, 'test1/index.html')
@@ -252,28 +254,23 @@ def borrar_ingreso(request, id):
 @cache_control(no_cache=True, must_revalidate=True, no_store=True)
 @login_required
 def editar_ingreso(request, id):
-    transacciones = Transacciones.objects.get(id=id)
-
-    if(request.method == 'GET'):
-        formatted_fecha = transacciones.fecha.strftime('%Y-%m-%d')  # Formatear la fecha
-        form = IngresosForm(instance = transacciones, initial={'fecha': formatted_fecha})
+    transaccion = Transacciones.objects.get(id=id)
+    if request.method == 'GET':
+        formatted_fecha = transaccion.fecha.strftime('%Y-%m-%d')
+        form = IngresosForm(instance=transaccion, initial={'fecha': formatted_fecha})
         context = {
             'form': form,
             'id': id,
-            'fecha_actual': transacciones.fecha, 
+            'fecha_actual': transaccion.fecha,
         }
         return render(request, 'test1/editar_ingresos.html', context)
-    
-    if(request.method == 'POST'):
-        form = IngresosForm(request.POST, instance = transacciones)
+
+    if request.method == 'POST':
+        form = IngresosForm(request.POST, instance=transaccion)
         if form.is_valid():
+            # Guarda la transacción y actualiza el saldo en el modelo Transacciones
             form.save()
-        context = {
-            'form': form,
-            'id': id,
-            'fecha_actual': transacciones.fecha,
-        }
-        return redirect('/ver_ingreso/')
+            return redirect('/ver_ingreso/')
     
 #endregion
 
@@ -338,28 +335,23 @@ def borrar_gasto(request, id):
 @cache_control(no_cache=True, must_revalidate=True, no_store=True)
 @login_required
 def editar_gasto(request, id):
-    transacciones = Transacciones.objects.get(id=id)
-
-    if(request.method == 'GET'):
-        formatted_fecha = transacciones.fecha.strftime('%Y-%m-%d')  # Formatear la fecha
-        form = GastosForm(instance = transacciones, initial={'fecha': formatted_fecha})
+    transaccion = Transacciones.objects.get(id=id)
+    if request.method == 'GET':
+        formatted_fecha = transaccion.fecha.strftime('%Y-%m-%d')
+        form = GastosForm(instance=transaccion, initial={'fecha': formatted_fecha})
         context = {
             'form': form,
             'id': id,
-            'fecha_actual': transacciones.fecha,
+            'fecha_actual': transaccion.fecha,
         }
         return render(request, 'test1/editar_gastos.html', context)
-    
-    if(request.method == 'POST'):
-        form = GastosForm(request.POST, instance = transacciones)
+
+    if request.method == 'POST':
+        form = GastosForm(request.POST, instance=transaccion)
         if form.is_valid():
+            # Guarda la transacción y actualiza el saldo en el modelo Transacciones
             form.save()
-        context = {
-            'form': form,
-            'id': id,
-            'fecha_actual': transacciones.fecha,
-        }
-        return redirect('/ver_gasto/')
+            return redirect('/ver_gasto/')
 #endregion
 
 #region CATEGORIA Y FUENTE PERSONALIZADOS
