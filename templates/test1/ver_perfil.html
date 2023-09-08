@@ -36,7 +36,7 @@
         <p>Correo electrónico: {{ usuario.email }}</p>
      
         <h3>Imagen de Perfil</h3>
-            <img src="#" alt="Imagen de perfil">
+            <img src="{{ usuario.imagen.url }}" alt="Imagen de perfil">
         <br>
         <br>
         <button id="abrir-modal-imagen-perfil" class="btn btn-primary">Cambiar Imagen de Perfil</button>
@@ -46,7 +46,7 @@
         <div id="modal-cambiar-imagen-perfil" class="modal">
             <div class="modal-content">
                 <h3>Cambiar Imagen de Perfil</h3>
-                <form method="post" enctype="multipart/form-data">
+                <form method="post" action="{% url 'actualizar_imagen' %} "enctype="multipart/form-data">
                     {% csrf_token %}
                     {{ form.non_field_errors }}
                     
@@ -55,9 +55,9 @@
                         <input type="file" name="{{ form.image.name }}" accept="image/*">
                         {{ form.image.errors }}
                     </div>
-                    <button type="submit">Guardar Cambios</button>
+                    <button class="btn btn-success" type="submit">Guardar Cambios</button>
                 </form>
-                <button id="close-modal" class="btn btn-secondary" data-dismiss="modal" >Cerrar</button>
+                <button id="close-modal" class="btn btn-secondary" "small" data-dismiss="modal" >Cerrar</button>
             </div>
         </div>
         
@@ -86,7 +86,7 @@
                         <input type="password" name="{{ form.new_password2.name }}">
                         {{ form.new_password2.errors }}
                     </div>
-                    <button type="submit">Guardar Cambios</button>
+                    <button class="btn btn-success" type="submit">Guardar Cambios</button>
                 </form>
                 <button id="close-modal" class="btn btn-secondary">Cerrar</button>
             </div>

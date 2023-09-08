@@ -3,7 +3,7 @@ from django.contrib.auth.models import AbstractUser
 
 class Usuario(AbstractUser):
     email = models.EmailField(max_length=254, unique=True)
-    imagen = models.ImageField(upload_to='images', height_field=None, width_field=None, max_length=None, null=True, blank=True,)
+    imagen = models.ImageField(upload_to='images', height_field=None, width_field=None, max_length=None, default='static/icon-user.png', null=True, blank=True,)
     # Agrega los atributos 'related_name' en las relaciones
     def __str__(self):
         return str(self.id)

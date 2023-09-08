@@ -176,17 +176,22 @@ def ver_perfil(request):
 
 
 @login_required
-def actualizar_imagen(request, id):
-    image = Usuario.objects.get(id=id)
+def actualizar_imagen(request):
     if request.method == 'POST':
-        form = UsuarioForm(request.POST, instance=image)
+        form = UsuarioForm(request.POST, request.FILES, instance=request.user)
         if form.is_valid():
             form.save()
+            messages.success(request, "Su imagen fue actualizada")
             return redirect("ver_perfil")
+            # Redirigir o realizar otras acciones después de actualizar la imagen
+        else:
+            
+            messages.error(request, "Ooops!! ocurrió un error")
+        
     else:
-        form = UsuarioForm(instance=image)
-    context = {"form": form}
-    return render(request, "test1/verperfil.html", context)
+        form = UsuarioForm(instance=request.user)
+
+        return render(request, "test1/ver_perfil.html", {'form': form})
     
 
 

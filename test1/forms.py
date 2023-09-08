@@ -7,7 +7,7 @@ from django.forms import DateInput
 class UsuarioForm(UserCreationForm):
     class Meta:
         model = Usuario
-        fields = ['username', 'email', 'password', 'imagen']
+        fields = ['username', 'email', 'password']
 
 class IngresosForm(ModelForm):
     class Meta:
