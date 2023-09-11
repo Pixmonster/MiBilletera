@@ -20,8 +20,27 @@
 }
 
 .card-body.card-divisa {
-    height: 370px !important;
+    height: 360px !important;
 }
 
+.card-body.card-reciente {
+    height: 360px !important;
+    overflow: hidden;
+}
 
-/* NO ACTUALIZA EL SALDO */
+.card-reciente ul {
+    padding: 0;
+    border-bottom: solid black 1px;
+    font-size: 0.9rem;
+    color: #5A5C69;
+}
+
+.card-reciente ul li {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.color-category {
+    color: rgb(233, 151, 0);
+}

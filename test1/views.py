@@ -101,6 +101,11 @@ def panel(request):
     for currency in to_currencies:
         rates[currency] = get_exchange_rate(from_currency, currency)
 
+# INGRESOS Y GASTOS MÁS RECIENTES
+
+    ingresos_recientes = Transacciones.objects.filter(fk_cuenta__fk_user=usuario_actual, es_ingreso=True).order_by('-fecha')[:3]
+    gastos_recientes = Transacciones.objects.filter(fk_cuenta__fk_user=usuario_actual, es_ingreso=False).order_by('-fecha')[:3]
+
     context = {
         'total_ingresos': total_ingresos,
         'total_gastos': total_gastos,
@@ -109,6 +114,8 @@ def panel(request):
         'filter_mes_gastos': filter_mes_gastos,
         'mes_actual': mes_actual,
         'rates': rates,  # Agrega las tasas de cambio al contexto
+        'ingresos_recientes': ingresos_recientes,
+        'gastos_recientes': gastos_recientes
     }
     return render (request,'test1/home.html', context)
 
