@@ -30,18 +30,27 @@
     
     {% include 'layout/partials/topnavbar.html' %}
 
-    <div class="container">
-        <h2>Mi Perfil</h2>
-        <p>Nombre de usuario: {{ usuario.username }}</p>
-        <p>Correo electrónico: {{ usuario.email }}</p>
-     
-        <h3>Imagen de Perfil</h3>
-            <img src="{{ usuario.imagen.url }}" alt="Imagen de perfil">
-        <br>
-        <br>
-        <button id="abrir-modal-imagen-perfil" class="btn btn-primary">Cambiar Imagen de Perfil</button>
-        <button id="abrir-modal-contraseña" class="btn btn-primary">Cambiar Contraseña</button>
-
+    <div class="container d-flex flex-column align-items-center">
+        <h2 class="bg-success text-white shadow p-2 rounded my-5">MI PERFIL</h2>
+        <div class="fw-bold shadow mb-5 d-flex bg-body w-100 h-100">
+            <div class="position-relative" style="width: 40%;">
+                <img class="p-2 w-100 shadow bg-success h-100" src="{{ usuario.imagen.url }}" alt="Imagen de perfil">
+                <i id="abrir-modal-imagen-perfil" class="far fa-edit position-absolute top-0 end-0 text-black pe-auto p-1" role="button"></i>
+            </div>
+            <div class="d-flex shadow px-4 w-100 p-2 justify-content-center flex-column border-top border-bottom border-end">
+                <div class="d-flex flex-column align-items-center">
+                    <p class="fs-4">Nombre de usuario</p>
+                    <p class="fs-5">{{ usuario.username }}</p>
+                    <p class="fs-4">Correo electrónico</p>
+                    <p class="fs-5">{{ usuario.email }}</p>
+                </div>
+                <div class="p-3 d-flex justify-content-center ">
+                    <button id="abrir-modal-contraseña" class="btn btn-primary m-2">Cambiar Contraseña</button>
+                    <button id="#" class="btn btn-danger m-2">Eliminar cuenta</button>
+                </div>
+            </div>
+        </div>
+        
         <!-- modal_cambiar_imagen_perfil.html -->
         <div id="modal-cambiar-imagen-perfil" class="modal" tabindex"-1">
             <div class="modal-dialog">

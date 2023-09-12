@@ -86,9 +86,14 @@ def panel(request):
         es_ingreso=False
     ).aggregate(Sum('monto'))['monto__sum'] or 0
 
+# MONTO TOTAL
     cuenta = Cuentas.objects.get(fk_user=usuario_actual)
-    monto_actual = cuenta.saldo
+    monto_total = cuenta.saldo
 
+# MONTO MES
+    monto_mes = (filter_mes_ingresos - filter_mes_gastos)
+
+# MES ACTUAL
     mes_actual = fecha_actual.strftime("%b")
 
 # USO API DE CAMBIOS DE MONEDA
@@ -109,13 +114,14 @@ def panel(request):
     context = {
         'total_ingresos': total_ingresos,
         'total_gastos': total_gastos,
-        'monto_actual': monto_actual,
+        'monto_total': monto_total,
         'filter_mes_ingresos': filter_mes_ingresos,
         'filter_mes_gastos': filter_mes_gastos,
         'mes_actual': mes_actual,
         'rates': rates,  # Agrega las tasas de cambio al contexto
         'ingresos_recientes': ingresos_recientes,
-        'gastos_recientes': gastos_recientes
+        'gastos_recientes': gastos_recientes,
+        'monto_mes': monto_mes
     }
     return render (request,'test1/home.html', context)
 
