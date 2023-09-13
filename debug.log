@@ -1,0 +1,663 @@
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Starting new HTTPS connection (1): www.alphavantage.co:443
+https://www.alphavantage.co:443 "GET /query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=EUR&apikey=R4FODY1WJFVUIAM6 HTTP/1.1" 200 None
+Starting new HTTPS connection (1): www.alphavantage.co:443
+https://www.alphavantage.co:443 "GET /query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=JPY&apikey=R4FODY1WJFVUIAM6 HTTP/1.1" 200 None
+Starting new HTTPS connection (1): www.alphavantage.co:443
+https://www.alphavantage.co:443 "GET /query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=GBP&apikey=R4FODY1WJFVUIAM6 HTTP/1.1" 200 None
+Starting new HTTPS connection (1): www.alphavantage.co:443
+https://www.alphavantage.co:443 "GET /query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=AUD&apikey=R4FODY1WJFVUIAM6 HTTP/1.1" 200 None
+Starting new HTTPS connection (1): www.alphavantage.co:443
+https://www.alphavantage.co:443 "GET /query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=COP&apikey=R4FODY1WJFVUIAM6 HTTP/1.1" 200 None
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\models.py changed, reloading.
+Watching for file changes with StatReloader
+Starting new HTTPS connection (1): www.alphavantage.co:443
+https://www.alphavantage.co:443 "GET /query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=EUR&apikey=R4FODY1WJFVUIAM6 HTTP/1.1" 200 None
+Starting new HTTPS connection (1): www.alphavantage.co:443
+Watching for file changes with StatReloader
+Starting new HTTPS connection (1): www.alphavantage.co:443
+https://www.alphavantage.co:443 "GET /query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=EUR&apikey=R4FODY1WJFVUIAM6 HTTP/1.1" 200 None
+Starting new HTTPS connection (1): www.alphavantage.co:443
+https://www.alphavantage.co:443 "GET /query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=JPY&apikey=R4FODY1WJFVUIAM6 HTTP/1.1" 200 None
+Starting new HTTPS connection (1): www.alphavantage.co:443
+https://www.alphavantage.co:443 "GET /query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=GBP&apikey=R4FODY1WJFVUIAM6 HTTP/1.1" 200 None
+Starting new HTTPS connection (1): www.alphavantage.co:443
+https://www.alphavantage.co:443 "GET /query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=AUD&apikey=R4FODY1WJFVUIAM6 HTTP/1.1" 200 None
+Starting new HTTPS connection (1): www.alphavantage.co:443
+https://www.alphavantage.co:443 "GET /query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=COP&apikey=R4FODY1WJFVUIAM6 HTTP/1.1" 200 None
+Not Found: /media/icon-user.png
+Starting new HTTPS connection (1): www.alphavantage.co:443
+https://www.alphavantage.co:443 "GET /query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=COP&apikey=R4FODY1WJFVUIAM6 HTTP/1.1" 200 None
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+Starting new HTTPS connection (1): www.alphavantage.co:443
+https://www.alphavantage.co:443 "GET /query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=EUR&apikey=R4FODY1WJFVUIAM6 HTTP/1.1" 200 None
+Starting new HTTPS connection (1): www.alphavantage.co:443
+https://www.alphavantage.co:443 "GET /query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=JPY&apikey=R4FODY1WJFVUIAM6 HTTP/1.1" 200 None
+Starting new HTTPS connection (1): www.alphavantage.co:443
+https://www.alphavantage.co:443 "GET /query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=GBP&apikey=R4FODY1WJFVUIAM6 HTTP/1.1" 200 None
+Starting new HTTPS connection (1): www.alphavantage.co:443
+https://www.alphavantage.co:443 "GET /query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=AUD&apikey=R4FODY1WJFVUIAM6 HTTP/1.1" 200 None
+Starting new HTTPS connection (1): www.alphavantage.co:443
+https://www.alphavantage.co:443 "GET /query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=COP&apikey=R4FODY1WJFVUIAM6 HTTP/1.1" 200 None
+Watching for file changes with StatReloader
+Starting new HTTPS connection (1): www.alphavantage.co:443
+https://www.alphavantage.co:443 "GET /query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=EUR&apikey=R4FODY1WJFVUIAM6 HTTP/1.1" 200 None
+Starting new HTTPS connection (1): www.alphavantage.co:443
+https://www.alphavantage.co:443 "GET /query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=JPY&apikey=R4FODY1WJFVUIAM6 HTTP/1.1" 200 None
+Starting new HTTPS connection (1): www.alphavantage.co:443
+https://www.alphavantage.co:443 "GET /query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=GBP&apikey=R4FODY1WJFVUIAM6 HTTP/1.1" 200 None
+Starting new HTTPS connection (1): www.alphavantage.co:443
+https://www.alphavantage.co:443 "GET /query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=AUD&apikey=R4FODY1WJFVUIAM6 HTTP/1.1" 200 None
+Starting new HTTPS connection (1): www.alphavantage.co:443
+https://www.alphavantage.co:443 "GET /query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=COP&apikey=R4FODY1WJFVUIAM6 HTTP/1.1" 200 None
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /actualizar_imagen/
+Traceback (most recent call last):
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py", line 203, in actualizar_imagen
+    imagen.save(os.path.join(settings.MEDIA_ROOT, imagen.name))
+TypeError: FieldFile.save() missing 1 required positional argument: 'content'
+Not Found: /favicon.ico
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /actualizar_imagen/
+Traceback (most recent call last):
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\utils\datastructures.py", line 84, in __getitem__
+    list_ = super().__getitem__(key)
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'imagen'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py", line 203, in actualizar_imagen
+    imagen.save(os.path.join(settings.MEDIA_ROOT, imagen.name), content=request.FILES['imagen'])
+                                                                        ~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\utils\datastructures.py", line 86, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'imagen'
+Internal Server Error: /actualizar_imagen/
+Traceback (most recent call last):
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\utils\datastructures.py", line 84, in __getitem__
+    list_ = super().__getitem__(key)
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'imagen'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py", line 203, in actualizar_imagen
+    imagen.save(os.path.join(settings.MEDIA_ROOT, imagen.name), content=request.FILES['imagen'])
+                                                                        ~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\utils\datastructures.py", line 86, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'imagen'
+Internal Server Error: /actualizar_imagen/
+Traceback (most recent call last):
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\utils\datastructures.py", line 84, in __getitem__
+    list_ = super().__getitem__(key)
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'imagen'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py", line 203, in actualizar_imagen
+    imagen.save(os.path.join(settings.MEDIA_ROOT, imagen.name), content=request.FILES['imagen'])
+                                                                        ~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\utils\datastructures.py", line 86, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'imagen'
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /actualizar_imagen/
+Traceback (most recent call last):
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py", line 203, in actualizar_imagen
+    imagen.save(os.path.join(settings.MEDIA_ROOT, imagen.name))
+TypeError: FieldFile.save() missing 1 required positional argument: 'content'
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /actualizar_imagen/
+Traceback (most recent call last):
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py", line 202, in actualizar_imagen
+    imagen.file.save(os.path.join(settings.MEDIA_ROOT, imagen.name))
+    ^^^^^^^^^^^^^^^^
+AttributeError: 'File' object has no attribute 'save'
+Not Found: /favicon.ico
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /actualizar_imagen/
+Traceback (most recent call last):
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py", line 202, in actualizar_imagen
+    imagen.save(os.path.join(settings.MEDIA_ROOT, imagen.name))
+TypeError: FieldFile.save() missing 1 required positional argument: 'content'
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /actualizar_imagen/
+Traceback (most recent call last):
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\utils\datastructures.py", line 84, in __getitem__
+    list_ = super().__getitem__(key)
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'imagen'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py", line 202, in actualizar_imagen
+    imagen.save(os.path.join(settings.MEDIA_ROOT, imagen.name), content=request.FILES['imagen'])
+                                                                        ~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\utils\datastructures.py", line 86, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'imagen'
+Not Found: /favicon.ico
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Internal Server Error: /actualizar_imagen/
+Traceback (most recent call last):
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py", line 202, in actualizar_imagen
+    imagen.file.save_to_file(os.path.join(settings.MEDIA_ROOT, imagen.name))
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'File' object has no attribute 'save_to_file'
+Watching for file changes with StatReloader
+Internal Server Error: /actualizar_imagen/
+Traceback (most recent call last):
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py", line 202, in actualizar_imagen
+    imagen.save(os.path.join(settings.MEDIA_ROOT, imagen.name))
+TypeError: FieldFile.save() missing 1 required positional argument: 'content'
+Not Found: /favicon.ico
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py changed, reloading.
+Watching for file changes with StatReloader
+STREAM b'IHDR' 16 13
+STREAM b'PLTE' 41 18
+STREAM b'IDAT' 71 8192
+Importing BlpImagePlugin
+Importing BmpImagePlugin
+Importing BufrStubImagePlugin
+Importing CurImagePlugin
+Importing DcxImagePlugin
+Importing DdsImagePlugin
+Importing EpsImagePlugin
+Importing FitsImagePlugin
+Importing FliImagePlugin
+Importing FpxImagePlugin
+Image: failed to import FpxImagePlugin: No module named 'olefile'
+Importing FtexImagePlugin
+Importing GbrImagePlugin
+Importing GifImagePlugin
+Importing GribStubImagePlugin
+Importing Hdf5StubImagePlugin
+Importing IcnsImagePlugin
+Importing IcoImagePlugin
+Importing ImImagePlugin
+Importing ImtImagePlugin
+Importing IptcImagePlugin
+Importing JpegImagePlugin
+Importing Jpeg2KImagePlugin
+Importing McIdasImagePlugin
+Importing MicImagePlugin
+Image: failed to import MicImagePlugin: No module named 'olefile'
+Importing MpegImagePlugin
+Importing MpoImagePlugin
+Importing MspImagePlugin
+Importing PalmImagePlugin
+Importing PcdImagePlugin
+Importing PcxImagePlugin
+Importing PdfImagePlugin
+Importing PixarImagePlugin
+Importing PngImagePlugin
+Importing PpmImagePlugin
+Importing PsdImagePlugin
+Importing QoiImagePlugin
+Importing SgiImagePlugin
+Importing SpiderImagePlugin
+Importing SunImagePlugin
+Importing TgaImagePlugin
+Importing TiffImagePlugin
+Importing WebPImagePlugin
+Importing WmfImagePlugin
+Importing XbmImagePlugin
+Importing XpmImagePlugin
+Importing XVThumbImagePlugin
+STREAM b'IHDR' 16 13
+STREAM b'cHRM' 41 32
+STREAM b'bKGD' 85 6
+b'bKGD' 85 6 (unknown)
+STREAM b'pHYs' 103 9
+STREAM b'tIME' 124 7
+b'tIME' 124 7 (unknown)
+STREAM b'IDAT' 143 6313
+STREAM b'IHDR' 16 13
+STREAM b'sRGB' 41 1
+STREAM b'IDAT' 54 8192
+tag: ImageWidth (256) - type: short (3) - value: b'(\x1e'
+tag: ImageLength (257) - type: short (3) - value: b'x\x0f'
+tag: BitsPerSample (258) - type: short (3) Tag Location: 46 - Data Location: 206 - value: b'\x08\x00\x08\x00\x08\x00'
+tag: PhotometricInterpretation (262) - type: short (3) - value: b'\x02\x00'
+tag: ImageDescription (270) - type: string (2) Tag Location: 70 - Data Location: 212 - value: <table: 103 bytes>
+tag: Make (271) - type: string (2) Tag Location: 82 - Data Location: 315 - value: b'NIKON CORPORATION\x00'
+tag: Model (272) - type: string (2) Tag Location: 94 - Data Location: 333 - value: b'NIKON Z 6\x00'
+tag: Orientation (274) - type: short (3) - value: b'\x01\x00'
+tag: SamplesPerPixel (277) - type: short (3) - value: b'\x03\x00'
+tag: XResolution (282) - type: rational (5) Tag Location: 130 - Data Location: 343 - value: b"\x00\x9f$\x00\x10'\x00\x00"
+tag: YResolution (283) - type: rational (5) Tag Location: 142 - Data Location: 351 - value: b"\x00\x9f$\x00\x10'\x00\x00"
+tag: ResolutionUnit (296) - type: short (3) - value: b'\x02\x00'
+tag: Software (305) - type: string (2) Tag Location: 166 - Data Location: 359 - value: b'Adobe Photoshop 21.0 (Windows)\x00'
+tag: DateTime (306) - type: string (2) Tag Location: 178 - Data Location: 390 - value: b'2020:09:05 12:02:52\x00'
+tag: Artist (315) - type: string (2) Tag Location: 190 - Data Location: 410 - value: b'EUGENIU FRIMU\x00'
+tag: ExifIFD (34665) - type: long (4) - value: b'\xa8\x01\x00\x00'
+STREAM b'IHDR' 16 13
+STREAM b'cHRM' 41 32
+STREAM b'bKGD' 85 6
+b'bKGD' 85 6 (unknown)
+STREAM b'pHYs' 103 9
+STREAM b'tIME' 124 7
+b'tIME' 124 7 (unknown)
+STREAM b'IDAT' 143 5874
+STREAM b'IHDR' 16 13
+STREAM b'cHRM' 41 32
+STREAM b'bKGD' 85 6
+b'bKGD' 85 6 (unknown)
+STREAM b'pHYs' 103 9
+STREAM b'IDAT' 124 12784
+STREAM b'IHDR' 16 13
+STREAM b'PLTE' 41 18
+STREAM b'IDAT' 71 8192
+tag: ImageWidth (256) - type: short (3) - value: b'(\x1e'
+tag: ImageLength (257) - type: short (3) - value: b'x\x0f'
+tag: BitsPerSample (258) - type: short (3) Tag Location: 46 - Data Location: 206 - value: b'\x08\x00\x08\x00\x08\x00'
+tag: PhotometricInterpretation (262) - type: short (3) - value: b'\x02\x00'
+tag: ImageDescription (270) - type: string (2) Tag Location: 70 - Data Location: 212 - value: <table: 103 bytes>
+tag: Make (271) - type: string (2) Tag Location: 82 - Data Location: 315 - value: b'NIKON CORPORATION\x00'
+tag: Model (272) - type: string (2) Tag Location: 94 - Data Location: 333 - value: b'NIKON Z 6\x00'
+tag: Orientation (274) - type: short (3) - value: b'\x01\x00'
+tag: SamplesPerPixel (277) - type: short (3) - value: b'\x03\x00'
+tag: XResolution (282) - type: rational (5) Tag Location: 130 - Data Location: 343 - value: b"\x00\x9f$\x00\x10'\x00\x00"
+tag: YResolution (283) - type: rational (5) Tag Location: 142 - Data Location: 351 - value: b"\x00\x9f$\x00\x10'\x00\x00"
+tag: ResolutionUnit (296) - type: short (3) - value: b'\x02\x00'
+tag: Software (305) - type: string (2) Tag Location: 166 - Data Location: 359 - value: b'Adobe Photoshop 21.0 (Windows)\x00'
+tag: DateTime (306) - type: string (2) Tag Location: 178 - Data Location: 390 - value: b'2020:09:05 12:02:52\x00'
+tag: Artist (315) - type: string (2) Tag Location: 190 - Data Location: 410 - value: b'EUGENIU FRIMU\x00'
+tag: ExifIFD (34665) - type: long (4) - value: b'\xa8\x01\x00\x00'
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\models.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Importing BlpImagePlugin
+Importing BmpImagePlugin
+Importing BufrStubImagePlugin
+Importing CurImagePlugin
+Importing DcxImagePlugin
+Importing DdsImagePlugin
+Importing EpsImagePlugin
+Importing FitsImagePlugin
+Importing FliImagePlugin
+Importing FpxImagePlugin
+Image: failed to import FpxImagePlugin: No module named 'olefile'
+Importing FtexImagePlugin
+Importing GbrImagePlugin
+Importing GifImagePlugin
+Importing GribStubImagePlugin
+Importing Hdf5StubImagePlugin
+Importing IcnsImagePlugin
+Importing IcoImagePlugin
+Importing ImImagePlugin
+Importing ImtImagePlugin
+Importing IptcImagePlugin
+Importing JpegImagePlugin
+Importing Jpeg2KImagePlugin
+Importing McIdasImagePlugin
+Importing MicImagePlugin
+Image: failed to import MicImagePlugin: No module named 'olefile'
+Importing MpegImagePlugin
+Importing MpoImagePlugin
+Importing MspImagePlugin
+Importing PalmImagePlugin
+Importing PcdImagePlugin
+Importing PcxImagePlugin
+Importing PdfImagePlugin
+Importing PixarImagePlugin
+Importing PngImagePlugin
+Importing PpmImagePlugin
+Importing PsdImagePlugin
+Importing QoiImagePlugin
+Importing SgiImagePlugin
+Importing SpiderImagePlugin
+Importing SunImagePlugin
+Importing TgaImagePlugin
+Importing TiffImagePlugin
+Importing WebPImagePlugin
+Importing WmfImagePlugin
+Importing XbmImagePlugin
+Importing XpmImagePlugin
+Importing XVThumbImagePlugin
+Internal Server Error: /actualizar_imagen/
+Traceback (most recent call last):
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py", line 200, in actualizar_imagen
+    form.save()
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\models.py", line 542, in save
+    self.instance.save()
+  File "C:\Users\APRENDIZ\Documents\MiBilletera\test1\models.py", line 15, in save
+    img = Image.open(self.imagen.path)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\PIL\Image.py", line 3218, in open
+    fp = builtins.open(filename, "rb")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\APRENDIZ\\Documents\\MiBilletera\\media\\WhatsApp Image 2023-07-31 at 12.20.48 PM (1).jpeg'
+Not Found: /favicon.ico
+Internal Server Error: /actualizar_imagen/
+Traceback (most recent call last):
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py", line 200, in actualizar_imagen
+    form.save()
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\models.py", line 542, in save
+    self.instance.save()
+  File "C:\Users\APRENDIZ\Documents\MiBilletera\test1\models.py", line 15, in save
+    img = Image.open(self.imagen.path)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\PIL\Image.py", line 3218, in open
+    fp = builtins.open(filename, "rb")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\APRENDIZ\\Documents\\MiBilletera\\media\\WhatsApp Image 2023-07-31 at 12.20.48 PM (3).jpeg'
+STREAM b'IHDR' 16 13
+STREAM b'cHRM' 41 32
+STREAM b'bKGD' 85 2
+b'bKGD' 85 2 (unknown)
+STREAM b'pHYs' 99 9
+STREAM b'tIME' 120 7
+b'tIME' 120 7 (unknown)
+STREAM b'IDAT' 139 2352
+Internal Server Error: /actualizar_imagen/
+Traceback (most recent call last):
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py", line 200, in actualizar_imagen
+    form.save()
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\models.py", line 542, in save
+    self.instance.save()
+  File "C:\Users\APRENDIZ\Documents\MiBilletera\test1\models.py", line 15, in save
+    img = Image.open(self.imagen.path)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\PIL\Image.py", line 3218, in open
+    fp = builtins.open(filename, "rb")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\APRENDIZ\\Documents\\MiBilletera\\media\\facebook.png'
+STREAM b'IHDR' 16 13
+STREAM b'PLTE' 41 18
+STREAM b'IDAT' 71 8192
+Internal Server Error: /actualizar_imagen/
+Traceback (most recent call last):
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py", line 200, in actualizar_imagen
+    form.save()
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\models.py", line 542, in save
+    self.instance.save()
+  File "C:\Users\APRENDIZ\Documents\MiBilletera\test1\models.py", line 15, in save
+    img = Image.open(self.imagen.path)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\PIL\Image.py", line 3218, in open
+    fp = builtins.open(filename, "rb")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\APRENDIZ\\Documents\\MiBilletera\\media\\manos abiertas.png'
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\models.py changed, reloading.
+Watching for file changes with StatReloader
+Importing BlpImagePlugin
+Importing BmpImagePlugin
+Importing BufrStubImagePlugin
+Importing CurImagePlugin
+Importing DcxImagePlugin
+Importing DdsImagePlugin
+Importing EpsImagePlugin
+Importing FitsImagePlugin
+Importing FliImagePlugin
+Importing FpxImagePlugin
+Image: failed to import FpxImagePlugin: No module named 'olefile'
+Importing FtexImagePlugin
+Importing GbrImagePlugin
+Importing GifImagePlugin
+Importing GribStubImagePlugin
+Importing Hdf5StubImagePlugin
+Importing IcnsImagePlugin
+Importing IcoImagePlugin
+Importing ImImagePlugin
+Importing ImtImagePlugin
+Importing IptcImagePlugin
+Importing JpegImagePlugin
+Importing Jpeg2KImagePlugin
+Importing McIdasImagePlugin
+Importing MicImagePlugin
+Image: failed to import MicImagePlugin: No module named 'olefile'
+Importing MpegImagePlugin
+Importing MpoImagePlugin
+Importing MspImagePlugin
+Importing PalmImagePlugin
+Importing PcdImagePlugin
+Importing PcxImagePlugin
+Importing PdfImagePlugin
+Importing PixarImagePlugin
+Importing PngImagePlugin
+Importing PpmImagePlugin
+Importing PsdImagePlugin
+Importing QoiImagePlugin
+Importing SgiImagePlugin
+Importing SpiderImagePlugin
+Importing SunImagePlugin
+Importing TgaImagePlugin
+Importing TiffImagePlugin
+Importing WebPImagePlugin
+Importing WmfImagePlugin
+Importing XbmImagePlugin
+Importing XpmImagePlugin
+Importing XVThumbImagePlugin
+STREAM b'IHDR' 16 13
+STREAM b'PLTE' 41 63
+STREAM b'IDAT' 116 8119
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\models.py changed, reloading.
+Watching for file changes with StatReloader
+Importing BlpImagePlugin
+Importing BmpImagePlugin
+Importing BufrStubImagePlugin
+Importing CurImagePlugin
+Importing DcxImagePlugin
+Importing DdsImagePlugin
+Importing EpsImagePlugin
+Importing FitsImagePlugin
+Importing FliImagePlugin
+Importing FpxImagePlugin
+Image: failed to import FpxImagePlugin: No module named 'olefile'
+Importing FtexImagePlugin
+Importing GbrImagePlugin
+Importing GifImagePlugin
+Importing GribStubImagePlugin
+Importing Hdf5StubImagePlugin
+Importing IcnsImagePlugin
+Importing IcoImagePlugin
+Importing ImImagePlugin
+Importing ImtImagePlugin
+Importing IptcImagePlugin
+Importing JpegImagePlugin
+Importing Jpeg2KImagePlugin
+Importing McIdasImagePlugin
+Importing MicImagePlugin
+Image: failed to import MicImagePlugin: No module named 'olefile'
+Importing MpegImagePlugin
+Importing MpoImagePlugin
+Importing MspImagePlugin
+Importing PalmImagePlugin
+Importing PcdImagePlugin
+Importing PcxImagePlugin
+Importing PdfImagePlugin
+Importing PixarImagePlugin
+Importing PngImagePlugin
+Importing PpmImagePlugin
+Importing PsdImagePlugin
+Importing QoiImagePlugin
+Importing SgiImagePlugin
+Importing SpiderImagePlugin
+Importing SunImagePlugin
+Importing TgaImagePlugin
+Importing TiffImagePlugin
+Importing WebPImagePlugin
+Importing WmfImagePlugin
+Importing XbmImagePlugin
+Importing XpmImagePlugin
+Importing XVThumbImagePlugin

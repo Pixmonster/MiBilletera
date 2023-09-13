@@ -17,7 +17,11 @@ from django.db.models import Q
 from django.urls import reverse
 from django.contrib.auth.hashers import check_password
 from django.contrib.auth.hashers import make_password
-from django.db import transaction
+import logging
+import os
+from django.conf import settings
+
+logger = logging.getLogger(__name__)
 
 def index(request):
     return render(request, 'test1/index.html')
@@ -163,7 +167,6 @@ def register(request):
 
     return render(request, 'test1/register.html')
 
-
 def logear(request):
     if request.method == 'POST':
         email = request.POST['email']
@@ -189,7 +192,6 @@ def ver_perfil(request):
     usuario = request.user  # Obtener el usuario autenticado
     return render(request, 'test1/ver_perfil.html', {'usuario': usuario})
 
-
 @login_required
 def actualizar_imagen(request):
     if request.method == 'POST':
@@ -198,18 +200,14 @@ def actualizar_imagen(request):
             form.save()
             messages.success(request, "Su imagen fue actualizada")
             return redirect("ver_perfil")
-            # Redirigir o realizar otras acciones después de actualizar la imagen
         else:
-            
+            logger.error("Error al procesar el formulario de imagen: %s", form.errors)
             messages.error(request, "Ooops!! ocurrió un error")
-        
     else:
         form = ImageForm(instance=request.user)
 
-        return render(request, "test1/ver_perfil.html", {'form': form})
+    return render(request, "test1/ver_perfil.html", {'form': form})
     
-
-
 @login_required
 def eliminar_usuario(request, user_id):
     usuario = get_object_or_404(Usuario, id=user_id)

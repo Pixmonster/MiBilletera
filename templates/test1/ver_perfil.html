@@ -9,6 +9,23 @@
     <link rel="icon" href="{% static 'img/favicon.png' %}" type="image/jpg" />
     <link rel="stylesheet" href="{% static 'css/ingresos.css' %}">
 
+    <style>
+        #edit-icon {
+            display: none;
+        }
+        
+        #profile-image {
+            transition: filter 0.10s ease-in-out;
+        }
+        
+        #profile-image:hover {
+            filter: brightness(70%);
+        }
+        
+        #profile-image:hover + #edit-icon {
+            display: block;
+        }
+    </style>
 </head>
 
 <body id="page-top">
@@ -29,15 +46,15 @@
                 <div class="container d-flex flex-column align-items-center">
                     <h2 class="bg-success text-white shadow p-2 rounded my-5">MI PERFIL</h2>
                     <div class="fw-bold shadow mb-5 d-flex bg-body w-100 h-100">
-                        <div class="position-relative" style="width: 40%;">
-                            <img class="p-2 w-100 shadow bg-success h-100" src="{{ usuario.imagen.url }}" alt="Imagen de perfil">
-                            <i data-bs-target="#cambiarfotoperfil" data-bs-toggle="modal" class="far fa-edit fa-lg position-absolute text-black pe-auto p-2" role="button"></i>
+                        <div class="position-relative d-flex align-items-center justify-content-center" style="width: 40%;">
+                            <img class="w-100 shadow h-75 img-profile rounded-circle" src="{{ usuario.imagen.url }}" alt="Imagen de perfil" id="profile-image">
+                            <i data-bs-target="#cambiarfotoperfil" data-bs-toggle="modal" class="far fa-edit fa-lg position-absolute top-0 end-0 text-black pe-auto p-2" role="button" id="edit-icon"></i>
                         </div>
                         <div class="d-flex shadow px-4 w-100 p-2 justify-content-center flex-column border-top border-bottom border-end">
                             <div class="d-flex flex-column align-items-center">
-                                <p class="fs-4">Nombre de usuario</p>
+                                <p class="fs-4"><strong>Nombre de usuario</strong></p>
                                 <p class="fs-5">{{ usuario.username }}</p>
-                                <p class="fs-4">Correo electrónico</p>
+                                <p class="fs-4"><strong>Correo electrónico</strong></p>
                                 <p class="fs-5">{{ usuario.email }}</p>
                             </div>
                             <div class="p-3 d-flex justify-content-center ">
@@ -60,12 +77,13 @@
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
-                                <form method="post" action="{% url 'actualizar_imagen' %} " enctype="multipart/form-data">
-                                    {% csrf_token %} {{ form.non_field_errors }}
-
+                                <form method="post" action="{% url 'actualizar_imagen' %}" enctype="multipart/form-data">
+                                    {% csrf_token %}
+                                    {{ form.non_field_errors }}
                                     <div class="form-group">
-                                        <label for="{{ form.image.id_for_label }}">Selecciona una nueva imagen:</label>
-                                        <input type="file" name="{{ form.image.name }}" accept="image/*"> {{ form.image.errors }}
+                                        <label for="{{ form.imagen.id_for_label }}">Selecciona una nueva imagen:</label>
+                                        <input type="file" name="imagen" accept="image/*">
+                                        {{ form.imagen.errors }}
                                     </div>
                                     <button class="btn btn-success" type="submit">Guardar Cambios</button>
                                 </form>
