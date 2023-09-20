@@ -661,3 +661,100 @@ Importing WmfImagePlugin
 Importing XbmImagePlugin
 Importing XpmImagePlugin
 Importing XVThumbImagePlugin
+STREAM b'IHDR' 16 13
+STREAM b'pHYs' 41 9
+STREAM b'iTXt' 62 14377
+STREAM b'cHRM' 14451 32
+STREAM b'IDAT' 14495 385347
+STREAM b'IHDR' 16 13
+STREAM b'pHYs' 41 9
+STREAM b'IDAT' 62 8192
+Watching for file changes with StatReloader
+Starting new HTTPS connection (1): www.alphavantage.co:443
+https://www.alphavantage.co:443 "GET /query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=EUR&apikey=R4FODY1WJFVUIAM6 HTTP/1.1" 200 None
+Starting new HTTPS connection (1): www.alphavantage.co:443
+https://www.alphavantage.co:443 "GET /query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=JPY&apikey=R4FODY1WJFVUIAM6 HTTP/1.1" 200 None
+Starting new HTTPS connection (1): www.alphavantage.co:443
+https://www.alphavantage.co:443 "GET /query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=GBP&apikey=R4FODY1WJFVUIAM6 HTTP/1.1" 200 None
+Starting new HTTPS connection (1): www.alphavantage.co:443
+https://www.alphavantage.co:443 "GET /query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=AUD&apikey=R4FODY1WJFVUIAM6 HTTP/1.1" 200 None
+Starting new HTTPS connection (1): www.alphavantage.co:443
+https://www.alphavantage.co:443 "GET /query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=COP&apikey=R4FODY1WJFVUIAM6 HTTP/1.1" 200 None
+Importing BlpImagePlugin
+Importing BmpImagePlugin
+Importing BufrStubImagePlugin
+Importing CurImagePlugin
+Importing DcxImagePlugin
+Importing DdsImagePlugin
+Importing EpsImagePlugin
+Importing FitsImagePlugin
+Importing FliImagePlugin
+Importing FpxImagePlugin
+Image: failed to import FpxImagePlugin: No module named 'olefile'
+Importing FtexImagePlugin
+Importing GbrImagePlugin
+Importing GifImagePlugin
+Importing GribStubImagePlugin
+Importing Hdf5StubImagePlugin
+Importing IcnsImagePlugin
+Importing IcoImagePlugin
+Importing ImImagePlugin
+Importing ImtImagePlugin
+Importing IptcImagePlugin
+Importing JpegImagePlugin
+Importing Jpeg2KImagePlugin
+Importing McIdasImagePlugin
+Importing MicImagePlugin
+Image: failed to import MicImagePlugin: No module named 'olefile'
+Importing MpegImagePlugin
+Importing MpoImagePlugin
+Importing MspImagePlugin
+Importing PalmImagePlugin
+Importing PcdImagePlugin
+Importing PcxImagePlugin
+Importing PdfImagePlugin
+Importing PixarImagePlugin
+Importing PngImagePlugin
+Importing PpmImagePlugin
+Importing PsdImagePlugin
+Importing QoiImagePlugin
+Importing SgiImagePlugin
+Importing SpiderImagePlugin
+Importing SunImagePlugin
+Importing TgaImagePlugin
+Importing TiffImagePlugin
+Importing WebPImagePlugin
+Importing WmfImagePlugin
+Importing XbmImagePlugin
+Importing XpmImagePlugin
+Importing XVThumbImagePlugin
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Not Found: /accounts/login/index.html
+Not Found: /favicon.ico
+Starting new HTTPS connection (1): www.alphavantage.co:443
+https://www.alphavantage.co:443 "GET /query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=EUR&apikey=R4FODY1WJFVUIAM6 HTTP/1.1" 200 None
+Starting new HTTPS connection (1): www.alphavantage.co:443
+https://www.alphavantage.co:443 "GET /query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=JPY&apikey=R4FODY1WJFVUIAM6 HTTP/1.1" 200 None
+Starting new HTTPS connection (1): www.alphavantage.co:443
+https://www.alphavantage.co:443 "GET /query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=GBP&apikey=R4FODY1WJFVUIAM6 HTTP/1.1" 200 None
+Starting new HTTPS connection (1): www.alphavantage.co:443
+https://www.alphavantage.co:443 "GET /query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=AUD&apikey=R4FODY1WJFVUIAM6 HTTP/1.1" 200 None
+Starting new HTTPS connection (1): www.alphavantage.co:443
+https://www.alphavantage.co:443 "GET /query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=COP&apikey=R4FODY1WJFVUIAM6 HTTP/1.1" 200 None
+Not Found: /accounts/login/index.html
+Not Found: /reset_password/js/codigo.js
+Not Found: /favicon.ico
+Watching for file changes with StatReloader
+Starting new HTTPS connection (1): www.alphavantage.co:443
+https://www.alphavantage.co:443 "GET /query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=EUR&apikey=R4FODY1WJFVUIAM6 HTTP/1.1" 200 None
+Starting new HTTPS connection (1): www.alphavantage.co:443
+https://www.alphavantage.co:443 "GET /query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=JPY&apikey=R4FODY1WJFVUIAM6 HTTP/1.1" 200 None
+Starting new HTTPS connection (1): www.alphavantage.co:443
+https://www.alphavantage.co:443 "GET /query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=GBP&apikey=R4FODY1WJFVUIAM6 HTTP/1.1" 200 None
+Starting new HTTPS connection (1): www.alphavantage.co:443
+https://www.alphavantage.co:443 "GET /query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=AUD&apikey=R4FODY1WJFVUIAM6 HTTP/1.1" 200 None
+Starting new HTTPS connection (1): www.alphavantage.co:443
+https://www.alphavantage.co:443 "GET /query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=COP&apikey=R4FODY1WJFVUIAM6 HTTP/1.1" 200 None
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader

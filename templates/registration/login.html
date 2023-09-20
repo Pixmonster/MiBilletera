@@ -3,7 +3,6 @@
 <html lang="en">
 
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -20,28 +19,37 @@
     <!-- Custom styles for this template-->
     <link href="{% static 'css/sb-admin-2.min.css' %}" rel="stylesheet">
     <link href="{% static 'css/style.css' %}" rel="stylesheet">
+    <style>
+        #icon:hover {
+            background-color: #198754;
+            color: white;
+        }
+
+        #icon {
+            color: black;
+            border-radius: 8px;
+        }
+    </style>
 
 </head>
 
+
+<body class="overflow-hidden">
 {% block 'header' %} {% include 'layout/partials/headerbase.html' %} {% endblock %}
-
-<body class="bg-success">
-
-    <div class="container">
+<div class="container ">
+    <div class="mb-3 p-3 d-flex flex-column justify-content-center align-items-center rounded ">
         <div class="dollar-container text-center">
             <img src="{% static 'img/dollar-open-eyes.png' %}" alt="Dollar with Eyes Open" id="dollar-image">
         </div>
         <!-- Outer Row -->
-        <div class="row justify-content-center">
+        <div class="row justify-content-center w-50">
             <div class="col-xl-10 col-lg-12 col-md-9">
-
                 <div class="card o-hidden border-0 shadow-lg my-2">
                     <div class="card-body p-0">
                         <!-- Nested Row within Card Body -->
                         <div class="row">
-
                             <div class="col-lg-12">
-                                <div class="p-5">
+                                <div class=" p-5">
                                     <div class="text-center">
                                         <h1 class="h4 text-gray-900 mb-4">Inicia sesión</h1>
                                     </div>
@@ -52,7 +60,6 @@
                                             {% endfor %}
                                     </ul>
                                     {% endif %}
-
                                     <form class="formlogin" method="post" action="{% url 'logear' %}">
                                         {% csrf_token %}
 
@@ -65,68 +72,60 @@
                                             <input type="password" name='password' id="password" class="form-control form-control-user" id="password" placeholder="contraseña" required>
                                         </div>
                                         <div class="form-group">
-                                            <div class="custom-control custom-checkbox small">
-                                                <input type="checkbox" class="custom-control-input" id="customCheck">
-                                                <label class="custom-control-label" for="customCheck">Recuerdame</label>
+                                            <div class="custom-control custom-checkbox small row">
+                                                <a class="small col text-center" href="{% url 'reset_password' %}">Olvidaste tu contraseña?</a>
+                                                <a class="small col text-center" href="{% url 'register' %}">Crea una nueva cuenta!</a>
                                             </div>
                                         </div>
                                         <button type="submit" class="btn btn-success btn-user btn-block">Ingresar</button>
                                         </a>
                                         <hr>
-                                        <a href="index.html" class="btn btn-google btn-user btn-block">
-                                            <i class="fab fa-google fa-fw"></i> Ingresar con Google
-                                        </a>
-                                        <a href="index.html" class="btn btn-facebook btn-user btn-block">
-                                            <i class="fab fa-facebook-f fa-fw"></i> Ingresar con Facebook
-                                        </a>
+                                        <div class="row">
+                                            <a href="index.html" id="icon" class="m-0 w-5 col text-center">
+                                                    <i class="fab fa-google"></i>
+                                                </a>
+                                            <a href="index.html" id="icon" class="m-0 w-5 col text-center">
+                                                    <i class="fab fa-facebook-f fa-fw text-black"></i>
+                                                </a>
+                                        </div>
                                     </form>
-                                    <hr>
-                                    <div class="text-center">
-                                        <a class="small" href="{% url 'reset_password' %}">Olvidaste tu contraseña?</a>
-                                    </div>
-                                    <div class="text-center">
-                                        <a class="small" href="{% url 'register' %}">Crea una nueva cuenta!</a>
-                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
             </div>
-
         </div>
-
     </div>
+</div>
+        <footer>
+            {% include 'layout/partials/footer.html' %}
+        </footer>
 
-    <footer>
-        {% include 'layout/partials/footer.html' %}
-    </footer>
+        <!-- Bootstrap core JavaScript-->
+        <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+        <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
 
-    <!-- Bootstrap core JavaScript-->
-    <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
-    <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+        <!-- Core plugin JavaScript-->
+        <script src="{% static 'vendor/jquery-easing/jquery.easing.min.js' %}"></script>
 
-    <!-- Core plugin JavaScript-->
-    <script src="{% static 'vendor/jquery-easing/jquery.easing.min.js' %}"></script>
+        <!-- Custom scripts for all pages-->
+        <script src="{% static 'js/sb-admin-2.min.js' %}"></script>
 
-    <!-- Custom scripts for all pages-->
-    <script src="{% static 'js/sb-admin-2.min.js' %}"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                const passwordInput = document.getElementById('password');
+                const dollarImage = document.getElementById('dollar-image');
 
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const passwordInput = document.getElementById('password');
-            const dollarImage = document.getElementById('dollar-image');
+                passwordInput.addEventListener('focus', () => {
+                    dollarImage.src = "{% static 'img/dollar-close-eyes.png' %}";
+                });
 
-            passwordInput.addEventListener('focus', () => {
-                dollarImage.src = "{% static 'img/dollar-close-eyes.png' %}";
+                passwordInput.addEventListener('blur', () => {
+                    dollarImage.src = "{% static 'img/dollar-open-eyes.png' %}";
+                });
             });
-
-            passwordInput.addEventListener('blur', () => {
-                dollarImage.src = "{% static 'img/dollar-open-eyes.png' %}";
-            });
-        });
-    </script>
+        </script>
 </body>
 
 </html>
