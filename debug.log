@@ -758,3 +758,2561 @@ Starting new HTTPS connection (1): www.alphavantage.co:443
 https://www.alphavantage.co:443 "GET /query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=COP&apikey=R4FODY1WJFVUIAM6 HTTP/1.1" 200 None
 Watching for file changes with StatReloader
 Watching for file changes with StatReloader
+Starting new HTTPS connection (1): www.alphavantage.co:443
+https://www.alphavantage.co:443 "GET /query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=EUR&apikey=R4FODY1WJFVUIAM6 HTTP/1.1" 200 None
+Starting new HTTPS connection (1): www.alphavantage.co:443
+https://www.alphavantage.co:443 "GET /query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=JPY&apikey=R4FODY1WJFVUIAM6 HTTP/1.1" 200 None
+Starting new HTTPS connection (1): www.alphavantage.co:443
+https://www.alphavantage.co:443 "GET /query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=GBP&apikey=R4FODY1WJFVUIAM6 HTTP/1.1" 200 None
+Starting new HTTPS connection (1): www.alphavantage.co:443
+https://www.alphavantage.co:443 "GET /query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=AUD&apikey=R4FODY1WJFVUIAM6 HTTP/1.1" 200 None
+Starting new HTTPS connection (1): www.alphavantage.co:443
+https://www.alphavantage.co:443 "GET /query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=COP&apikey=R4FODY1WJFVUIAM6 HTTP/1.1" 200 None
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Starting new HTTPS connection (1): www.alphavantage.co:443
+https://www.alphavantage.co:443 "GET /query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=EUR&apikey=R4FODY1WJFVUIAM6 HTTP/1.1" 200 None
+Starting new HTTPS connection (1): www.alphavantage.co:443
+https://www.alphavantage.co:443 "GET /query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=JPY&apikey=R4FODY1WJFVUIAM6 HTTP/1.1" 200 None
+Starting new HTTPS connection (1): www.alphavantage.co:443
+https://www.alphavantage.co:443 "GET /query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=GBP&apikey=R4FODY1WJFVUIAM6 HTTP/1.1" 200 None
+Starting new HTTPS connection (1): www.alphavantage.co:443
+https://www.alphavantage.co:443 "GET /query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=AUD&apikey=R4FODY1WJFVUIAM6 HTTP/1.1" 200 None
+Starting new HTTPS connection (1): www.alphavantage.co:443
+https://www.alphavantage.co:443 "GET /query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=COP&apikey=R4FODY1WJFVUIAM6 HTTP/1.1" 200 None
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py changed, reloading.
+Watching for file changes with StatReloader
+Starting new HTTPS connection (1): www.alphavantage.co:443
+https://www.alphavantage.co:443 "GET /query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=EUR&apikey=R4FODY1WJFVUIAM6 HTTP/1.1" 200 None
+Starting new HTTPS connection (1): www.alphavantage.co:443
+https://www.alphavantage.co:443 "GET /query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=JPY&apikey=R4FODY1WJFVUIAM6 HTTP/1.1" 200 None
+Starting new HTTPS connection (1): www.alphavantage.co:443
+https://www.alphavantage.co:443 "GET /query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=GBP&apikey=R4FODY1WJFVUIAM6 HTTP/1.1" 200 None
+Starting new HTTPS connection (1): www.alphavantage.co:443
+https://www.alphavantage.co:443 "GET /query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=AUD&apikey=R4FODY1WJFVUIAM6 HTTP/1.1" 200 None
+Starting new HTTPS connection (1): www.alphavantage.co:443
+https://www.alphavantage.co:443 "GET /query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=COP&apikey=R4FODY1WJFVUIAM6 HTTP/1.1" 200 None
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /list_ingreso/
+Traceback (most recent call last):
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\decorators\cache.py", line 40, in _cache_controlled
+    response = viewfunc(request, *args, **kw)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py", line 266, in list_ingresos
+    return JsonResponse(context, safe=False)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\http\response.py", line 731, in __init__
+    data = json.dumps(data, cls=encoder, **json_dumps_params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\serializers\json.py", line 106, in default
+    return super().default(o)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Usuario is not JSON serializable
+Internal Server Error: /list_ingreso/
+Traceback (most recent call last):
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\decorators\cache.py", line 40, in _cache_controlled
+    response = viewfunc(request, *args, **kw)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py", line 266, in list_ingresos
+    return JsonResponse(context, safe=False)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\http\response.py", line 731, in __init__
+    data = json.dumps(data, cls=encoder, **json_dumps_params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\serializers\json.py", line 106, in default
+    return super().default(o)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Usuario is not JSON serializable
+Internal Server Error: /list_ingreso/
+Traceback (most recent call last):
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\decorators\cache.py", line 40, in _cache_controlled
+    response = viewfunc(request, *args, **kw)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py", line 266, in list_ingresos
+    return JsonResponse(context, safe=False)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\http\response.py", line 731, in __init__
+    data = json.dumps(data, cls=encoder, **json_dumps_params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\serializers\json.py", line 106, in default
+    return super().default(o)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Usuario is not JSON serializable
+Internal Server Error: /list_ingreso/
+Traceback (most recent call last):
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\decorators\cache.py", line 40, in _cache_controlled
+    response = viewfunc(request, *args, **kw)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py", line 266, in list_ingresos
+    return JsonResponse(context, safe=False)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\http\response.py", line 731, in __init__
+    data = json.dumps(data, cls=encoder, **json_dumps_params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\serializers\json.py", line 106, in default
+    return super().default(o)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Usuario is not JSON serializable
+Internal Server Error: /list_ingreso/
+Traceback (most recent call last):
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\decorators\cache.py", line 40, in _cache_controlled
+    response = viewfunc(request, *args, **kw)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py", line 266, in list_ingresos
+    return JsonResponse(context, safe=False)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\http\response.py", line 731, in __init__
+    data = json.dumps(data, cls=encoder, **json_dumps_params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\serializers\json.py", line 106, in default
+    return super().default(o)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Usuario is not JSON serializable
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /list_ingreso/
+Traceback (most recent call last):
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\decorators\cache.py", line 40, in _cache_controlled
+    response = viewfunc(request, *args, **kw)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py", line 266, in list_ingresos
+    return JsonResponse(context, safe=False)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\http\response.py", line 731, in __init__
+    data = json.dumps(data, cls=encoder, **json_dumps_params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\serializers\json.py", line 106, in default
+    return super().default(o)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Usuario is not JSON serializable
+Internal Server Error: /list_ingreso/
+Traceback (most recent call last):
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\decorators\cache.py", line 40, in _cache_controlled
+    response = viewfunc(request, *args, **kw)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py", line 266, in list_ingresos
+    return JsonResponse(context, safe=False)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\http\response.py", line 731, in __init__
+    data = json.dumps(data, cls=encoder, **json_dumps_params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\serializers\json.py", line 106, in default
+    return super().default(o)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Usuario is not JSON serializable
+Internal Server Error: /list_ingreso/
+Traceback (most recent call last):
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\decorators\cache.py", line 40, in _cache_controlled
+    response = viewfunc(request, *args, **kw)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py", line 266, in list_ingresos
+    return JsonResponse(context, safe=False)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\http\response.py", line 731, in __init__
+    data = json.dumps(data, cls=encoder, **json_dumps_params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\serializers\json.py", line 106, in default
+    return super().default(o)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Usuario is not JSON serializable
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py changed, reloading.
+Watching for file changes with StatReloader
+Starting new HTTPS connection (1): www.alphavantage.co:443
+https://www.alphavantage.co:443 "GET /query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=EUR&apikey=R4FODY1WJFVUIAM6 HTTP/1.1" 200 None
+Starting new HTTPS connection (1): www.alphavantage.co:443
+https://www.alphavantage.co:443 "GET /query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=JPY&apikey=R4FODY1WJFVUIAM6 HTTP/1.1" 200 None
+Starting new HTTPS connection (1): www.alphavantage.co:443
+https://www.alphavantage.co:443 "GET /query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=GBP&apikey=R4FODY1WJFVUIAM6 HTTP/1.1" 200 None
+Starting new HTTPS connection (1): www.alphavantage.co:443
+https://www.alphavantage.co:443 "GET /query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=AUD&apikey=R4FODY1WJFVUIAM6 HTTP/1.1" 200 None
+Starting new HTTPS connection (1): www.alphavantage.co:443
+https://www.alphavantage.co:443 "GET /query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=COP&apikey=R4FODY1WJFVUIAM6 HTTP/1.1" 200 None
+Watching for file changes with StatReloader
+Starting new HTTPS connection (1): www.alphavantage.co:443
+https://www.alphavantage.co:443 "GET /query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=EUR&apikey=R4FODY1WJFVUIAM6 HTTP/1.1" 200 None
+Starting new HTTPS connection (1): www.alphavantage.co:443
+https://www.alphavantage.co:443 "GET /query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=JPY&apikey=R4FODY1WJFVUIAM6 HTTP/1.1" 200 None
+Starting new HTTPS connection (1): www.alphavantage.co:443
+https://www.alphavantage.co:443 "GET /query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=GBP&apikey=R4FODY1WJFVUIAM6 HTTP/1.1" 200 None
+Starting new HTTPS connection (1): www.alphavantage.co:443
+https://www.alphavantage.co:443 "GET /query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=AUD&apikey=R4FODY1WJFVUIAM6 HTTP/1.1" 200 None
+Starting new HTTPS connection (1): www.alphavantage.co:443
+https://www.alphavantage.co:443 "GET /query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=COP&apikey=R4FODY1WJFVUIAM6 HTTP/1.1" 200 None
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py changed, reloading.
+Watching for file changes with StatReloader
+Starting new HTTPS connection (1): www.alphavantage.co:443
+https://www.alphavantage.co:443 "GET /query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=EUR&apikey=R4FODY1WJFVUIAM6 HTTP/1.1" 200 None
+Starting new HTTPS connection (1): www.alphavantage.co:443
+https://www.alphavantage.co:443 "GET /query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=JPY&apikey=R4FODY1WJFVUIAM6 HTTP/1.1" 200 None
+Starting new HTTPS connection (1): www.alphavantage.co:443
+https://www.alphavantage.co:443 "GET /query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=GBP&apikey=R4FODY1WJFVUIAM6 HTTP/1.1" 200 None
+Starting new HTTPS connection (1): www.alphavantage.co:443
+https://www.alphavantage.co:443 "GET /query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=AUD&apikey=R4FODY1WJFVUIAM6 HTTP/1.1" 200 None
+Starting new HTTPS connection (1): www.alphavantage.co:443
+https://www.alphavantage.co:443 "GET /query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=COP&apikey=R4FODY1WJFVUIAM6 HTTP/1.1" 200 None
+Internal Server Error: /nueva_deuda/
+Traceback (most recent call last):
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py", line 430, in nueva_deuda
+    return render(request, 'nueva_deuda.html', {})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: nueva_deuda.html
+Not Found: /favicon.ico
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py changed, reloading.
+Watching for file changes with StatReloader
+Starting new HTTPS connection (1): www.alphavantage.co:443
+https://www.alphavantage.co:443 "GET /query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=EUR&apikey=R4FODY1WJFVUIAM6 HTTP/1.1" 200 None
+Starting new HTTPS connection (1): www.alphavantage.co:443
+https://www.alphavantage.co:443 "GET /query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=JPY&apikey=R4FODY1WJFVUIAM6 HTTP/1.1" 200 None
+Starting new HTTPS connection (1): www.alphavantage.co:443
+https://www.alphavantage.co:443 "GET /query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=GBP&apikey=R4FODY1WJFVUIAM6 HTTP/1.1" 200 None
+Starting new HTTPS connection (1): www.alphavantage.co:443
+https://www.alphavantage.co:443 "GET /query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=AUD&apikey=R4FODY1WJFVUIAM6 HTTP/1.1" 200 None
+Starting new HTTPS connection (1): www.alphavantage.co:443
+https://www.alphavantage.co:443 "GET /query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=COP&apikey=R4FODY1WJFVUIAM6 HTTP/1.1" 200 None
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\models.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Starting new HTTPS connection (1): www.alphavantage.co:443
+https://www.alphavantage.co:443 "GET /query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=EUR&apikey=R4FODY1WJFVUIAM6 HTTP/1.1" 200 None
+Starting new HTTPS connection (1): www.alphavantage.co:443
+https://www.alphavantage.co:443 "GET /query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=JPY&apikey=R4FODY1WJFVUIAM6 HTTP/1.1" 200 None
+Starting new HTTPS connection (1): www.alphavantage.co:443
+https://www.alphavantage.co:443 "GET /query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=GBP&apikey=R4FODY1WJFVUIAM6 HTTP/1.1" 200 None
+Starting new HTTPS connection (1): www.alphavantage.co:443
+https://www.alphavantage.co:443 "GET /query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=AUD&apikey=R4FODY1WJFVUIAM6 HTTP/1.1" 200 None
+Starting new HTTPS connection (1): www.alphavantage.co:443
+https://www.alphavantage.co:443 "GET /query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=COP&apikey=R4FODY1WJFVUIAM6 HTTP/1.1" 200 None
+Not Found: /panel/charts.html
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\models.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /favicon.ico
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+Starting new HTTPS connection (1): www.alphavantage.co:443
+https://www.alphavantage.co:443 "GET /query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=EUR&apikey=R4FODY1WJFVUIAM6 HTTP/1.1" 200 None
+Starting new HTTPS connection (1): www.alphavantage.co:443
+https://www.alphavantage.co:443 "GET /query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=JPY&apikey=R4FODY1WJFVUIAM6 HTTP/1.1" 200 None
+Starting new HTTPS connection (1): www.alphavantage.co:443
+https://www.alphavantage.co:443 "GET /query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=GBP&apikey=R4FODY1WJFVUIAM6 HTTP/1.1" 200 None
+Starting new HTTPS connection (1): www.alphavantage.co:443
+https://www.alphavantage.co:443 "GET /query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=AUD&apikey=R4FODY1WJFVUIAM6 HTTP/1.1" 200 None
+Starting new HTTPS connection (1): www.alphavantage.co:443
+https://www.alphavantage.co:443 "GET /query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=COP&apikey=R4FODY1WJFVUIAM6 HTTP/1.1" 200 None
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /nueva_deuda/
+Traceback (most recent call last):
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py", line 433, in nueva_deuda
+    if form_deuda.is_valid():
+       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\forms.py", line 201, in is_valid
+    return self.is_bound and not self.errors
+                                 ^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\forms.py", line 196, in errors
+    self.full_clean()
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\forms.py", line 433, in full_clean
+    self._clean_fields()
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\forms.py", line 448, in _clean_fields
+    value = getattr(self, "clean_%s" % name)()
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py", line 81, in clean_valor_de_interes_mensual
+    valor_input = self.cleaned_data['valor_de_interes_mensual'].strip()  # Elimina espacios en blanco
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'float' object has no attribute 'strip'
+Not Found: /favicon.ico
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /nueva_deuda/
+Traceback (most recent call last):
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py", line 433, in nueva_deuda
+    if form_deuda.is_valid():
+       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\forms.py", line 201, in is_valid
+    return self.is_bound and not self.errors
+                                 ^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\forms.py", line 196, in errors
+    self.full_clean()
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\forms.py", line 433, in full_clean
+    self._clean_fields()
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\forms.py", line 448, in _clean_fields
+    value = getattr(self, "clean_%s" % name)()
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py", line 82, in clean_valor_de_interes_mensual
+    if '%' in valor_input:
+       ^^^^^^^^^^^^^^^^^^
+TypeError: argument of type 'float' is not iterable
+Internal Server Error: /nueva_deuda/
+Traceback (most recent call last):
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py", line 433, in nueva_deuda
+    if form_deuda.is_valid():
+       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\forms.py", line 201, in is_valid
+    return self.is_bound and not self.errors
+                                 ^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\forms.py", line 196, in errors
+    self.full_clean()
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\forms.py", line 433, in full_clean
+    self._clean_fields()
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\forms.py", line 448, in _clean_fields
+    value = getattr(self, "clean_%s" % name)()
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py", line 82, in clean_valor_de_interes_mensual
+    if '%' in valor_input:
+       ^^^^^^^^^^^^^^^^^^
+TypeError: argument of type 'float' is not iterable
+Not Found: /favicon.ico
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /nueva_deuda/
+Traceback (most recent call last):
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py", line 433, in nueva_deuda
+    if form_deuda.is_valid():
+       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\forms.py", line 201, in is_valid
+    return self.is_bound and not self.errors
+                                 ^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\forms.py", line 196, in errors
+    self.full_clean()
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\forms.py", line 433, in full_clean
+    self._clean_fields()
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\forms.py", line 448, in _clean_fields
+    value = getattr(self, "clean_%s" % name)()
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py", line 83, in clean_valor_de_interes_mensual
+    if '%' in valor_input:
+       ^^^^^^^^^^^^^^^^^^
+TypeError: argument of type 'float' is not iterable
+Internal Server Error: /nueva_deuda/
+Traceback (most recent call last):
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py", line 433, in nueva_deuda
+    if form_deuda.is_valid():
+       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\forms.py", line 201, in is_valid
+    return self.is_bound and not self.errors
+                                 ^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\forms.py", line 196, in errors
+    self.full_clean()
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\forms.py", line 433, in full_clean
+    self._clean_fields()
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\forms.py", line 448, in _clean_fields
+    value = getattr(self, "clean_%s" % name)()
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py", line 83, in clean_valor_de_interes_mensual
+    if '%' in valor_input:
+       ^^^^^^^^^^^^^^^^^^
+TypeError: argument of type 'float' is not iterable
+Not Found: /favicon.ico
+Internal Server Error: /nueva_deuda/
+Traceback (most recent call last):
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py", line 433, in nueva_deuda
+    if form_deuda.is_valid():
+       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\forms.py", line 201, in is_valid
+    return self.is_bound and not self.errors
+                                 ^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\forms.py", line 196, in errors
+    self.full_clean()
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\forms.py", line 433, in full_clean
+    self._clean_fields()
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\forms.py", line 448, in _clean_fields
+    value = getattr(self, "clean_%s" % name)()
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py", line 83, in clean_valor_de_interes_mensual
+    if '%' in valor_input:
+       ^^^^^^^^^^^^^^^^^^
+TypeError: argument of type 'float' is not iterable
+Not Found: /favicon.ico
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /nueva_deuda/
+Traceback (most recent call last):
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py", line 433, in nueva_deuda
+    if form_deuda.is_valid():
+       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\forms.py", line 201, in is_valid
+    return self.is_bound and not self.errors
+                                 ^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\forms.py", line 196, in errors
+    self.full_clean()
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\forms.py", line 433, in full_clean
+    self._clean_fields()
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\forms.py", line 448, in _clean_fields
+    value = getattr(self, "clean_%s" % name)()
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py", line 82, in clean_valor_de_interes_mensual
+    if '%' in valor_input:
+       ^^^^^^^^^^^^^^^^^^
+TypeError: argument of type 'float' is not iterable
+Not Found: /favicon.ico
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\models.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /nueva_deuda/
+Traceback (most recent call last):
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py", line 433, in nueva_deuda
+    if form_deuda.is_valid():
+       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\forms.py", line 201, in is_valid
+    return self.is_bound and not self.errors
+                                 ^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\forms.py", line 196, in errors
+    self.full_clean()
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\forms.py", line 433, in full_clean
+    self._clean_fields()
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\forms.py", line 448, in _clean_fields
+    value = getattr(self, "clean_%s" % name)()
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py", line 82, in clean_valor_de_interes_mensual
+    if '%' in valor_input:
+       ^^^^^^^^^^^^^^^^^^
+TypeError: argument of type 'decimal.Decimal' is not iterable
+Not Found: /favicon.ico
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\models.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Internal Server Error: /nueva_deuda/
+Traceback (most recent call last):
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py", line 433, in nueva_deuda
+    if form_deuda.is_valid():
+       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\forms.py", line 201, in is_valid
+    return self.is_bound and not self.errors
+                                 ^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\forms.py", line 196, in errors
+    self.full_clean()
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\forms.py", line 433, in full_clean
+    self._clean_fields()
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\forms.py", line 448, in _clean_fields
+    value = getattr(self, "clean_%s" % name)()
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py", line 82, in clean_valor_de_interes_mensual
+    if '%' in valor_input:
+       ^^^^^^^^^^^^^^^^^^
+TypeError: argument of type 'decimal.Decimal' is not iterable
+Not Found: /favicon.ico
+Internal Server Error: /nueva_deuda/
+Traceback (most recent call last):
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py", line 433, in nueva_deuda
+    if form_deuda.is_valid():
+       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\forms.py", line 201, in is_valid
+    return self.is_bound and not self.errors
+                                 ^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\forms.py", line 196, in errors
+    self.full_clean()
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\forms.py", line 433, in full_clean
+    self._clean_fields()
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\forms.py", line 448, in _clean_fields
+    value = getattr(self, "clean_%s" % name)()
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py", line 82, in clean_valor_de_interes_mensual
+    if '%' in valor_input:
+       ^^^^^^^^^^^^^^^^^^
+TypeError: argument of type 'decimal.Decimal' is not iterable
+Internal Server Error: /nueva_deuda/
+Traceback (most recent call last):
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py", line 433, in nueva_deuda
+    if form_deuda.is_valid():
+       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\forms.py", line 201, in is_valid
+    return self.is_bound and not self.errors
+                                 ^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\forms.py", line 196, in errors
+    self.full_clean()
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\forms.py", line 433, in full_clean
+    self._clean_fields()
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\forms.py", line 448, in _clean_fields
+    value = getattr(self, "clean_%s" % name)()
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py", line 82, in clean_valor_de_interes_mensual
+    if '%' in valor_input:
+       ^^^^^^^^^^^^^^^^^^
+TypeError: argument of type 'decimal.Decimal' is not iterable
+Internal Server Error: /nueva_deuda/
+Traceback (most recent call last):
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py", line 433, in nueva_deuda
+    if form_deuda.is_valid():
+       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\forms.py", line 201, in is_valid
+    return self.is_bound and not self.errors
+                                 ^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\forms.py", line 196, in errors
+    self.full_clean()
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\forms.py", line 433, in full_clean
+    self._clean_fields()
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\forms.py", line 448, in _clean_fields
+    value = getattr(self, "clean_%s" % name)()
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py", line 82, in clean_valor_de_interes_mensual
+    if '%' in valor_input:
+       ^^^^^^^^^^^^^^^^^^
+TypeError: argument of type 'decimal.Decimal' is not iterable
+Not Found: /favicon.ico
+Internal Server Error: /nueva_deuda/
+Traceback (most recent call last):
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py", line 433, in nueva_deuda
+    if form_deuda.is_valid():
+       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\forms.py", line 201, in is_valid
+    return self.is_bound and not self.errors
+                                 ^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\forms.py", line 196, in errors
+    self.full_clean()
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\forms.py", line 433, in full_clean
+    self._clean_fields()
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\forms.py", line 448, in _clean_fields
+    value = getattr(self, "clean_%s" % name)()
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py", line 82, in clean_valor_de_interes_mensual
+    if '%' in valor_input:
+       ^^^^^^^^^^^^^^^^^^
+TypeError: argument of type 'decimal.Decimal' is not iterable
+Not Found: /favicon.ico
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /nueva_deuda/
+Traceback (most recent call last):
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py", line 433, in nueva_deuda
+    if form_deuda.is_valid():
+       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\forms.py", line 201, in is_valid
+    return self.is_bound and not self.errors
+                                 ^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\forms.py", line 196, in errors
+    self.full_clean()
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\forms.py", line 433, in full_clean
+    self._clean_fields()
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\forms.py", line 448, in _clean_fields
+    value = getattr(self, "clean_%s" % name)()
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py", line 82, in clean_valor_de_interes_mensual
+    if '%' in valor_input:
+       ^^^^^^^^^^^^^^^^^^
+TypeError: argument of type 'decimal.Decimal' is not iterable
+Not Found: /favicon.ico
+Internal Server Error: /nueva_deuda/
+Traceback (most recent call last):
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py", line 433, in nueva_deuda
+    if form_deuda.is_valid():
+       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\forms.py", line 201, in is_valid
+    return self.is_bound and not self.errors
+                                 ^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\forms.py", line 196, in errors
+    self.full_clean()
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\forms.py", line 433, in full_clean
+    self._clean_fields()
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\forms.py", line 448, in _clean_fields
+    value = getattr(self, "clean_%s" % name)()
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py", line 82, in clean_valor_de_interes_mensual
+    if '%' in valor_input:
+       ^^^^^^^^^^^^^^^^^^
+TypeError: argument of type 'decimal.Decimal' is not iterable
+Not Found: /favicon.ico
+Internal Server Error: /nueva_deuda/
+Traceback (most recent call last):
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py", line 433, in nueva_deuda
+    if form_deuda.is_valid():
+       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\forms.py", line 201, in is_valid
+    return self.is_bound and not self.errors
+                                 ^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\forms.py", line 196, in errors
+    self.full_clean()
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\forms.py", line 433, in full_clean
+    self._clean_fields()
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\forms.py", line 448, in _clean_fields
+    value = getattr(self, "clean_%s" % name)()
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py", line 82, in clean_valor_de_interes_mensual
+    if '%' in valor_input:
+       ^^^^^^^^^^^^^^^^^^
+TypeError: argument of type 'decimal.Decimal' is not iterable
+Internal Server Error: /nueva_deuda/
+Traceback (most recent call last):
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py", line 433, in nueva_deuda
+    if form_deuda.is_valid():
+       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\forms.py", line 201, in is_valid
+    return self.is_bound and not self.errors
+                                 ^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\forms.py", line 196, in errors
+    self.full_clean()
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\forms.py", line 433, in full_clean
+    self._clean_fields()
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\forms.py", line 448, in _clean_fields
+    value = getattr(self, "clean_%s" % name)()
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py", line 82, in clean_valor_de_interes_mensual
+    if '%' in valor_input:
+       ^^^^^^^^^^^^^^^^^^
+TypeError: argument of type 'decimal.Decimal' is not iterable
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /nueva_deuda/
+Traceback (most recent call last):
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py", line 433, in nueva_deuda
+    if form_deuda.is_valid():
+       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\forms.py", line 201, in is_valid
+    return self.is_bound and not self.errors
+                                 ^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\forms.py", line 196, in errors
+    self.full_clean()
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\forms.py", line 433, in full_clean
+    self._clean_fields()
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\forms.py", line 448, in _clean_fields
+    value = getattr(self, "clean_%s" % name)()
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py", line 82, in clean_valor_de_interes_mensual
+    if '%' in valor_input:
+       ^^^^^^^^^^^^^^^^^^
+TypeError: argument of type 'decimal.Decimal' is not iterable
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /nueva_deuda/
+Traceback (most recent call last):
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py", line 433, in nueva_deuda
+    if form_deuda.is_valid():
+       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\forms.py", line 201, in is_valid
+    return self.is_bound and not self.errors
+                                 ^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\forms.py", line 196, in errors
+    self.full_clean()
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\forms.py", line 433, in full_clean
+    self._clean_fields()
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\forms.py", line 448, in _clean_fields
+    value = getattr(self, "clean_%s" % name)()
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py", line 83, in clean_valor_de_interes_mensual
+    if '%' in valor_input:
+       ^^^^^^^^^^^^^^^^^^
+TypeError: argument of type 'decimal.Decimal' is not iterable
+Internal Server Error: /nueva_deuda/
+Traceback (most recent call last):
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py", line 433, in nueva_deuda
+    if form_deuda.is_valid():
+       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\forms.py", line 201, in is_valid
+    return self.is_bound and not self.errors
+                                 ^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\forms.py", line 196, in errors
+    self.full_clean()
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\forms.py", line 433, in full_clean
+    self._clean_fields()
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\forms.py", line 448, in _clean_fields
+    value = getattr(self, "clean_%s" % name)()
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py", line 83, in clean_valor_de_interes_mensual
+    if '%' in valor_input:
+       ^^^^^^^^^^^^^^^^^^
+TypeError: argument of type 'decimal.Decimal' is not iterable
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /nueva_deuda/
+Traceback (most recent call last):
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py", line 433, in nueva_deuda
+    if form_deuda.is_valid():
+       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\forms.py", line 201, in is_valid
+    return self.is_bound and not self.errors
+                                 ^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\forms.py", line 196, in errors
+    self.full_clean()
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\forms.py", line 433, in full_clean
+    self._clean_fields()
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\forms.py", line 448, in _clean_fields
+    value = getattr(self, "clean_%s" % name)()
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py", line 83, in clean_valor_de_interes_mensual
+    if '%' in valor_input:
+       ^^^^^^^^^^^^^^^^^^
+TypeError: argument of type 'decimal.Decimal' is not iterable
+Internal Server Error: /nueva_deuda/
+Traceback (most recent call last):
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py", line 433, in nueva_deuda
+    if form_deuda.is_valid():
+       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\forms.py", line 201, in is_valid
+    return self.is_bound and not self.errors
+                                 ^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\forms.py", line 196, in errors
+    self.full_clean()
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\forms.py", line 433, in full_clean
+    self._clean_fields()
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\forms.py", line 448, in _clean_fields
+    value = getattr(self, "clean_%s" % name)()
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py", line 83, in clean_valor_de_interes_mensual
+    if '%' in valor_input:
+       ^^^^^^^^^^^^^^^^^^
+TypeError: argument of type 'decimal.Decimal' is not iterable
+Not Found: /favicon.ico
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\models.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /nueva_deuda/
+Traceback (most recent call last):
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py", line 435, in nueva_deuda
+    valor_total_deuda = form_deuda.cleaned_data['valor_total_deuda'].replace(',', '').replace('.', '')
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'decimal.Decimal' object has no attribute 'replace'
+Not Found: /favicon.ico
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py changed, reloading.
+Watching for file changes with StatReloader
+Starting new HTTPS connection (1): www.alphavantage.co:443
+https://www.alphavantage.co:443 "GET /query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=EUR&apikey=R4FODY1WJFVUIAM6 HTTP/1.1" 200 None
+Starting new HTTPS connection (1): www.alphavantage.co:443
+https://www.alphavantage.co:443 "GET /query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=JPY&apikey=R4FODY1WJFVUIAM6 HTTP/1.1" 200 None
+Starting new HTTPS connection (1): www.alphavantage.co:443
+https://www.alphavantage.co:443 "GET /query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=GBP&apikey=R4FODY1WJFVUIAM6 HTTP/1.1" 200 None
+Starting new HTTPS connection (1): www.alphavantage.co:443
+https://www.alphavantage.co:443 "GET /query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=AUD&apikey=R4FODY1WJFVUIAM6 HTTP/1.1" 200 None
+Starting new HTTPS connection (1): www.alphavantage.co:443
+https://www.alphavantage.co:443 "GET /query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=COP&apikey=R4FODY1WJFVUIAM6 HTTP/1.1" 200 None
+Watching for file changes with StatReloader
+Starting new HTTPS connection (1): www.alphavantage.co:443
+https://www.alphavantage.co:443 "GET /query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=EUR&apikey=R4FODY1WJFVUIAM6 HTTP/1.1" 200 None
+Starting new HTTPS connection (1): www.alphavantage.co:443
+https://www.alphavantage.co:443 "GET /query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=JPY&apikey=R4FODY1WJFVUIAM6 HTTP/1.1" 200 None
+Starting new HTTPS connection (1): www.alphavantage.co:443
+https://www.alphavantage.co:443 "GET /query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=GBP&apikey=R4FODY1WJFVUIAM6 HTTP/1.1" 200 None
+Starting new HTTPS connection (1): www.alphavantage.co:443
+https://www.alphavantage.co:443 "GET /query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=AUD&apikey=R4FODY1WJFVUIAM6 HTTP/1.1" 200 None
+Starting new HTTPS connection (1): www.alphavantage.co:443
+https://www.alphavantage.co:443 "GET /query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=COP&apikey=R4FODY1WJFVUIAM6 HTTP/1.1" 200 None
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py changed, reloading.
+Watching for file changes with StatReloader
+Starting new HTTPS connection (1): www.alphavantage.co:443
+https://www.alphavantage.co:443 "GET /query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=EUR&apikey=R4FODY1WJFVUIAM6 HTTP/1.1" 200 None
+Starting new HTTPS connection (1): www.alphavantage.co:443
+https://www.alphavantage.co:443 "GET /query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=JPY&apikey=R4FODY1WJFVUIAM6 HTTP/1.1" 200 None
+Starting new HTTPS connection (1): www.alphavantage.co:443
+https://www.alphavantage.co:443 "GET /query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=GBP&apikey=R4FODY1WJFVUIAM6 HTTP/1.1" 200 None
+Starting new HTTPS connection (1): www.alphavantage.co:443
+https://www.alphavantage.co:443 "GET /query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=AUD&apikey=R4FODY1WJFVUIAM6 HTTP/1.1" 200 None
+Starting new HTTPS connection (1): www.alphavantage.co:443
+https://www.alphavantage.co:443 "GET /query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=COP&apikey=R4FODY1WJFVUIAM6 HTTP/1.1" 200 None
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /nueva_deuda/
+Traceback (most recent call last):
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\decorators\cache.py", line 40, in _cache_controlled
+    response = viewfunc(request, *args, **kw)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py", line 435, in nueva_deuda
+    if form_deuda.is_valid():
+       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\forms.py", line 201, in is_valid
+    return self.is_bound and not self.errors
+                                 ^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\forms.py", line 196, in errors
+    self.full_clean()
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\forms.py", line 433, in full_clean
+    self._clean_fields()
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\forms.py", line 448, in _clean_fields
+    value = getattr(self, "clean_%s" % name)()
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py", line 82, in clean_valor_de_interes_mensual
+    valor_decimal = valor_entero / 100.0  # Divide por 100 para obtener la representación decimal
+                    ~~~~~~~~~~~~~^~~~~~~
+TypeError: unsupported operand type(s) for /: 'decimal.Decimal' and 'float'
+Not Found: /favicon.ico
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /nueva_deuda/
+Traceback (most recent call last):
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\decorators\cache.py", line 40, in _cache_controlled
+    response = viewfunc(request, *args, **kw)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py", line 439, in nueva_deuda
+    messages.success(request, 'Nueva deuda guardada correctamente')
+                                     ^^^^
+NameError: name 'form' is not defined
+Not Found: /favicon.ico
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\models.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\models.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Internal Server Error: /nueva_deuda/
+Traceback (most recent call last):
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 880, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\boundfield.py", line 69, in __getitem__
+    raise TypeError(
+TypeError: BoundField indices must be integers or slices, not str.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\decorators\cache.py", line 40, in _cache_controlled
+    response = viewfunc(request, *args, **kw)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py", line 443, in nueva_deuda
+    return render(request, 'test1/nueva_deuda.html', {'form_deuda': form_deuda, 'usuario': usuario_actual})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1064, in render
+    output = self.filter_expression.resolve(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 715, in resolve
+    obj = self.var.resolve(context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 847, in resolve
+    value = self._resolve_lookup(context)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\boundfield.py", line 258, in id_for_label
+    id_ = widget.attrs.get("id") or self.auto_id
+          ^^^^^^^^^^^^
+AttributeError: 'DecimalField' object has no attribute 'attrs'
+Not Found: /favicon.ico
+Internal Server Error: /nueva_deuda/
+Traceback (most recent call last):
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 880, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\boundfield.py", line 69, in __getitem__
+    raise TypeError(
+TypeError: BoundField indices must be integers or slices, not str.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\decorators\cache.py", line 40, in _cache_controlled
+    response = viewfunc(request, *args, **kw)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py", line 443, in nueva_deuda
+    return render(request, 'test1/nueva_deuda.html', {'form_deuda': form_deuda, 'usuario': usuario_actual})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1064, in render
+    output = self.filter_expression.resolve(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 715, in resolve
+    obj = self.var.resolve(context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 847, in resolve
+    value = self._resolve_lookup(context)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\boundfield.py", line 258, in id_for_label
+    id_ = widget.attrs.get("id") or self.auto_id
+          ^^^^^^^^^^^^
+AttributeError: 'DecimalField' object has no attribute 'attrs'
+Internal Server Error: /nueva_deuda/
+Traceback (most recent call last):
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 880, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\boundfield.py", line 69, in __getitem__
+    raise TypeError(
+TypeError: BoundField indices must be integers or slices, not str.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\decorators\cache.py", line 40, in _cache_controlled
+    response = viewfunc(request, *args, **kw)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py", line 443, in nueva_deuda
+    return render(request, 'test1/nueva_deuda.html', {'form_deuda': form_deuda, 'usuario': usuario_actual})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1064, in render
+    output = self.filter_expression.resolve(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 715, in resolve
+    obj = self.var.resolve(context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 847, in resolve
+    value = self._resolve_lookup(context)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\boundfield.py", line 258, in id_for_label
+    id_ = widget.attrs.get("id") or self.auto_id
+          ^^^^^^^^^^^^
+AttributeError: 'DecimalField' object has no attribute 'attrs'
+Internal Server Error: /nueva_deuda/
+Traceback (most recent call last):
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 880, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\boundfield.py", line 69, in __getitem__
+    raise TypeError(
+TypeError: BoundField indices must be integers or slices, not str.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\decorators\cache.py", line 40, in _cache_controlled
+    response = viewfunc(request, *args, **kw)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py", line 443, in nueva_deuda
+    return render(request, 'test1/nueva_deuda.html', {'form_deuda': form_deuda, 'usuario': usuario_actual})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1064, in render
+    output = self.filter_expression.resolve(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 715, in resolve
+    obj = self.var.resolve(context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 847, in resolve
+    value = self._resolve_lookup(context)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\boundfield.py", line 258, in id_for_label
+    id_ = widget.attrs.get("id") or self.auto_id
+          ^^^^^^^^^^^^
+AttributeError: 'DecimalField' object has no attribute 'attrs'
+Internal Server Error: /nueva_deuda/
+Traceback (most recent call last):
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 880, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\boundfield.py", line 69, in __getitem__
+    raise TypeError(
+TypeError: BoundField indices must be integers or slices, not str.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\decorators\cache.py", line 40, in _cache_controlled
+    response = viewfunc(request, *args, **kw)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py", line 443, in nueva_deuda
+    return render(request, 'test1/nueva_deuda.html', {'form_deuda': form_deuda, 'usuario': usuario_actual})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1064, in render
+    output = self.filter_expression.resolve(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 715, in resolve
+    obj = self.var.resolve(context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 847, in resolve
+    value = self._resolve_lookup(context)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\boundfield.py", line 258, in id_for_label
+    id_ = widget.attrs.get("id") or self.auto_id
+          ^^^^^^^^^^^^
+AttributeError: 'DecimalField' object has no attribute 'attrs'
+Internal Server Error: /nueva_deuda/
+Traceback (most recent call last):
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\decorators\cache.py", line 40, in _cache_controlled
+    response = viewfunc(request, *args, **kw)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py", line 443, in nueva_deuda
+    return render(request, 'test1/nueva_deuda.html', {'form_deuda': form_deuda, 'usuario': usuario_actual})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1070, in render
+    return render_value_in_context(output, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1047, in render_value_in_context
+    value = str(value)
+            ^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\utils\html.py", line 420, in <lambda>
+    klass.__str__ = lambda self: mark_safe(klass_str(self))
+                                           ^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\boundfield.py", line 34, in __str__
+    return self.as_widget()
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\boundfield.py", line 94, in as_widget
+    attrs = self.build_widget_attrs(attrs, widget)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\boundfield.py", line 269, in build_widget_attrs
+    widget.use_required_attribute(self.initial)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'DecimalField' object has no attribute 'use_required_attribute'
+Internal Server Error: /nueva_deuda/
+Traceback (most recent call last):
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\decorators\cache.py", line 40, in _cache_controlled
+    response = viewfunc(request, *args, **kw)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py", line 443, in nueva_deuda
+    return render(request, 'test1/nueva_deuda.html', {'form_deuda': form_deuda, 'usuario': usuario_actual})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1070, in render
+    return render_value_in_context(output, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1047, in render_value_in_context
+    value = str(value)
+            ^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\utils\html.py", line 420, in <lambda>
+    klass.__str__ = lambda self: mark_safe(klass_str(self))
+                                           ^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\boundfield.py", line 34, in __str__
+    return self.as_widget()
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\boundfield.py", line 94, in as_widget
+    attrs = self.build_widget_attrs(attrs, widget)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\boundfield.py", line 269, in build_widget_attrs
+    widget.use_required_attribute(self.initial)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'DecimalField' object has no attribute 'use_required_attribute'
+Internal Server Error: /nueva_deuda/
+Traceback (most recent call last):
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\decorators\cache.py", line 40, in _cache_controlled
+    response = viewfunc(request, *args, **kw)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py", line 443, in nueva_deuda
+    return render(request, 'test1/nueva_deuda.html', {'form_deuda': form_deuda, 'usuario': usuario_actual})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1070, in render
+    return render_value_in_context(output, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1047, in render_value_in_context
+    value = str(value)
+            ^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\utils\html.py", line 420, in <lambda>
+    klass.__str__ = lambda self: mark_safe(klass_str(self))
+                                           ^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\boundfield.py", line 34, in __str__
+    return self.as_widget()
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\boundfield.py", line 94, in as_widget
+    attrs = self.build_widget_attrs(attrs, widget)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\boundfield.py", line 269, in build_widget_attrs
+    widget.use_required_attribute(self.initial)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'DecimalField' object has no attribute 'use_required_attribute'
+Internal Server Error: /nueva_deuda/
+Traceback (most recent call last):
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\decorators\cache.py", line 40, in _cache_controlled
+    response = viewfunc(request, *args, **kw)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py", line 443, in nueva_deuda
+    return render(request, 'test1/nueva_deuda.html', {'form_deuda': form_deuda, 'usuario': usuario_actual})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1070, in render
+    return render_value_in_context(output, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1047, in render_value_in_context
+    value = str(value)
+            ^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\utils\html.py", line 420, in <lambda>
+    klass.__str__ = lambda self: mark_safe(klass_str(self))
+                                           ^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\boundfield.py", line 34, in __str__
+    return self.as_widget()
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\boundfield.py", line 94, in as_widget
+    attrs = self.build_widget_attrs(attrs, widget)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\boundfield.py", line 269, in build_widget_attrs
+    widget.use_required_attribute(self.initial)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'DecimalField' object has no attribute 'use_required_attribute'
+Internal Server Error: /nueva_deuda/
+Traceback (most recent call last):
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\decorators\cache.py", line 40, in _cache_controlled
+    response = viewfunc(request, *args, **kw)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py", line 443, in nueva_deuda
+    return render(request, 'test1/nueva_deuda.html', {'form_deuda': form_deuda, 'usuario': usuario_actual})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1070, in render
+    return render_value_in_context(output, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1047, in render_value_in_context
+    value = str(value)
+            ^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\utils\html.py", line 420, in <lambda>
+    klass.__str__ = lambda self: mark_safe(klass_str(self))
+                                           ^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\boundfield.py", line 34, in __str__
+    return self.as_widget()
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\boundfield.py", line 94, in as_widget
+    attrs = self.build_widget_attrs(attrs, widget)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\boundfield.py", line 269, in build_widget_attrs
+    widget.use_required_attribute(self.initial)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'DecimalField' object has no attribute 'use_required_attribute'
+Internal Server Error: /nueva_deuda/
+Traceback (most recent call last):
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\decorators\cache.py", line 40, in _cache_controlled
+    response = viewfunc(request, *args, **kw)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py", line 443, in nueva_deuda
+    return render(request, 'test1/nueva_deuda.html', {'form_deuda': form_deuda, 'usuario': usuario_actual})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1070, in render
+    return render_value_in_context(output, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1047, in render_value_in_context
+    value = str(value)
+            ^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\utils\html.py", line 420, in <lambda>
+    klass.__str__ = lambda self: mark_safe(klass_str(self))
+                                           ^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\boundfield.py", line 34, in __str__
+    return self.as_widget()
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\boundfield.py", line 94, in as_widget
+    attrs = self.build_widget_attrs(attrs, widget)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\boundfield.py", line 269, in build_widget_attrs
+    widget.use_required_attribute(self.initial)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'DecimalField' object has no attribute 'use_required_attribute'
+Internal Server Error: /nueva_deuda/
+Traceback (most recent call last):
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\decorators\cache.py", line 40, in _cache_controlled
+    response = viewfunc(request, *args, **kw)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py", line 443, in nueva_deuda
+    return render(request, 'test1/nueva_deuda.html', {'form_deuda': form_deuda, 'usuario': usuario_actual})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1070, in render
+    return render_value_in_context(output, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1047, in render_value_in_context
+    value = str(value)
+            ^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\utils\html.py", line 420, in <lambda>
+    klass.__str__ = lambda self: mark_safe(klass_str(self))
+                                           ^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\boundfield.py", line 34, in __str__
+    return self.as_widget()
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\boundfield.py", line 94, in as_widget
+    attrs = self.build_widget_attrs(attrs, widget)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\boundfield.py", line 269, in build_widget_attrs
+    widget.use_required_attribute(self.initial)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'DecimalField' object has no attribute 'use_required_attribute'
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Internal Server Error: /nueva_deuda/
+Traceback (most recent call last):
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\decorators\cache.py", line 40, in _cache_controlled
+    response = viewfunc(request, *args, **kw)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\Documents\MiBilletera\test1\views.py", line 435, in nueva_deuda
+    if form_deuda.is_valid():
+       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\forms.py", line 201, in is_valid
+    return self.is_bound and not self.errors
+                                 ^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\forms.py", line 196, in errors
+    self.full_clean()
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\forms.py", line 433, in full_clean
+    self._clean_fields()
+  File "C:\Users\APRENDIZ\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\forms\forms.py", line 448, in _clean_fields
+    value = getattr(self, "clean_%s" % name)()
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py", line 89, in clean_valor_de_interes_mensual
+    return valor_de_interes_mensual / 100.0
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+TypeError: unsupported operand type(s) for /: 'decimal.Decimal' and 'float'
+Not Found: /favicon.ico
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\models.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\models.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\APRENDIZ\Documents\MiBilletera\test1\forms.py changed, reloading.
+Watching for file changes with StatReloader

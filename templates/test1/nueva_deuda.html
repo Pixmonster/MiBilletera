@@ -1,0 +1,108 @@
+{% load widget_tweaks %} {% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpg" href="{% static 'img/favicon.png' %}" />
+    <title>Mi Billetera | Deudas</title>
+</head>
+
+<body>
+
+    <body id="page-top">
+
+        <!-- Page Wrapper -->
+        <div id="wrapper">
+
+            {% include 'layout/partials/togler.html' %}
+
+            <!-- Content Wrapper -->
+            <div id="content-wrapper" class="d-flex flex-column">
+
+                <!-- Main Content -->
+                <div id="content">
+
+                    {% include 'layout/partials/topnavbar.html' %}
+
+                    <!-- Begin Page Content -->
+                    <div>
+
+                        <!-- Page Heading -->
+                        <div class="d-flex flex-column w-50 mx-auto">
+                            <h1 class="h2 text-success bg-body p-3 mt-2 text-center mx-auto w-50 shadow"><b>REGISTRAR DEUDA</b></h1>
+
+                            <form method="POST" class="my form w-75 mx-auto px-5 my-3 shadow-lg" style="border-radius: 10px; padding: 50px 0 50px 0;">
+                                {% csrf_token %}
+                            
+                                <div class="form-group">
+                                    <label for="{{ form_deuda.descripcion_deuda.id_for_label }}">Descripción deuda:</label>
+                                    {{ form_deuda.descripcion_deuda }}
+                                </div>
+                            
+                                <div class="form-group">
+                                    <label for="{{ form.valor_total_deuda.id_for_label }}">Valor total deuda:</label>
+                                    {{ form_deuda.valor_total_deuda }}
+                                </div>
+                            
+                                <div class="form-group">
+                                    <label for="{{ form_deuda.tipo_de_interes.id_for_label }}">Tipo de interés:</label>
+                                    {{ form_deuda.tipo_de_interes }}
+                                </div>
+                            
+                                <div class="form-group">
+                                    <label for="{{ form_deuda.valor_de_interes_mensual.id_for_label }}">Valor de interés mensual:</label>
+                                    {{ form_deuda.valor_de_interes_mensual }}
+                                    {% for error in form_deuda.valor_de_interes_mensual.errors %}
+                                    <p class="text-danger">{{ error }}</p>
+                                    {% endfor %}
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="{{ form_deuda.valor_de_interes_fijo.id_for_label }}">Valor de interés fijo:</label>
+                                    {{ form_deuda.valor_de_interes_fijo }}
+                                    {% for error in form_deuda.valor_de_interes_fijo.errors %}
+                                    <p class="text-danger">{{ error }}</p>
+                                    {% endfor %}
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="{{ form_deuda.plazo_del_prestamo.id_for_label }}">Plazo del préstamo:</label>
+                                    {{ form_deuda.plazo_del_prestamo }}
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="{{ form_deuda.frecuencia_de_pago.id_for_label }}">Frecuencia de pago:</label>
+                                    {{ form_deuda.frecuencia_de_pago }}
+                                </div>
+                            
+                                <button type="submit" class="btn btn-success btn-user btn-block">Ingresar</button>
+                            
+                                {% if messages %}
+                                <ul class="messages">
+                                    {% for message in messages %}
+                                    <li{% if message.tags %} class="{{ message.tags }} alert alert-success" {% endif %}>{{ message }}</li>
+                                    {% endfor %}
+                                </ul>
+                                {% endif %}
+                            </form>
+                        </div>
+
+                        <script src="https://cdn.jsdelivr.net/npm/autonumeric@4.3.0/dist/autoNumeric.min.js"></script>
+
+                        <script>
+                            document.addEventListener("DOMContentLoaded", function() {
+                                new AutoNumeric('.autonumeric', {
+                                    allowDecimalPadding: false,
+                                    currencySymbol: '',
+                                    decimalCharacter: ',',
+                                    digitGroupSeparator: '.',
+                                    unformatOnSubmit: true
+                                });
+                            });
+                        </script>
+
+    </body>
+
+</html>

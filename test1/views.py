@@ -125,7 +125,8 @@ def panel(request):
         'rates': rates,  # Agrega las tasas de cambio al contexto
         'ingresos_recientes': ingresos_recientes,
         'gastos_recientes': gastos_recientes,
-        'monto_mes': monto_mes
+        'monto_mes': monto_mes,
+        'usuario': usuario_actual # Para la foto de perfil
     }
     return render (request,'test1/home.html', context)
 
@@ -247,7 +248,7 @@ def nuevo_ingreso(request):
 
     form.fields['fk_fuente'].queryset = fuente_ingreso
     form_fuente = FuentePersonalizadaForm()
-    return render(request, 'test1/nuevo_ingreso.html', {'form': form, 'form_fuente': form_fuente})
+    return render(request, 'test1/nuevo_ingreso.html', {'form': form, 'form_fuente': form_fuente, 'usuario': usuario_actual})
 
 @cache_control(no_cache=True, must_revalidate=True, no_store=True)
 @login_required
@@ -258,7 +259,8 @@ def list_ingresos(request):
         transaccion['url_edicion'] = reverse('editar_ingreso', args=[transaccion['id']])
 
     context = {
-        'transacciones': list(transacciones)
+        'transacciones': list(transacciones),
+
     }
     return JsonResponse(context, safe=False)
 
@@ -268,7 +270,8 @@ def ver_ingreso(request):
     transacciones = Transacciones.objects.filter(fk_cuenta__fk_user=request.user, es_ingreso=True)
     
     context = {
-        'transacciones': transacciones
+        'transacciones': transacciones,
+        'usuario': request.user
     }
     return render(request, 'test1/ver_ingresos.html', context)
 
@@ -283,6 +286,7 @@ def borrar_ingreso(request, id):
 @cache_control(no_cache=True, must_revalidate=True, no_store=True)
 @login_required
 def editar_ingreso(request, id):
+    usuario_actual = request.user
     transaccion = Transacciones.objects.get(id=id)
     if request.method == 'GET':
         formatted_fecha = transaccion.fecha.strftime('%Y-%m-%d')
@@ -291,6 +295,7 @@ def editar_ingreso(request, id):
             'form': form,
             'id': id,
             'fecha_actual': transaccion.fecha,
+            'usuario': usuario_actual
         }
         return render(request, 'test1/editar_ingresos.html', context)
 
@@ -329,7 +334,7 @@ def nuevo_gasto (request):
 
     form.fields['fk_categoria'].queryset = categoria_gasto
     form_categoria = CategoriaPersonalizadaForm()  # formulario de categoría
-    return render (request, 'test1/nuevo_gasto.html', {'form': form, 'form_categoria': form_categoria})
+    return render (request, 'test1/nuevo_gasto.html', {'form': form, 'form_categoria': form_categoria, 'usuario': usuario_actual})
 
 @cache_control(no_cache=True, must_revalidate=True, no_store=True)
 @login_required
@@ -350,7 +355,8 @@ def ver_gastos(request):
     transacciones = Transacciones.objects.filter(fk_cuenta__fk_user=request.user,es_ingreso=False)
 
     context = {
-        'transacciones': transacciones
+        'transacciones': transacciones,
+        'usuario': request.user
     }
     return render(request, 'test1/ver_gastos.html', context)
 
@@ -364,6 +370,7 @@ def borrar_gasto(request, id):
 @cache_control(no_cache=True, must_revalidate=True, no_store=True)
 @login_required
 def editar_gasto(request, id):
+    usuario_actual = request.user
     transaccion = Transacciones.objects.get(id=id)
     if request.method == 'GET':
         formatted_fecha = transaccion.fecha.strftime('%Y-%m-%d')
@@ -372,6 +379,7 @@ def editar_gasto(request, id):
             'form': form,
             'id': id,
             'fecha_actual': transaccion.fecha,
+            'usuario': usuario_actual
         }
         return render(request, 'test1/editar_gastos.html', context)
 
@@ -413,5 +421,26 @@ def crear_fuente_personalizada(request):
     else:
         form_fuente = FuentePersonalizadaForm()
     return render(request, 'nuevo_ingreso.html', {'form_categoria': form_fuente})
+
+#endregion
+
+#region DEUDAS
+
+@cache_control(no_cache=True, must_revalidate=True, no_store=True)
+@login_required
+def nueva_deuda(request):
+    usuario_actual = request.user
+    if request.method == 'POST':
+        form_deuda = DeudasForm(request.POST)
+        if form_deuda.is_valid():
+            deuda = form_deuda.save(commit=False)
+            deuda.fk_user = request.user  # Asigna el usuario actual
+            deuda.save()
+            messages.success(request, 'Nueva deuda guardada correctamente')
+            return redirect('nueva_deuda')
+    else:
+        form_deuda = DeudasForm()
+    return render(request, 'test1/nueva_deuda.html', {'form_deuda': form_deuda, 'usuario': usuario_actual})
+
 
 #endregion
