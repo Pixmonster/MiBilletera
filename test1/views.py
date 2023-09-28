@@ -433,11 +433,17 @@ def nueva_deuda(request):
     if request.method == 'POST':
         form_deuda = DeudasForm(request.POST)
         if form_deuda.is_valid():
-            deuda = form_deuda.save(commit=False)
-            deuda.fk_user = request.user  # Asigna el usuario actual
-            deuda.save()
-            messages.success(request, 'Nueva deuda guardada correctamente')
-            return redirect('nueva_deuda')
+            try:
+                deuda = form_deuda.save(commit=False)
+                deuda.fk_user = request.user  # Asigna el usuario actual
+                deuda.save()
+                messages.success(request, 'Nueva deuda guardada correctamente')
+                return redirect('nueva_deuda')
+            except Exception as e:
+                print("Error al guardar en la base de datos:", str(e))
+                messages.error(request, 'Hubo un error al guardar la nueva deuda.')
+        else:
+            print("El formulario no es válido:", form_deuda.errors)
     else:
         form_deuda = DeudasForm()
     return render(request, 'test1/nueva_deuda.html', {'form_deuda': form_deuda, 'usuario': usuario_actual})

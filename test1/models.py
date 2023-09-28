@@ -68,10 +68,8 @@ class Deudas(models.Model):
     descripcion_deuda = models.CharField(max_length=50, null= False, blank= False)
     valor_total_deuda = models.DecimalField(max_digits=15, decimal_places=2, blank=False, null=False)
     tipo_de_interes = models.CharField(max_length=50, null=False, blank=False)
-    valor_de_interes_mensual = models.DecimalField(max_digits=5, decimal_places=2, null=True, blank=True)
-    valor_de_interes_fijo = models.DecimalField(max_digits=5, decimal_places=2, null=True, blank=True)
+    tasa_de_interes = models.DecimalField(max_digits=5, decimal_places=2, null=True, blank=True)
     plazo_del_prestamo = models.IntegerField(null=True, blank=True)
-    frecuencia_de_pago = models.CharField(max_length=20, null=True, blank=True)
     fk_user = models.ForeignKey(Usuario, on_delete=models.CASCADE)
 
     def __str__(self):

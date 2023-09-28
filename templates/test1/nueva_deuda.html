@@ -35,49 +35,38 @@
 
                             <form method="POST" class="my form w-75 mx-auto px-5 my-3 shadow-lg" style="border-radius: 10px; padding: 50px 0 50px 0;">
                                 {% csrf_token %}
-                            
+
                                 <div class="form-group">
-                                    <label for="{{ form_deuda.descripcion_deuda.id_for_label }}">Descripción deuda:</label>
+                                    {{ form_deuda.descripcion_deuda.label_tag }}
                                     {{ form_deuda.descripcion_deuda }}
                                 </div>
-                            
+
                                 <div class="form-group">
-                                    <label for="{{ form.valor_total_deuda.id_for_label }}">Valor total deuda:</label>
+                                {{ form_deuda.tipo_de_interes.label_tag }}
+                                {{ form_deuda.tipo_de_interes }}
+                                </div>
+
+                                <div class="casilla-interes form-group">
+                                    {{ form_deuda.valor_total_deuda.label_tag }}
                                     {{ form_deuda.valor_total_deuda }}
                                 </div>
-                            
-                                <div class="form-group">
-                                    <label for="{{ form_deuda.tipo_de_interes.id_for_label }}">Tipo de interés:</label>
-                                    {{ form_deuda.tipo_de_interes }}
-                                </div>
-                            
-                                <div class="form-group">
-                                    <label for="{{ form_deuda.valor_de_interes_mensual.id_for_label }}">Valor de interés mensual:</label>
-                                    {{ form_deuda.valor_de_interes_mensual }}
-                                    {% for error in form_deuda.valor_de_interes_mensual.errors %}
-                                    <p class="text-danger">{{ error }}</p>
-                                    {% endfor %}
-                                </div>
 
-                                <div class="form-group">
-                                    <label for="{{ form_deuda.valor_de_interes_fijo.id_for_label }}">Valor de interés fijo:</label>
-                                    {{ form_deuda.valor_de_interes_fijo }}
-                                    {% for error in form_deuda.valor_de_interes_fijo.errors %}
-                                    <p class="text-danger">{{ error }}</p>
-                                    {% endfor %}
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="{{ form_deuda.plazo_del_prestamo.id_for_label }}">Plazo del préstamo:</label>
-                                    {{ form_deuda.plazo_del_prestamo }}
+                                <div class="casilla-interes form-group">
+                                    {{ form_deuda.tasa_de_interes.label_tag }}
+                                    {{ form_deuda.tasa_de_interes }}
                                 </div>
                                 
-                                <div class="form-group">
-                                    <label for="{{ form_deuda.frecuencia_de_pago.id_for_label }}">Frecuencia de pago:</label>
-                                    {{ form_deuda.frecuencia_de_pago }}
+                                <div class="casilla-interes form-group">
+                                    {{ form_deuda.valor_de_interes_mensual.label_tag }}
+                                    {{ form_deuda.valor_de_interes_mensual }}
+                                </div>
+                                
+                                <div class="casilla-interes form-group">
+                                    <label>Plazo del préstamo en años:</label>
+                                    {{ form_deuda.plazo_del_prestamo }}
                                 </div>
                             
-                                <button type="submit" class="btn btn-success btn-user btn-block">Ingresar</button>
+                                <button type="submit" class="btn btn-success btn-user btn-block mt-3">Ingresar</button>
                             
                                 {% if messages %}
                                 <ul class="messages">
@@ -100,6 +89,40 @@
                                     digitGroupSeparator: '.',
                                     unformatOnSubmit: true
                                 });
+                            });
+                        </script>
+
+                        <script>
+                            $(document).ready(function () {
+                                // Oculta todas las casillas al cargar la página
+                                $('.casilla-interes').hide();
+                        
+                                // Establece la opción seleccionada en blanco al cargar la página
+                                $('#id_tipo_de_interes').val('');
+
+                                // Muestra u oculta las casillas según el tipo de interés seleccionado
+                                $('#id_tipo_de_interes').change(function () {
+                                    var selectedOption = $(this).val();
+                        
+                                    // Oculta todas las casillas
+                                    $('.casilla-interes').hide();
+                        
+                                    // Muestra las casillas específicas según el tipo de interés seleccionado
+                                    if (selectedOption === 'Fijo') {
+                                        $('#id_valor_total_deuda').closest('.casilla-interes').show();
+                                        $('#id_tasa_de_interes').closest('.casilla-interes').show();
+                                    } else if (selectedOption === 'Tasa Anual') {
+                                        $('#id_valor_total_deuda').closest('.casilla-interes').show();
+                                        $('#id_tasa_de_interes').closest('.casilla-interes').show();
+                                    } else if (selectedOption === 'Simple' || selectedOption === 'Compuesto') {
+                                        $('#id_valor_total_deuda').closest('.casilla-interes').show();
+                                        $('#id_tasa_de_interes').closest('.casilla-interes').show();
+                                        $('#id_valor_total_deuda').closest('.casilla-interes').show();
+                                        $('#id_plazo_del_prestamo').closest('.casilla-interes').show();
+                                    }
+                                });
+                                // Hacer el campo requerido
+                                $('#id_tipo_de_interes').prop('required', true);
                             });
                         </script>
 
