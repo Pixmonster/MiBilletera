@@ -1,0 +1,131 @@
+{% load widget_tweaks %} {% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpg" href="{% static 'img/favicon.png' %}" />
+    <title>Mi Billetera | Deudas</title>
+</head>
+
+<body>
+
+    <body id="page-top">
+
+        <!-- Page Wrapper -->
+        <div id="wrapper">
+
+            {% include 'layout/partials/togler.html' %}
+
+            <!-- Content Wrapper -->
+            <div id="content-wrapper" class="d-flex flex-column">
+
+                <!-- Main Content -->
+                <div id="content">
+
+                    {% include 'layout/partials/topnavbar.html' %}
+
+                    <!-- Begin Page Content -->
+                    <div>
+
+                        <!-- Page Heading -->
+                        <div class="d-flex flex-column w-50 mx-auto">
+                            <h1 class="h2 text-success bg-body p-3 mt-2 text-center mx-auto w-50 shadow"><b>REGISTRAR DEUDA</b></h1>
+
+                            <form method="POST" class="my form w-75 mx-auto px-5 my-3 shadow-lg" style="border-radius: 10px; padding: 50px 0 50px 0;">
+                                {% csrf_token %}
+
+                                <div class="form-group">
+                                    {{ form_deuda.descripcion_deuda.label_tag }}
+                                    {{ form_deuda.descripcion_deuda }}
+                                </div>
+
+                                <div class="form-group">
+                                {{ form_deuda.tipo_de_interes.label_tag }}
+                                {{ form_deuda.tipo_de_interes }}
+                                </div>
+
+                                <div class="casilla-interes form-group">
+                                    {{ form_deuda.valor_total_deuda.label_tag }}
+                                    {{ form_deuda.valor_total_deuda }}
+                                </div>
+
+                                <div class="casilla-interes form-group">
+                                    {{ form_deuda.tasa_de_interes.label_tag }}
+                                    {{ form_deuda.tasa_de_interes }}
+                                </div>
+                                
+                                <div class="casilla-interes form-group">
+                                    {{ form_deuda.valor_de_interes_mensual.label_tag }}
+                                    {{ form_deuda.valor_de_interes_mensual }}
+                                </div>
+                                
+                                <div class="casilla-interes form-group">
+                                    <label>Plazo del préstamo en años:</label>
+                                    {{ form_deuda.plazo_del_prestamo }}
+                                </div>
+                            
+                                <button type="submit" class="btn btn-success btn-user btn-block mt-3">Ingresar</button>
+                            
+                                {% if messages %}
+                                <ul class="messages">
+                                    {% for message in messages %}
+                                    <li{% if message.tags %} class="{{ message.tags }} alert alert-success" {% endif %}>{{ message }}</li>
+                                    {% endfor %}
+                                </ul>
+                                {% endif %}
+                            </form>
+                        </div>
+
+                        <script src="https://cdn.jsdelivr.net/npm/autonumeric@4.3.0/dist/autoNumeric.min.js"></script>
+
+                        <script>
+                            document.addEventListener("DOMContentLoaded", function() {
+                                new AutoNumeric('.autonumeric', {
+                                    allowDecimalPadding: false,
+                                    currencySymbol: '',
+                                    decimalCharacter: ',',
+                                    digitGroupSeparator: '.',
+                                    unformatOnSubmit: true
+                                });
+                            });
+                        </script>
+
+                        <script>
+                            $(document).ready(function () {
+                                // Oculta todas las casillas al cargar la página
+                                $('.casilla-interes').hide();
+                        
+                                // Establece la opción seleccionada en blanco al cargar la página
+                                $('#id_tipo_de_interes').val('');
+
+                                // Muestra u oculta las casillas según el tipo de interés seleccionado
+                                $('#id_tipo_de_interes').change(function () {
+                                    var selectedOption = $(this).val();
+                        
+                                    // Oculta todas las casillas
+                                    $('.casilla-interes').hide();
+                        
+                                    // Muestra las casillas específicas según el tipo de interés seleccionado
+                                    if (selectedOption === 'Fijo') {
+                                        $('#id_valor_total_deuda').closest('.casilla-interes').show();
+                                        $('#id_tasa_de_interes').closest('.casilla-interes').show();
+                                    } else if (selectedOption === 'Tasa Anual') {
+                                        $('#id_valor_total_deuda').closest('.casilla-interes').show();
+                                        $('#id_tasa_de_interes').closest('.casilla-interes').show();
+                                    } else if (selectedOption === 'Simple' || selectedOption === 'Compuesto') {
+                                        $('#id_valor_total_deuda').closest('.casilla-interes').show();
+                                        $('#id_tasa_de_interes').closest('.casilla-interes').show();
+                                        $('#id_valor_total_deuda').closest('.casilla-interes').show();
+                                        $('#id_plazo_del_prestamo').closest('.casilla-interes').show();
+                                    }
+                                });
+                                // Hacer el campo requerido
+                                $('#id_tipo_de_interes').prop('required', true);
+                            });
+                        </script>
+
+    </body>
+
+</html>

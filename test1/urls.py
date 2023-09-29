@@ -38,8 +38,7 @@ urlpatterns = [
      path('crear_fuente_personalizada/', views.crear_fuente_personalizada, name='crear_fuente_personalizada'),
      path('ver_perfil/', views.ver_perfil, name="ver_perfil"),
      path('actualizar_imagen/', views.actualizar_imagen, name="actualizar_imagen"),
-     path('redirect_to_assistant/', views.redirect_to_assistant, name="redirect_to_assistant"),
-     
+     path('nueva_deuda/', views.nueva_deuda, name="nueva_deuda"),
      
      
 ]
