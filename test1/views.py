@@ -415,3 +415,7 @@ def crear_fuente_personalizada(request):
     return render(request, 'nuevo_ingreso.html', {'form_categoria': form_fuente})
 
 #endregion
+
+
+def redirect_to_assistant(request):
+    return redirect('assistant:home')

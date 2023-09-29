@@ -5,9 +5,13 @@ from django.contrib.auth import views as auth_views
 from django.conf.urls.static import static
 from django.conf import settings
 
+app_name = 'assistant'
+
+
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("", include('test1.urls')),
+    path('assistant/', include('assistant.urls')),
     path("accounts/", include('django.contrib.auth.urls')),
 ]
 

@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     "test1",
     'widget_tweaks',
     'django.contrib.humanize',
+    'assistant',
 ]
 
 MIDDLEWARE = [
