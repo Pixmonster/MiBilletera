@@ -3478,3 +3478,13 @@ C:\Users\APRENDIZ\Documents\MiBilletera\test1\models.py changed, reloading.
 Watching for file changes with StatReloader
 Watching for file changes with StatReloader
 Watching for file changes with StatReloader
+Starting new HTTPS connection (1): www.alphavantage.co:443
+https://www.alphavantage.co:443 "GET /query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=EUR&apikey=R4FODY1WJFVUIAM6 HTTP/1.1" 200 None
+Starting new HTTPS connection (1): www.alphavantage.co:443
+https://www.alphavantage.co:443 "GET /query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=JPY&apikey=R4FODY1WJFVUIAM6 HTTP/1.1" 200 None
+Starting new HTTPS connection (1): www.alphavantage.co:443
+https://www.alphavantage.co:443 "GET /query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=GBP&apikey=R4FODY1WJFVUIAM6 HTTP/1.1" 200 None
+Starting new HTTPS connection (1): www.alphavantage.co:443
+https://www.alphavantage.co:443 "GET /query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=AUD&apikey=R4FODY1WJFVUIAM6 HTTP/1.1" 200 None
+Starting new HTTPS connection (1): www.alphavantage.co:443
+https://www.alphavantage.co:443 "GET /query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=COP&apikey=R4FODY1WJFVUIAM6 HTTP/1.1" 200 None
