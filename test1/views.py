@@ -18,6 +18,7 @@ from django.urls import reverse
 from django.contrib.auth.hashers import check_password
 from django.contrib.auth.hashers import make_password
 import logging
+from decimal import Decimal
 import os
 from django.conf import settings
 
@@ -426,6 +427,18 @@ def crear_fuente_personalizada(request):
 
 #region DEUDAS
 
+def calcular_interes_fijo(valor_total_deuda, tasa_de_interes, plazo_del_prestamo):
+    return valor_total_deuda * tasa_de_interes * plazo_del_prestamo
+
+def calcular_interes_porcentaje_tasa_anual(valor_total_deuda, tasa_de_interes, plazo_del_prestamo):
+    return valor_total_deuda * tasa_de_interes * plazo_del_prestamo
+
+def calcular_interes_simple(valor_total_deuda, tasa_de_interes, plazo_del_prestamo):
+    return valor_total_deuda * tasa_de_interes * plazo_del_prestamo
+
+def calcular_interes_compuesto(valor_total_deuda, tasa_de_interes, plazo_del_prestamo):
+    return valor_total_deuda * (1 + tasa_de_interes)**plazo_del_prestamo - valor_total_deuda
+
 @cache_control(no_cache=True, must_revalidate=True, no_store=True)
 @login_required
 def nueva_deuda(request):
@@ -434,11 +447,31 @@ def nueva_deuda(request):
         form_deuda = DeudasForm(request.POST)
         if form_deuda.is_valid():
             try:
+                valor_total_deuda = form_deuda.cleaned_data['valor_total_deuda']
+                tasa_de_interes = form_deuda.cleaned_data['tasa_de_interes']
+                plazo_del_prestamo = form_deuda.cleaned_data['plazo_del_prestamo']
+
+                tipo_de_interes = form_deuda.cleaned_data['tipo_de_interes']
+
+                # Calcula el interés según el tipo seleccionado
+                if tipo_de_interes == 'Fijo':
+                    interes = calcular_interes_fijo(valor_total_deuda, tasa_de_interes, plazo_del_prestamo)
+                elif tipo_de_interes == 'Tasa Anual':
+                    interes = calcular_interes_porcentaje_tasa_anual(valor_total_deuda, tasa_de_interes, plazo_del_prestamo)
+                elif tipo_de_interes == 'Simple':
+                    interes = calcular_interes_simple(valor_total_deuda, tasa_de_interes, plazo_del_prestamo)
+                elif tipo_de_interes == 'Compuesto':
+                    interes = calcular_interes_compuesto(valor_total_deuda, tasa_de_interes, plazo_del_prestamo)
+
+                # Crea una instancia del modelo Deuda y guarda los datos en la base de datos
                 deuda = form_deuda.save(commit=False)
-                deuda.fk_user = request.user  # Asigna el usuario actual
+                deuda.fk_user = request.user
+                deuda.valor_interes = Decimal(interes)  # Almacena el interés en el campo 'valor_interes'
                 deuda.save()
-                messages.success(request, 'Nueva deuda guardada correctamente')
+
+                # Redirige a alguna otra vista o página después de guardar
                 return redirect('nueva_deuda')
+
             except Exception as e:
                 print("Error al guardar en la base de datos:", str(e))
                 messages.error(request, 'Hubo un error al guardar la nueva deuda.')
