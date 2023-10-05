@@ -42,8 +42,13 @@
                                 </div>
 
                                 <div class="form-group">
-                                {{ form_deuda.tipo_de_interes.label_tag }}
-                                {{ form_deuda.tipo_de_interes }}
+                                    <label>Tipo de interés:</label>
+                                    {{ form_deuda.tipo_de_interes }}
+                                </div>
+
+                                <div class="casilla-interes form-group">
+                                    <label>Capitalización:</label>
+                                    {{ form_deuda.capitalizacion }}
                                 </div>
 
                                 <div class="casilla-interes form-group">
@@ -52,13 +57,13 @@
                                 </div>
 
                                 <div class="casilla-interes form-group">
-                                    {{ form_deuda.tasa_de_interes.label_tag }}
-                                    {{ form_deuda.tasa_de_interes }}
+                                    <label>Tasa de interés mensual:</label>
+                                    {{ form_deuda.tasa_de_interes_mensual }}
                                 </div>
                                 
                                 <div class="casilla-interes form-group">
-                                    {{ form_deuda.valor_de_interes_mensual.label_tag }}
-                                    {{ form_deuda.valor_de_interes_mensual }}
+                                    <label>Tasa de interés anual:</label>
+                                    {{ form_deuda.tasa_de_interes_anual }}
                                 </div>
                                 
                                 <div class="casilla-interes form-group">
@@ -110,16 +115,15 @@
                                     // Muestra las casillas específicas según el tipo de interés seleccionado
                                     if (selectedOption === 'Fijo') {
                                         $('#id_valor_total_deuda').closest('.casilla-interes').show();
-                                        $('#id_tasa_de_interes').closest('.casilla-interes').show();
+                                        $('#id_tasa_de_interes_mensual').closest('.casilla-interes').show();
+                                    } else if (selectedOption === 'Simple') {
+                                        $('#id_valor_total_deuda').closest('.casilla-interes').show();
+                                        $('#id_tasa_de_interes_anual').closest('.casilla-interes').show();
                                         $('#id_plazo_del_prestamo').closest('.casilla-interes').show();
-                                    } else if (selectedOption === 'Tasa Anual') {
+                                    } else if (selectedOption ==='Compuesto') {
+                                        $('#id_capitalizacion').closest('.casilla-interes').show();
                                         $('#id_valor_total_deuda').closest('.casilla-interes').show();
-                                        $('#id_tasa_de_interes').closest('.casilla-interes').show();
-                                        $('#id_plazo_del_prestamo').closest('.casilla-interes').show();
-                                    } else if (selectedOption === 'Simple' || selectedOption === 'Compuesto') {
-                                        $('#id_valor_total_deuda').closest('.casilla-interes').show();
-                                        $('#id_tasa_de_interes').closest('.casilla-interes').show();
-                                        $('#id_valor_total_deuda').closest('.casilla-interes').show();
+                                        $('#id_tasa_de_interes_anual').closest('.casilla-interes').show();
                                         $('#id_plazo_del_prestamo').closest('.casilla-interes').show();
                                     }
                                 });

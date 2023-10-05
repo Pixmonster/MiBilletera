@@ -77,9 +77,17 @@ class FuentePersonalizadaForm(forms.ModelForm):
 TIPOS_DE_INTERES = (
     ('', 'Selecciona un tipo de interés'),
     ('Fijo', 'Interés Fijo'),
-    ('Tasa Anual', 'Porcentaje de Tasa Anual'),
     ('Simple', 'Interés Simple'),
     ('Compuesto', 'Interés Compuesto'),
+)
+
+CAPITALIZACION = (
+    ('', 'Selecciona la frecuencia de capitalización'),
+    (1, 'Anual'),
+    (2, 'Semestral'),
+    (4, 'Trimestral'),
+    (12, 'Mensual'),
+    (365, 'Diaria'),
 )
 
 class CustomDecimalInput(forms.widgets.TextInput):
@@ -88,12 +96,14 @@ class CustomDecimalInput(forms.widgets.TextInput):
         super().__init__(attrs=attrs)
 
 class DeudasForm(forms.ModelForm):
-    tasa_de_interes = forms.DecimalField(widget=CustomDecimalInput)
+    tasa_de_interes_anual = forms.DecimalField(widget=CustomDecimalInput, required=False)
+    tasa_de_interes_mensual = forms.DecimalField(widget=CustomDecimalInput, required=False)
     tipo_de_interes = forms.ChoiceField(choices=TIPOS_DE_INTERES, widget=forms.Select(attrs={'class': 'form-control w-100'}))
+    capitalizacion = forms.ChoiceField(choices=CAPITALIZACION, widget=forms.Select(attrs={'class': 'form-control w-100'}), required=False)
 
     class Meta:
         model = Deudas
-        fields = ['descripcion_deuda', 'valor_total_deuda', 'tipo_de_interes', 'tasa_de_interes', 'plazo_del_prestamo']
+        fields = ['descripcion_deuda', 'valor_total_deuda', 'tipo_de_interes', 'tasa_de_interes_anual', 'tasa_de_interes_mensual', 'plazo_del_prestamo', 'capitalizacion']
         widgets = {
             'descripcion_deuda': forms.TextInput(attrs={'class': 'form-control w-100'}),
             'valor_total_deuda': forms.TextInput(attrs={'class': 'form-control autonumeric'}),
@@ -101,10 +111,17 @@ class DeudasForm(forms.ModelForm):
             'plazo_del_prestamo': forms.TextInput(attrs={'class': 'form-control w-100'})
         }
 
-    def clean_tasa_de_interes(self):
-        tasa_de_interes = self.cleaned_data['tasa_de_interes']
-        if tasa_de_interes is not None:
-            return tasa_de_interes / 100
+    def clean_tasa_de_interes_mensual(self):
+        tasa_de_interes_mensual = self.cleaned_data['tasa_de_interes_mensual']
+        if tasa_de_interes_mensual is not None:
+            return tasa_de_interes_mensual / 100
+        else:
+            return None
+        
+    def clean_tasa_de_interes_anual(self):
+        tasa_de_interes_anual = self.cleaned_data['tasa_de_interes_anual']
+        if tasa_de_interes_anual is not None:
+            return tasa_de_interes_anual / 100
         else:
             return None
         
