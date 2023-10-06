@@ -3,7 +3,7 @@ from .models import *
 from django import forms
 from django.forms import ModelForm
 from django.forms import DateInput
-
+from decimal import InvalidOperation
 #region Usuario
 class UsuarioForm(UserCreationForm):
     class Meta:
@@ -78,7 +78,6 @@ TIPOS_DE_INTERES = (
     ('', 'Selecciona un tipo de interés'),
     ('Fijo', 'Interés Fijo'),
     ('Simple', 'Interés Simple'),
-    ('Compuesto', 'Interés Compuesto'),
 )
 
 CAPITALIZACION = (
@@ -103,9 +102,10 @@ class DeudasForm(forms.ModelForm):
 
     class Meta:
         model = Deudas
-        fields = ['descripcion_deuda', 'valor_total_deuda', 'tipo_de_interes', 'tasa_de_interes_anual', 'tasa_de_interes_mensual', 'plazo_del_prestamo', 'capitalizacion']
+        fields = ['descripcion_deuda', 'valor_total_deuda', 'tipo_de_interes', 'tasa_de_interes_anual', 'tasa_de_interes_mensual', 'plazo_del_prestamo', 'capitalizacion', 'dia_pago']
         widgets = {
             'descripcion_deuda': forms.TextInput(attrs={'class': 'form-control w-100'}),
+            'dia_pago': forms.TextInput(attrs={'class': 'form-control w-100'}),
             'valor_total_deuda': forms.TextInput(attrs={'class': 'form-control autonumeric'}),
             'tipo_de_interes': forms.TextInput(attrs={'class': 'form-control w-100'}),
             'plazo_del_prestamo': forms.TextInput(attrs={'class': 'form-control w-100'})

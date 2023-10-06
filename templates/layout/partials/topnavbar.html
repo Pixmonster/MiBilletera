@@ -13,52 +13,40 @@
         <!-- Nav Item - Alerts -->
         <li class="nav-item dropdown no-arrow mx-1">
             <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="fas fa-bell fa-fw text-gray-500"></i>
-                                <!-- Counter - Alerts -->
-                                <span class="badge badge-danger badge-counter"></span>
-                            </a>
+                <i class="fas fa-bell fa-fw text-gray-500"></i>
+                <!-- Counter - Alerts -->
+                <span class="badge badge-danger badge-counter">{% for recordatorio in recordatorios %}{% if recordatorio.activo %}1{% endif %}{% endfor %}</span>
+            </a>
             <!-- Dropdown - Alerts -->
             <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="alertsDropdown">
                 <h6 class="dropdown-header">
                     Notificaciones
                 </h6>
-                <a class="dropdown-item d-flex align-items-center" href="#">
-                    <div class="mr-3">
-                        <div class="icon-circle bg-primary">
-                            <i class="fas fa-file-alt text-white"></i>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="small text-gray-500">December 12, 2019</div>
-                        <span class="font-weight-bold">Ejemplo</span>
-                    </div>
-                </a>
-                <a class="dropdown-item d-flex align-items-center" href="#">
-                    <div class="mr-3">
-                        <div class="icon-circle bg-success">
-                            <i class="fas fa-donate text-white"></i>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="small text-gray-500">December 7, 2019</div>
-                        Ejemplo
-                    </div>
-                </a>
-                <a class="dropdown-item d-flex align-items-center" href="#">
-                    <div class="mr-3">
-                        <div class="icon-circle bg-warning">
-                            <i class="fas fa-exclamation-triangle text-white"></i>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="small text-gray-500">December 2, 2019</div>
-                        Ejemplo
-                    </div>
-                </a>
+                {% for recordatorio in recordatorios %}
+                    {% if recordatorio.activo %}
+                        <a class="dropdown-item d-flex align-items-center" href="#">
+                            <div class="mr-3">
+                                <div class="icon-circle bg-primary">
+                                    <i class="fas fa-file-alt text-white"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="small text-gray-500">{{ recordatorio.fecha }}</div>
+                                <span class="font-weight-bold">{{ recordatorio.mensaje }}</span>
+                            </div>
+                        </a>
+                    {% endif %}
+                {% endfor %}
+                <ul>
+                    {% for recordatorio in recordatorios %}
+                        <li>
+                            {{ recordatorio.fecha }} - {{ recordatorio.mensaje }}
+                        </li>
+                    {% endfor %}
+                </ul>
                 <a class="dropdown-item text-center small text-gray-500" href="#">Ver todas las alertas</a>
             </div>
         </li>
-
         <div class="topbar-divider d-none d-sm-block"></div>
 
         <!-- Nav Item - User Information -->

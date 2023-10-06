@@ -20,7 +20,9 @@ from django.contrib.auth.hashers import make_password
 import logging
 from decimal import Decimal
 import os
+from datetime import date
 from django.conf import settings
+import json
 
 logger = logging.getLogger(__name__)
 
@@ -435,9 +437,6 @@ def calcular_interes_simple(valor_total_deuda, tasa_de_interes_anual, plazo_del_
     interes_mensual = valor_total_deuda * tasa_de_interes_mensual * plazo_del_prestamo_en_meses
     return interes_mensual
 
-def calcular_interes_compuesto(valor_total_deuda, tasa_de_interes_anual, plazo_del_prestamo, capitalizacion):
-    return valor_total_deuda * (1 + tasa_de_interes_anual)**plazo_del_prestamo - valor_total_deuda
-
 @cache_control(no_cache=True, must_revalidate=True, no_store=True)
 @login_required
 def nueva_deuda(request):
@@ -446,26 +445,37 @@ def nueva_deuda(request):
         form_deuda = DeudasForm(request.POST)
         if form_deuda.is_valid():
             try:
-                valor_total_deuda = form_deuda.cleaned_data['valor_total_deuda']
-                tasa_de_interes_mensual = form_deuda.cleaned_data['tasa_de_interes_mensual']
-                tasa_de_interes_anual = form_deuda.cleaned_data['tasa_de_interes_anual']
-                plazo_del_prestamo = form_deuda.cleaned_data['plazo_del_prestamo']
+                valor_total_deuda = Decimal(form_deuda.cleaned_data['valor_total_deuda'] or 0)  # Si es None, se establece como 0
+                tasa_de_interes_mensual = Decimal(form_deuda.cleaned_data['tasa_de_interes_mensual'] or 0)  # Si es None, se establece como 0
+                tasa_de_interes_anual = Decimal(form_deuda.cleaned_data['tasa_de_interes_anual'] or 0)  # Si es None, se establece como 0
+                plazo_del_prestamo = form_deuda.cleaned_data['plazo_del_prestamo'] or 0  # Si es None, se establece como 0
                 tipo_de_interes = form_deuda.cleaned_data['tipo_de_interes']
-                capitalizacion = form_deuda.cleaned_data['capitalizacion']
 
                 # Calcula el interés según el tipo seleccionado
                 if tipo_de_interes == 'Fijo':
                     interes_mes = calcular_interes_fijo(valor_total_deuda, tasa_de_interes_mensual)
                 elif tipo_de_interes == 'Simple':
                     interes_mes = calcular_interes_simple(valor_total_deuda, tasa_de_interes_anual, plazo_del_prestamo)
-                elif tipo_de_interes == 'Compuesto':
-                    interes_mes = calcular_interes_compuesto(valor_total_deuda, tasa_de_interes_anual, plazo_del_prestamo, capitalizacion)
-
+            
                 # Crea una instancia del modelo Deuda y guarda los datos en la base de datos
                 deuda = form_deuda.save(commit=False)
                 deuda.fk_user = request.user
                 deuda.valor_interes_mensual = Decimal(interes_mes)  # Almacena el interés en el campo 'valor_interes'
                 deuda.save()
+
+                # Crear el recordatorio
+                dia_pago = deuda.dia_pago  # Obtiene el día de pago de la deuda
+                hoy = date.today()
+
+                # Verifica si el día de pago ya pasó en este mes
+                if hoy.day > dia_pago:
+                    fecha_recordatorio = hoy.replace(day=dia_pago, month=hoy.month + 1)
+                else:
+                    fecha_recordatorio = hoy.replace(day=dia_pago)
+
+                mensaje_recordatorio = f"Recuerda pagar la deuda: {deuda.descripcion_deuda}"
+                recordatorio = Recordatorio(fecha=fecha_recordatorio, mensaje=mensaje_recordatorio, usuario=request.user)
+                recordatorio.save()
 
                 # Redirige a alguna otra vista o página después de guardar
                 return redirect('nueva_deuda')
@@ -479,5 +489,15 @@ def nueva_deuda(request):
         form_deuda = DeudasForm()
     return render(request, 'test1/nueva_deuda.html', {'form_deuda': form_deuda, 'usuario': usuario_actual})
 
+#endregion
+
+#region NOTIFICACIONES
+
+def notificaciones(request):
+    usuario_actual = request.user
+    hoy = date.today()
+    recordatorios = Recordatorio.objects.filter(usuario=usuario_actual, fecha=hoy)
+
+    return render(request, 'topnavbar.html', {'recordatorios': recordatorios})
 
 #endregion
