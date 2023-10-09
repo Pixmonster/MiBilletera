@@ -54,6 +54,8 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
 
+SESSION_ENGINE = 'django.contrib.sessions.backends.db'
+
 ROOT_URLCONF = "Finance.urls"
 
 TEMPLATES = [
@@ -67,6 +69,7 @@ TEMPLATES = [
                 "django.template.context_processors.request",
                 "django.contrib.auth.context_processors.auth",
                 "django.contrib.messages.context_processors.messages",
+                "test1.context_processors.notificaciones_context"
             ],
         },
     },

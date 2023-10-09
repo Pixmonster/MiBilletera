@@ -1,13 +1,11 @@
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, redirect, get_object_or_404
-from django.contrib.auth import logout, login, authenticate
-from django.views.decorators.cache import never_cache
+from django.contrib.auth import logout, login
 from django.contrib import messages
-from django.http import HttpResponse
 from django.http.response import JsonResponse
 from .models import *
 from .forms import *
-from datetime import datetime, timedelta
+from datetime import datetime
 from django.db.models import Sum
 import locale
 import requests
@@ -19,10 +17,7 @@ from django.contrib.auth.hashers import check_password
 from django.contrib.auth.hashers import make_password
 import logging
 from decimal import Decimal
-import os
 from datetime import date
-from django.conf import settings
-import json
 
 logger = logging.getLogger(__name__)
 
@@ -474,7 +469,7 @@ def nueva_deuda(request):
                     fecha_recordatorio = hoy.replace(day=dia_pago)
 
                 mensaje_recordatorio = f"Recuerda pagar la deuda: {deuda.descripcion_deuda}"
-                recordatorio = Recordatorio(fecha=fecha_recordatorio, mensaje=mensaje_recordatorio, usuario=request.user)
+                recordatorio = Recordatorio(fecha=fecha_recordatorio, mensaje=mensaje_recordatorio, usuario=request.user, deuda=deuda)
                 recordatorio.save()
 
                 # Redirige a alguna otra vista o página después de guardar
@@ -488,16 +483,5 @@ def nueva_deuda(request):
     else:
         form_deuda = DeudasForm()
     return render(request, 'test1/nueva_deuda.html', {'form_deuda': form_deuda, 'usuario': usuario_actual})
-
-#endregion
-
-#region NOTIFICACIONES
-
-def notificaciones(request):
-    usuario_actual = request.user
-    hoy = date.today()
-    recordatorios = Recordatorio.objects.filter(usuario=usuario_actual, fecha=hoy)
-
-    return render(request, 'topnavbar.html', {'recordatorios': recordatorios})
 
 #endregion

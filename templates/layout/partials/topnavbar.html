@@ -24,27 +24,20 @@
                 </h6>
                 {% for recordatorio in recordatorios %}
                     {% if recordatorio.activo %}
-                        <a class="dropdown-item d-flex align-items-center" href="#">
+                        <a class="dropdown-item d-flex align-items-center">
                             <div class="mr-3">
                                 <div class="icon-circle bg-primary">
                                     <i class="fas fa-file-alt text-white"></i>
                                 </div>
                             </div>
                             <div>
-                                <div class="small text-gray-500">{{ recordatorio.fecha }}</div>
+                                <div class="small text-gray-500">{{ recordatorio.fecha.day }} de cada mes</div>
                                 <span class="font-weight-bold">{{ recordatorio.mensaje }}</span>
                             </div>
                         </a>
                     {% endif %}
                 {% endfor %}
-                <ul>
-                    {% for recordatorio in recordatorios %}
-                        <li>
-                            {{ recordatorio.fecha }} - {{ recordatorio.mensaje }}
-                        </li>
-                    {% endfor %}
-                </ul>
-                <a class="dropdown-item text-center small text-gray-500" href="#">Ver todas las alertas</a>
+
             </div>
         </li>
         <div class="topbar-divider d-none d-sm-block"></div>
