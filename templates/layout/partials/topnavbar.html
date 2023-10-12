@@ -15,7 +15,7 @@
             <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <i class="fas fa-bell fa-fw text-gray-500"></i>
                 <!-- Counter - Alerts -->
-                <span class="badge badge-danger badge-counter">{% for recordatorio in recordatorios %}{% if recordatorio.activo %}1{% endif %}{% endfor %}</span>
+                <span id="notification-counter" class="badge badge-danger badge-counter">{% for recordatorio in recordatorios %}{% if recordatorio.activo %}!{% endif %}{% endfor %}</span>
             </a>
             <!-- Dropdown - Alerts -->
             <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="alertsDropdown">
@@ -37,7 +37,6 @@
                         </a>
                     {% endif %}
                 {% endfor %}
-
             </div>
         </li>
         <div class="topbar-divider d-none d-sm-block"></div>
@@ -71,4 +70,21 @@
     </ul>
 
 </nav>
+
+<script>
+    // Espera a que se cargue el documento
+    document.addEventListener("DOMContentLoaded", function () {
+        // Selecciona el enlace de notificación por su ID
+        var notificationLink = document.getElementById("alertsDropdown");
+
+        // Agrega un evento clic al enlace de notificación
+        notificationLink.addEventListener("click", function () {
+            // Oculta el contador de notificaciones al hacer clic en el enlace
+            var notificationCounter = document.getElementById("notification-counter");
+            if (notificationCounter) {
+                notificationCounter.style.display = "none";
+            }
+        });
+    });
+</script>
 <!-- End of Topbar -->
