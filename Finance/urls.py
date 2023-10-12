@@ -11,7 +11,7 @@ app_name = 'assistant'
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("", include('test1.urls')),
-    path('assistant/', include('assistant.urls')),
+    path("", include('assistant.urls')),
     path("accounts/", include('django.contrib.auth.urls')),
 ]
 

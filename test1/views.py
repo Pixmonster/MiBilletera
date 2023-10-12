@@ -484,4 +484,51 @@ def nueva_deuda(request):
         form_deuda = DeudasForm()
     return render(request, 'test1/nueva_deuda.html', {'form_deuda': form_deuda, 'usuario': usuario_actual})
 
+@cache_control(no_cache=True, must_revalidate=True, no_store=True)
+@login_required
+def ver_deudas(request):
+    deudas = Deudas.objects.filter(fk_user=request.user)
+
+    context = {
+        'deudas': deudas,
+        'usuario': request.user
+    }
+    return render(request, 'test1/ver_deudas.html', context)
+
+@cache_control(no_cache=True, must_revalidate=True, no_store=True)
+@login_required
+def list_deudas(request):
+    deudas = Deudas.objects.filter(fk_user=request.user).values('id', 'descripcion_deuda', 'dia_pago', 'valor_total_deuda', 'tipo_de_interes', 'valor_interes_mensual')
+
+    for deuda in deudas:
+        deuda['url_edicion'] = reverse('editar_deuda', args=[deuda['id']])
+
+    context = {
+        'deudas': list(deudas)
+    }
+    return JsonResponse(context, safe=False)
+
+@cache_control(no_cache=True, must_revalidate=True, no_store=True)
+@login_required
+def editar_deuda(request, id):
+    usuario_actual = request.user
+    transaccion = Transacciones.objects.get(id=id)
+    if request.method == 'GET':
+        formatted_fecha = transaccion.fecha.strftime('%Y-%m-%d')
+        form = GastosForm(instance=transaccion, initial={'fecha': formatted_fecha})
+        context = {
+            'form': form,
+            'id': id,
+            'fecha_actual': transaccion.fecha,
+            'usuario': usuario_actual
+        }
+        return render(request, 'test1/editar_gastos.html', context)
+
+    if request.method == 'POST':
+        form = GastosForm(request.POST, instance=transaccion)
+        if form.is_valid():
+            # Guarda la transacción y actualiza el saldo en el modelo Transacciones
+            form.save()
+            return redirect('/ver_gasto/')
+
 #endregion

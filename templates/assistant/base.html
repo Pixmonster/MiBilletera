@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Assistant | {% block title %}  {% endblock %}</title>
+    <link rel="icon" type="image/jpg" href="{% static 'img/favicon.png' %}" />
     <link rel="stylesheet" href="{% static 'css/estilo.css' %}" type="text/css" />
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}"> {% block 'style' %}{% endblock %}
 </head>
@@ -16,5 +17,29 @@
     <!-- Bootstrap core JavaScript-->
 <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
 <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+<script>
+    function insertMessage(messageType) {
+        var messages = {
+            'resumen': 'Este es mi resumen económico \nMis ingresos de este mes son: {{ filter_mes_ingresos }} \nMis gastos de este mes son: {{ filter_mes_gastos }} \nMis ingresos totales son: {{ total_ingresos }} \nMis gastos totales son: {{ total_gastos }} \nMis deudas totales son: {{ total_deudas }}',
+        };
+        
+        var inputElement = document.querySelector('textarea[name="prompt"]');
+        
+        if (messages[messageType]) {
+            inputElement.value += messages[messageType];
+        }
+        
+        inputElement.focus();
+
+        var textarea = document.querySelector('textarea[name="prompt"]');
+        
+        // Ajusta la altura del textarea automáticamente
+        textarea.style.height = 'auto';
+        textarea.style.height = (textarea.scrollHeight) + 'px';
+        
+        textarea.focus();
+    }
+</script>
+
 </body>
 </html>

@@ -38,5 +38,8 @@ urlpatterns = [
      path('crear_fuente_personalizada/', views.crear_fuente_personalizada, name='crear_fuente_personalizada'),
      path('ver_perfil/', views.ver_perfil, name="ver_perfil"),
      path('actualizar_imagen/', views.actualizar_imagen, name="actualizar_imagen"),
-     path('nueva_deuda/', views.nueva_deuda, name="nueva_deuda")  
+     path('nueva_deuda/', views.nueva_deuda, name="nueva_deuda"),
+     path('list_deuda/', views.list_deudas, name="list_deuda"),
+     path('ver_deuda/', views.ver_deudas, name="ver_deuda"),
+     path('editar_deuda/<int:id>', views.editar_deuda, name="editar_deuda"),
 ]
