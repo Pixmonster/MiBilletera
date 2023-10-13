@@ -20,13 +20,15 @@
 
                 <!-- Begin Page Content -->
                 <div class="d-flex">
-                    <div class="card mx-5 h-75">
+
+                    <div class="card mx-5 h-75 w-100">
                         <h1 class="card-header text-center">Tu Asistente Financiero</h1>
                         <div class="card-body">
                             <div class="d-flex justify-content-end">
                                 <button type="button" class="btn btn-primary mb-3" onclick="location.href='{% url 'new_chat' %}'">Nuevo Chat +</button>
                             </div>
-                            <div class="chat-history mb-3">
+                            <!-- Agrega un contenedor con scroll para el historial del chat -->
+                            <div class="chat-history mb-3" style="max-height: 480px; overflow-y: auto;">
                                 {% for message in messages %}
                                 <div class="card mb-2 {% if message.role == 'assistant' %}bg-success text-white{% endif %}">
                                     <div class="card-body p-2">
@@ -44,7 +46,7 @@
                         </div>
                     </div>
 
-                    <div class="w-25 h-100 card mr-5">
+                    <div class="w-50 h-100 card mr-5">
                         <h1 class="card-header text-center">Informe</h1>
                         <div class="card-body w-100">
 
