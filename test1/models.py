@@ -48,6 +48,7 @@ class Transacciones(models.Model):
     fecha = models.DateField()
     monto = models.DecimalField(max_digits=15, decimal_places=2, blank=False, null=False)
     es_ingreso = models.BooleanField(default=True)
+    
     fk_categoria = models.ForeignKey(CategoriaGasto, on_delete=models.CASCADE, null=True, blank=True)
     fk_fuente = models.ForeignKey(FuenteIngreso, on_delete=models.CASCADE, null=True, blank=True)
     fk_cuenta = models.ForeignKey(Cuentas, on_delete=models.CASCADE)
