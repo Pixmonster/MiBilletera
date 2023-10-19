@@ -22,7 +22,7 @@ import matplotlib.pyplot as plt
 from io import BytesIO
 import base64
 from django.db.models import Sum, F
-from django.db.models.functions import TruncMonth
+from django.db.models.functions import TruncMonth, TruncWeek, TruncDay
 
 logger = logging.getLogger(__name__)
 
@@ -551,22 +551,44 @@ def generar_grafico(request):
         }
         return render(request, 'test1/grafico.html', context)
     return render(request, 'test1/grafico.html', {})
+import pdb;
 
 def generate_chart(request, option, tipo):
-    fig, ax = plt.subplots()
-    if option == 'ingresos_por_mes' and tipo == 'mensual':
+    if option == 'ingresos' and tipo == 'mensual':
         # Obtén datos de ingresos por mes
-        ingresos_por_mes = Transacciones.objects.filter(es_ingreso=True).annotate(
-            month=TruncMonth('fecha')).values('month').annotate(total=Sum('monto')).order_by('month')
+
+        ingresos_por_mes = Transacciones.objects.filter(es_ingreso=True).annotate(month=TruncMonth('fecha')).values('month').annotate(total=Sum('monto')).order_by('month')
         months = [ingreso['month'].strftime('%b %Y') for ingreso in ingresos_por_mes]
         totals = [ingreso['total'] for ingreso in ingresos_por_mes]
+        print ("Meses: ", months)
+        print("Totales: ", totals)
         fig, ax = plt.subplots()
         ax.bar(months, totals)
         ax.set_xlabel('Mes')
         ax.set_ylabel('Total de Ingresos')
         ax.set_title('Ingresos por mes')
         plt.xticks(rotation=15, ha='right')
-    elif option == 'gastos_por_mes' and tipo == 'mensual':
+    elif option == 'ingresos' and tipo == 'semanal':
+        ingresos_por_semana = Transacciones.objects.filter(es_ingreso=True).annotate(week=TruncWeek('fecha')).values('week').annotate(total=Sum('monto')).order_by('week')
+        weeks = [ingreso['week'].strftime('%b %d %y') for ingreso in ingresos_por_semana]
+        totals = [ingreso['total'] for ingreso in ingresos_por_semana]
+        fig, ax = plt.subplots()
+        ax.bar(weeks, totals)
+        ax.set_xlabel('Semana')
+        ax.set_ylabel('Total de Ingresos')
+        ax.set_title('Ingresos por semana')
+        plt.xticks(rotation=15, ha='right')
+    elif option == 'ingresos' and tipo == 'diario':
+        ingresos_por_dia = Transacciones.objects.filter(es_ingreso=True).annotate(day=TruncDay('fecha')).values('day').annotate(total=Sum('monto')).order_by('day')
+        days = [ingreso['day'].strftime('%b %d %y') for ingreso in ingresos_por_dia]
+        totals = [ingreso['total'] for ingreso in ingresos_por_dia]
+        fig, ax = plt.subplots()
+        ax.bar(days, totals)
+        ax.set_xlabel('Dias')
+        ax.set_ylabel('Total de Ingresos')
+        ax.set_title('Ingresos por Dias')
+        plt.xticks(rotation=15, ha='right')
+    elif option == 'gastos' and tipo == 'mensual':
         # Obtén datos de gastos por mes
         gastos_por_mes = Transacciones.objects.filter(es_ingreso=False).annotate(
             month=TruncMonth('fecha')).values('month').annotate(total=Sum('monto')).order_by('month')
@@ -580,8 +602,7 @@ def generate_chart(request, option, tipo):
         plt.xticks(rotation=15, ha='right')
     elif option == 'gastos_por_categoria' and tipo == 'mensual':
         # Obtén datos de gastos por categoría
-        gastos_por_categoria = Transacciones.objects.filter(es_ingreso=False, fk_categoria__isnull=False).values(
-            'fk_categoria__nombre_categoria').annotate(total=Sum('monto')).order_by('fk_categoria__nombre_categoria')
+        gastos_por_categoria = Transacciones.objects.filter(es_ingreso=False, fk_categoria__isnull=False).values('fk_categoria__nombre_categoria').annotate(total=Sum('monto')).order_by('fk_categoria__nombre_categoria')
         categories = [gasto['fk_categoria__nombre_categoria'] for gasto in gastos_por_categoria]
         totals = [gasto['total'] for gasto in gastos_por_categoria]
         fig, ax = plt.subplots()
@@ -601,8 +622,8 @@ def generate_chart(request, option, tipo):
 
     graphic = base64.b64encode(image_png)
     graphic = graphic.decode('utf-8')
-
     return graphic
+
 
 
 #endregion

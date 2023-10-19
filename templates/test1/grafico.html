@@ -31,14 +31,14 @@
                                 <div class="form-group">
                                     <label for="option">Seleccione una opción de visualizar su resumen: </label>
                                     <select id="option" name="option" class="form-control">
-                                        <option value="ingresos_por_mes">Ingresos</option>
-                                        <option value="gastos_por_mes">Gastos</option>
+                                        <option value="ingresos">Ingresos</option>
+                                        <option value="gastos">Gastos</option>
                                         <option value="gastos_por_categoria">Gastos por categoría</option>
                                     </select>
                                 </div>
                                 <div class="form-group">
-                                    <label for="period">Seleccione un período:</label>
-                                    <select id="period" name="period" class="form-control">
+                                    <label for="tipo">Seleccione un período:</label>
+                                    <select id="tipo" name="tipo" class="form-control">
                                         <option value="mensual">Mensual</option>
                                         <option value="semanal">Semanal</option>
                                         <option value="diario">Diario</option>
@@ -60,6 +60,13 @@
             </div>
         </div>
     </div>
+    <footer class="sticky-footer bg-white">
+        <div class="container my-auto">
+            <div class="copyright text-center my-auto">
+                <span>Copyright &copy; Mi Billetera 2023</span>
+            </div>
+        </div>
+    </footer>
     <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
     <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
 </body>
