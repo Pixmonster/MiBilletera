@@ -553,10 +553,10 @@ def generar_grafico(request):
     return render(request, 'test1/grafico.html', {})
 import pdb;
 
+@login_required
 def generate_chart(request, option, tipo):
     if option == 'ingresos' and tipo == 'mensual':
         # Obtén datos de ingresos por mes
-
         ingresos_por_mes = Transacciones.objects.filter(es_ingreso=True).annotate(month=TruncMonth('fecha')).values('month').annotate(total=Sum('monto')).order_by('month')
         months = [ingreso['month'].strftime('%b %Y') for ingreso in ingresos_por_mes]
         totals = [ingreso['total'] for ingreso in ingresos_por_mes]
@@ -600,6 +600,28 @@ def generate_chart(request, option, tipo):
         ax.set_ylabel('Total de gastos')
         ax.set_title('Gastos por mes')
         plt.xticks(rotation=15, ha='right')
+    elif option == 'gastos' and tipo == 'semanal':
+        # Obtén datos de gastos por mes
+        gastos_por_semana = Transacciones.objects.filter(es_ingreso=False).annotate(week=TruncWeek('fecha')).values('week').annotate(total=Sum('monto')).order_by('week')
+        weeks = [gasto['week'].strftime('%b %d %Y') for gasto in gastos_por_semana]
+        totals = [gasto['total'] for gasto in gastos_por_semana]
+        fig, ax = plt.subplots()
+        ax.bar(weeks, totals)
+        ax.set_xlabel('Semana')
+        ax.set_ylabel('Total de gastos')
+        ax.set_title('Gastos por semana')
+        plt.xticks(rotation=15, ha='right')
+    elif option == 'gastos' and tipo == 'diario':
+        # Obtén datos de gastos por mes
+        gastos_por_dia = Transacciones.objects.filter(es_ingreso=False).annotate(day=TruncDay('fecha')).values('day').annotate(total=Sum('monto')).order_by('day')
+        days = [gasto['day'].strftime('%b %d %Y') for gasto in gastos_por_dia]
+        totals = [gasto['total'] for gasto in gastos_por_dia]
+        fig, ax = plt.subplots()
+        ax.bar(days, totals)
+        ax.set_xlabel('Dias')
+        ax.set_ylabel('Total de gastos')
+        ax.set_title('Gastos por dia')
+        plt.xticks(rotation=15, ha='right')
     elif option == 'gastos_por_categoria' and tipo == 'mensual':
         # Obtén datos de gastos por categoría
         gastos_por_categoria = Transacciones.objects.filter(es_ingreso=False, fk_categoria__isnull=False).values('fk_categoria__nombre_categoria').annotate(total=Sum('monto')).order_by('fk_categoria__nombre_categoria')
@@ -611,6 +633,7 @@ def generate_chart(request, option, tipo):
         ax.set_ylabel('Total de gastos')
         ax.set_title('Gastos por categoría')
         plt.xticks(rotation=15, ha='right')
+
 
 
     # Convierte el gráfico en una imagen
