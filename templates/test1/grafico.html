@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="{% static 'css/estilo.css' %}" type="text/css" />
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
 </head>
+
 <body>
     <!-- Page Wrapper -->
     <div id="wrapper">
@@ -39,7 +40,7 @@
                                 <div class="form-group">
                                     <label for="tipo">Seleccione un período:</label>
                                     <select id="tipo" name="tipo" class="form-control">
-                                        <option value="mensual">Mensual</option>
+                                        <option value="mensual" >Mensual</option>
                                         <option value="semanal">Semanal</option>
                                         <option value="diario">Diario</option>
                                     </select>
@@ -69,6 +70,29 @@
     </footer>
     <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
     <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+          // Seleccionar el elemento select de la opción y el elemento select del período
+          var optionSelect = $('#option');
+          var tipoSelect = $('#tipo');
+          
+          // Función para mostrar u ocultar las opciones del período según la selección
+          function toggleTipoSelect() {
+            if (optionSelect.val() === "gastos_por_categoria") {
+              tipoSelect.val("mensual");
+              tipoSelect.prop('disabled', true); // Deshabilita el select
+            } else {
+              tipoSelect.prop('disabled', false); // Habilita el select
+            }
+          }
+        
+          // Llama a la función al cargar la página y cuando cambia la opción
+          toggleTipoSelect();
+          optionSelect.on('change', toggleTipoSelect);
+        });
+        
+        </script>
 </body>
 </html>
 

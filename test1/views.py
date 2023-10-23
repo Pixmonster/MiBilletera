@@ -633,7 +633,18 @@ def generate_chart(request, option, tipo):
         ax.set_ylabel('Total de gastos')
         ax.set_title('Gastos por categoría')
         plt.xticks(rotation=15, ha='right')
-
+    elif option == 'gastos_por_categoria' and tipo == '':
+        # Obtén datos de gastos por categoría
+        tipo = "mensual"
+        gastos_por_categoria = Transacciones.objects.filter(es_ingreso=False, fk_categoria__isnull=False).values('fk_categoria__nombre_categoria').annotate(total=Sum('monto')).order_by('fk_categoria__nombre_categoria')
+        categories = [gasto['fk_categoria__nombre_categoria'] for gasto in gastos_por_categoria]
+        totals = [gasto['total'] for gasto in gastos_por_categoria]
+        fig, ax = plt.subplots()
+        ax.bar(categories, totals)
+        ax.set_xlabel('Categoría')
+        ax.set_ylabel('Total de gastos')
+        ax.set_title('Gastos por categoría')
+        plt.xticks(rotation=15, ha='right')
 
 
     # Convierte el gráfico en una imagen
@@ -648,5 +659,25 @@ def generate_chart(request, option, tipo):
     return graphic
 
 
+
+#endregion
+
+#region ahorros
+
+def crear_ahorro(request):
+    if request.method == 'POST':
+        # Procesa el formulario de ahorro
+        form = AhorroForm(request.POST)
+        if form.is_valid():
+            ahorro = form.save()
+            # Actualiza el saldo en la cuenta
+            cuenta = ahorro.fk_cuenta
+            cuenta.saldo += ahorro.monto
+            cuenta.save()
+            return redirect('página_de_confirmación')
+    else:
+        form = AhorroForm()
+
+    return render(request, 'crear_ahorro.html', {'form': form})
 
 #endregion

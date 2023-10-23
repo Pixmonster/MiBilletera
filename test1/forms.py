@@ -126,3 +126,13 @@ class DeudasForm(forms.ModelForm):
             return None
         
 #endregion
+
+class AhorroForm():
+    monto = forms.DecimalField(required=True)
+    class Meta:
+        model = Ahorro
+        fields = ['monto']
+
+        
+
+    

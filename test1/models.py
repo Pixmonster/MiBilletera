@@ -88,3 +88,12 @@ class Recordatorio(models.Model):
 
     def __str__(self):
         return self.mensaje
+    
+class Ahorro(models.Model):
+    fecha = models.DateField()
+    monto = models.DecimalField(max_digits=15, decimal_places=2, blank=False, null=False)
+    fk_cuenta = models.ForeignKey(Cuentas, on_delete=models.CASCADE)
+
+    def __str__(self):
+        return f"Ahorro de {self.monto} en {self.fecha}"
+    
