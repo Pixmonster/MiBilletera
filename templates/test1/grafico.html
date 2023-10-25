@@ -1,15 +1,18 @@
+{% extends "layout/base.html" %}
 {% load static %}
-<!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    {% block title %} Graficos {% endblock %}
+    <link rel="icon" type="image/jpg" href="{% static 'img/favicon.png' %}" />
     <link rel="stylesheet" href="{% static 'css/estilo.css' %}" type="text/css" />
-    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}"> {% block 'style' %}{% endblock %}
 </head>
+{% block content %}
+{% load humanize %}
+<body id="page-top">
 
-<body>
     <!-- Page Wrapper -->
     <div id="wrapper">
 
@@ -68,9 +71,10 @@
             </div>
         </div>
     </footer>
-    <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
-    <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+    {% block 'script' %}
+        
     <script>
         $(document).ready(function() {
           // Seleccionar el elemento select de la opción y el elemento select del período
@@ -93,7 +97,13 @@
         });
         
         </script>
+        <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+        <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+    {% endblock  %} 
 </body>
-</html>
+
+{% endblock %}
+
 
 

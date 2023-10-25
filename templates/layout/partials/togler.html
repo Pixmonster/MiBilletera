@@ -45,6 +45,7 @@
       data-target="#collapseTwo"
       aria-expanded="true"
       aria-controls="collapseTwo"
+      aria-carouselExample= "Collapse"
     >
       <i class="fas fa-money-check-alt"></i>
       <span>Ingresos</span>
@@ -56,6 +57,19 @@
                 <a class="collapse-item" href="{% url 'ver_ingreso' %}">Ver ingresos</a>
             </div>
         </div>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#Collapse" aria-expanded="true" aria-controls="collapseUtilities">
+    <i class="fas fa-piggy-bank"></i>
+    <span>Ahorros</span>
+  </a>
+      <div id="Collapse" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+              <h6 class="collapse-header">Administrar Ahorros:</h6>
+              <a class="collapse-item" href="{% url 'nuevo_ahorro' %}">Registrar Ahorro</a>
+              <a class="collapse-item" href="{% url 'ver_ahorros' %}">Ver Ahorro</a>
+          </div>
+      </div>
     </li>
 
     <!-- Nav Item - Utilities Collapse Menu -->
@@ -103,10 +117,11 @@
 
     <!-- Nav Item - Tables -->
     <li class="nav-item">
-        <a class="nav-link" href="{% url 'generar_grafico' %}">
+        <a class="nav-link" href="#">
       <i class="fas fa-fw fa-chart-area"></i>
-      <span>Informes</span></a
-    >
+      <span>Pendientes</span>
+        </a>
+  
   </li>
 
   <!-- Divider -->

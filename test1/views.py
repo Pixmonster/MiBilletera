@@ -24,6 +24,7 @@ import base64
 from django.db.models import Sum, F
 from django.db.models.functions import TruncMonth, TruncWeek, TruncDay
 
+
 logger = logging.getLogger(__name__)
 
 def index(request):
@@ -663,21 +664,58 @@ def generate_chart(request, option, tipo):
 #endregion
 
 #region ahorros
-
-def crear_ahorro(request):
+@cache_control(no_cache=True, must_revalidate=True, no_store=True)
+@login_required
+def nuevo_ahorro(request):
+    usuario_actual = request.user
     if request.method == 'POST':
-        # Procesa el formulario de ahorro
+        form = AhorroForm(request.POST)
+        print(form) 
+        if form.is_valid():
+            monto = form.cleaned_data['monto']
+            tipo = form.cleaned_data['tipo']
+            cuenta_usuario = Cuentas.objects.get(fk_user=usuario_actual) # Se obtiene la cuenta del usuario
+            nuevo_ahorro = Ahorro(monto=monto, tipo=tipo, fk_cuenta=cuenta_usuario)
+            nuevo_ahorro.save()
+            cuenta_usuario.saldo -= monto 
+            cuenta_usuario.save()
+            messages.success(request, 'Ahorro guardado correctamente')
+            return redirect('nuevo_ahorro')
+    else:
+        form = AhorroForm()
+    return render(request, 'test1/nuevo_ahorro.html', {'form': form})
+
+
+def ver_ahorros(request):
+    usuario_actual = request.user
+    ahorros = Ahorro.objects.filter(fk_cuenta__fk_user=usuario_actual)
+    total_ahorros = ahorros.aggregate(total=Sum('monto'))['total']
+
+    if request.method == 'POST':
         form = AhorroForm(request.POST)
         if form.is_valid():
-            ahorro = form.save()
-            # Actualiza el saldo en la cuenta
-            cuenta = ahorro.fk_cuenta
-            cuenta.saldo += ahorro.monto
-            cuenta.save()
-            return redirect('página_de_confirmación')
+            monto_devuelto = form.cleaned_data['monto_a_devolver']
+            if monto_devuelto <= total_ahorros:
+                cuenta_usuario = Cuentas.objects.get(fk_user=usuario_actual)
+                cuenta_usuario.saldo += monto_devuelto
+                cuenta_usuario.save()
+
+                # Resta el monto devuelto de los ahorros
+                for ahorro in ahorros:
+                    if monto_devuelto > 0:
+                        if ahorro.monto > monto_devuelto:
+                            ahorro.monto -= monto_devuelto
+                            monto_devuelto = 0
+                            ahorro.save()
+                        else:
+                            monto_devuelto -= ahorro.monto
+                            ahorro.delete()
+
     else:
         form = AhorroForm()
 
-    return render(request, 'crear_ahorro.html', {'form': form})
+    return render(request, 'test1/ver_ahorros.html', {'ahorros': ahorros, 'total_ahorros': total_ahorros, 'form': form})
+
+
 
 #endregion
