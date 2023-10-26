@@ -749,24 +749,23 @@ def borrar_ahorro(request, id):
 @cache_control(no_cache=True, must_revalidate=True, no_store=True)
 @login_required
 def list_ahorro(request):
-    # Filtra los ahorros relacionados con el usuario actual
+
     usuario_actual = request.user
     ahorros = Ahorro.objects.filter(fk_cuenta__fk_user=usuario_actual)
     
-    # Prepara los datos para la respuesta JSON
+
     ahorros_data = []
     for ahorro in ahorros:
         ahorro_info = {
             'id': ahorro.id,
-            'fecha': ahorro.fecha.strftime('%Y-%m-%d'),  # Formatea la fecha si es necesario
+            'fecha': ahorro.fecha.strftime('%Y-%m-%d'), 
             'tipo' : ahorro.tipo,
             'monto': ahorro.monto,
-            # Agrega otros campos del modelo si es necesario
-            'url_edicion': reverse('editar_ahorro', args=[ahorro.id]),  # Ajusta la URL de edición
+            'url_edicion': reverse('editar_ahorro', args=[ahorro.id]),  
         }
         ahorros_data.append(ahorro_info)
 
-    # Crea el contexto y devuelve la respuesta JSON
+
     context = {
         'ahorros': ahorros_data,
     }
