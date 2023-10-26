@@ -96,5 +96,5 @@ class Ahorro(models.Model):
     fk_cuenta = models.ForeignKey(Cuentas, on_delete=models.CASCADE)
 
     def __str__(self):
-        return f"Ahorro de {self.monto} en {self.fecha}"
+        return self.tipo
     

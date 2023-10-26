@@ -1,5 +1,5 @@
 from django.contrib.auth.decorators import login_required
-from django.shortcuts import render, redirect, get_object_or_404
+from django.shortcuts import render, redirect, get_object_or_404, HttpResponse
 from django.contrib.auth import logout, login
 from django.contrib import messages
 from django.http.response import JsonResponse
@@ -663,6 +663,7 @@ def generate_chart(request, option, tipo):
 
 #endregion
 
+
 #region ahorros
 @cache_control(no_cache=True, must_revalidate=True, no_store=True)
 @login_required
@@ -686,6 +687,8 @@ def nuevo_ahorro(request):
     return render(request, 'test1/nuevo_ahorro.html', {'form': form})
 
 
+@cache_control(no_cache=True, must_revalidate=True, no_store=True)
+@login_required
 def ver_ahorros(request):
     usuario_actual = request.user
     ahorros = Ahorro.objects.filter(fk_cuenta__fk_user=usuario_actual)
@@ -717,5 +720,56 @@ def ver_ahorros(request):
     return render(request, 'test1/ver_ahorros.html', {'ahorros': ahorros, 'total_ahorros': total_ahorros, 'form': form})
 
 
+@cache_control(no_cache=True, must_revalidate=True, no_store=True)
+@login_required
+def editar_ahorro(request, id):
+    ahorro = Ahorro.objects.get(id=id)
+    if request.method == 'POST':
+        form = AhorroForm(request.POST, instance=ahorro)
+        if form.is_valid():
+            form.save()
+            return redirect('ver_ahorros')
+    else:
+        form = AhorroForm(instance=ahorro)
+    return render(request, 'test1/editar_ahorro.html', {'form': form})
+
+
+@cache_control(no_cache=True, must_revalidate=True, no_store=True)
+@login_required
+def borrar_ahorro(request, id):
+    ahorro = Ahorro.objects.get(id=id)
+    usuario_actual = request.user
+    cuenta_usuario = Cuentas.objects.get(fk_user=usuario_actual)
+    cuenta_usuario.saldo += ahorro.monto
+    cuenta_usuario.save()
+    ahorro.delete()
+    return redirect('/ver_ahorros/')
+
+
+@cache_control(no_cache=True, must_revalidate=True, no_store=True)
+@login_required
+def list_ahorro(request):
+    # Filtra los ahorros relacionados con el usuario actual
+    usuario_actual = request.user
+    ahorros = Ahorro.objects.filter(fk_cuenta__fk_user=usuario_actual)
+    
+    # Prepara los datos para la respuesta JSON
+    ahorros_data = []
+    for ahorro in ahorros:
+        ahorro_info = {
+            'id': ahorro.id,
+            'fecha': ahorro.fecha.strftime('%Y-%m-%d'),  # Formatea la fecha si es necesario
+            'tipo' : ahorro.tipo,
+            'monto': ahorro.monto,
+            # Agrega otros campos del modelo si es necesario
+            'url_edicion': reverse('editar_ahorro', args=[ahorro.id]),  # Ajusta la URL de edición
+        }
+        ahorros_data.append(ahorro_info)
+
+    # Crea el contexto y devuelve la respuesta JSON
+    context = {
+        'ahorros': ahorros_data,
+    }
+    return JsonResponse(context, safe=False)
 
 #endregion

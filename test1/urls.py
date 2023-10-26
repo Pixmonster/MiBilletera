@@ -45,4 +45,8 @@ urlpatterns = [
      path('generar_grafico/', views.generar_grafico, name='generar_grafico'),
      path('nuevo_ahorro/', views.nuevo_ahorro, name='nuevo_ahorro'),
      path('ver_ahorros/', views.ver_ahorros, name='ver_ahorros'),
+     path('borrar_ahorro/<int:id>/', views.borrar_ahorro, name="borrar_ahorro"),
+     path('editar_ahorro/<int:id>', views.editar_ahorro, name="editar_ahorro"),
+     path('list_ahorro/', views.list_ahorro, name="list_ahorro"),
+
 ]
