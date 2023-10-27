@@ -23,7 +23,8 @@ from io import BytesIO
 import base64
 from django.db.models import Sum, F
 from django.db.models.functions import TruncMonth, TruncWeek, TruncDay
-
+from reportlab.lib.pagesizes import letter
+from reportlab.pdfgen import canvas
 
 logger = logging.getLogger(__name__)
 
@@ -556,110 +557,76 @@ import pdb;
 
 @login_required
 def generate_chart(request, option, tipo):
-    if option == 'ingresos' and tipo == 'mensual':
-        # Obtén datos de ingresos por mes
-        ingresos_por_mes = Transacciones.objects.filter(es_ingreso=True).annotate(month=TruncMonth('fecha')).values('month').annotate(total=Sum('monto')).order_by('month')
-        months = [ingreso['month'].strftime('%b %Y') for ingreso in ingresos_por_mes]
-        totals = [ingreso['total'] for ingreso in ingresos_por_mes]
-        print ("Meses: ", months)
-        print("Totales: ", totals)
-        fig, ax = plt.subplots()
-        ax.bar(months, totals)
-        ax.set_xlabel('Mes')
-        ax.set_ylabel('Total de Ingresos')
-        ax.set_title('Ingresos por mes')
-        plt.xticks(rotation=15, ha='right')
-    elif option == 'ingresos' and tipo == 'semanal':
-        ingresos_por_semana = Transacciones.objects.filter(es_ingreso=True).annotate(week=TruncWeek('fecha')).values('week').annotate(total=Sum('monto')).order_by('week')
-        weeks = [ingreso['week'].strftime('%b %d %y') for ingreso in ingresos_por_semana]
-        totals = [ingreso['total'] for ingreso in ingresos_por_semana]
-        fig, ax = plt.subplots()
-        ax.bar(weeks, totals)
-        ax.set_xlabel('Semana')
-        ax.set_ylabel('Total de Ingresos')
-        ax.set_title('Ingresos por semana')
-        plt.xticks(rotation=15, ha='right')
-    elif option == 'ingresos' and tipo == 'diario':
-        ingresos_por_dia = Transacciones.objects.filter(es_ingreso=True).annotate(day=TruncDay('fecha')).values('day').annotate(total=Sum('monto')).order_by('day')
-        days = [ingreso['day'].strftime('%b %d %y') for ingreso in ingresos_por_dia]
-        totals = [ingreso['total'] for ingreso in ingresos_por_dia]
-        fig, ax = plt.subplots()
-        ax.bar(days, totals)
-        ax.set_xlabel('Dias')
-        ax.set_ylabel('Total de Ingresos')
-        ax.set_title('Ingresos por Dias')
-        plt.xticks(rotation=15, ha='right')
-    elif option == 'gastos' and tipo == 'mensual':
-        # Obtén datos de gastos por mes
-        gastos_por_mes = Transacciones.objects.filter(es_ingreso=False).annotate(
-            month=TruncMonth('fecha')).values('month').annotate(total=Sum('monto')).order_by('month')
-        months = [gasto['month'].strftime('%b %Y') for gasto in gastos_por_mes]
-        totals = [gasto['total'] for gasto in gastos_por_mes]
-        fig, ax = plt.subplots()
-        ax.bar(months, totals)
-        ax.set_xlabel('Mes')
-        ax.set_ylabel('Total de gastos')
-        ax.set_title('Gastos por mes')
-        plt.xticks(rotation=15, ha='right')
-    elif option == 'gastos' and tipo == 'semanal':
-        # Obtén datos de gastos por mes
-        gastos_por_semana = Transacciones.objects.filter(es_ingreso=False).annotate(week=TruncWeek('fecha')).values('week').annotate(total=Sum('monto')).order_by('week')
-        weeks = [gasto['week'].strftime('%b %d %Y') for gasto in gastos_por_semana]
-        totals = [gasto['total'] for gasto in gastos_por_semana]
-        fig, ax = plt.subplots()
-        ax.bar(weeks, totals)
-        ax.set_xlabel('Semana')
-        ax.set_ylabel('Total de gastos')
-        ax.set_title('Gastos por semana')
-        plt.xticks(rotation=15, ha='right')
-    elif option == 'gastos' and tipo == 'diario':
-        # Obtén datos de gastos por mes
-        gastos_por_dia = Transacciones.objects.filter(es_ingreso=False).annotate(day=TruncDay('fecha')).values('day').annotate(total=Sum('monto')).order_by('day')
-        days = [gasto['day'].strftime('%b %d %Y') for gasto in gastos_por_dia]
-        totals = [gasto['total'] for gasto in gastos_por_dia]
-        fig, ax = plt.subplots()
-        ax.bar(days, totals)
-        ax.set_xlabel('Dias')
-        ax.set_ylabel('Total de gastos')
-        ax.set_title('Gastos por dia')
-        plt.xticks(rotation=15, ha='right')
-    elif option == 'gastos_por_categoria' and tipo == 'mensual':
-        # Obtén datos de gastos por categoría
-        gastos_por_categoria = Transacciones.objects.filter(es_ingreso=False, fk_categoria__isnull=False).values('fk_categoria__nombre_categoria').annotate(total=Sum('monto')).order_by('fk_categoria__nombre_categoria')
-        categories = [gasto['fk_categoria__nombre_categoria'] for gasto in gastos_por_categoria]
-        totals = [gasto['total'] for gasto in gastos_por_categoria]
-        fig, ax = plt.subplots()
-        ax.bar(categories, totals)
-        ax.set_xlabel('Categoría')
-        ax.set_ylabel('Total de gastos')
-        ax.set_title('Gastos por categoría')
-        plt.xticks(rotation=15, ha='right')
-    elif option == 'gastos_por_categoria' and tipo == '':
-        # Obtén datos de gastos por categoría
-        tipo = "mensual"
-        gastos_por_categoria = Transacciones.objects.filter(es_ingreso=False, fk_categoria__isnull=False).values('fk_categoria__nombre_categoria').annotate(total=Sum('monto')).order_by('fk_categoria__nombre_categoria')
-        categories = [gasto['fk_categoria__nombre_categoria'] for gasto in gastos_por_categoria]
-        totals = [gasto['total'] for gasto in gastos_por_categoria]
-        fig, ax = plt.subplots()
-        ax.bar(categories, totals)
-        ax.set_xlabel('Categoría')
-        ax.set_ylabel('Total de gastos')
-        ax.set_title('Gastos por categoría')
-        plt.xticks(rotation=15, ha='right')
+    transacciones = Transacciones.objects.filter(es_ingreso=(option == 'ingresos'))
 
+    if tipo == 'mensual':
+        group_by = TruncMonth('fecha')
+        xlabel = 'Mes'
+        title = 'Ingresos' if option == 'ingresos' else 'Gastos'
+    elif tipo == 'semanal':
+        group_by = TruncWeek('fecha')
+        xlabel = 'Semana'
+        title = 'Ingresos' if option == 'ingresos' else 'Gastos'
+    elif tipo == 'diario':
+        group_by = TruncDay('fecha')
+        xlabel = 'Día'
+        title = 'Ingresos' if option == 'ingresos' else 'Gastos'
+    elif tipo == '' and option == 'gastos_por_categoria':
+        tipo = 'mensual'
+        xlabel = 'Categoría'
+        title = 'Gastos por categoría'
 
-    # Convierte el gráfico en una imagen
+    if option == 'gastos_por_categoria':
+        transacciones = transacciones.exclude(fk_categoria__isnull=True)
+
+    data = transacciones.annotate(
+        period=group_by
+    ).values('period').annotate(
+        total=Sum('monto')
+    ).order_by('period')
+
+    labels = [item['period'].strftime('%b %Y' if tipo == 'mensual' else '%b %d %Y') for item in data]
+    totals = [item['total'] for item in data]
+
+    fig, ax = plt.subplots()
+    ax.bar(labels, totals)
+    ax.set_xlabel(xlabel)
+    ax.set_ylabel(f'Total de {title.lower()}')
+    ax.set_title(f'{title} por {xlabel}')
+    plt.xticks(rotation=15, ha='right')
+
     buffer = BytesIO()
     fig.savefig(buffer, format='png')
     buffer.seek(0)
     image_png = buffer.getvalue()
     buffer.close()
 
-    graphic = base64.b64encode(image_png)
-    graphic = graphic.decode('utf-8')
+    graphic = base64.b64encode(image_png).decode('utf-8')
     return graphic
 
+def descargar_pdf(request):
+    # Llama a la función que genera el archivo de informe
+    archivo = generar_informe()  # Debes implementar esta función
 
+    # Configura la respuesta HTTP
+    response = HttpResponse(archivo, content_type='application/pdf')
+    response['Content-Disposition'] = f'attachment; filename="{smart_str("informe.pdf")}'
+
+    return response
+
+def generar_informe():
+    buffer = BytesIO()
+    p = canvas.Canvas(buffer, pagesize=letter)
+
+    # Agregar contenido al PDF
+    p.drawString(100, 750, "Mi Informe PDF")
+    # Agregar más contenido según tus necesidades
+
+    p.showPage()
+    p.save()
+
+    buffer.seek(0)
+    return buffer.read()
 
 #endregion
 
@@ -723,15 +690,27 @@ def ver_ahorros(request):
 @cache_control(no_cache=True, must_revalidate=True, no_store=True)
 @login_required
 def editar_ahorro(request, id):
-    ahorro = Ahorro.objects.get(id=id)
+    usuario_actual = request.user
+    ahorro = Ahorro.objects.get(id=id)  # Reemplaza 'Ahorro' por el nombre de tu modelo
+    monto_anterior = ahorro.monto  
+    cuenta_usuario = Cuentas.objects.get(fk_user=usuario_actual)
+    if request.method == 'GET':
+        form = AhorroForm(instance=ahorro)
+        context = {
+            'form': form,
+            'id': id,
+        }
+        return render(request, 'test1/editar_ahorro.html', context)  # Reemplaza 'tu_app' por el nombre de tu aplicación
+
     if request.method == 'POST':
         form = AhorroForm(request.POST, instance=ahorro)
         if form.is_valid():
+            nuevo_monto = form.cleaned_data['monto']
+            diferencia_monto = nuevo_monto - monto_anterior
             form.save()
-            return redirect('ver_ahorros')
-    else:
-        form = AhorroForm(instance=ahorro)
-    return render(request, 'test1/editar_ahorro.html', {'form': form})
+            cuenta_usuario.saldo += diferencia_monto
+            cuenta_usuario.save()
+            return redirect('ver_ahorros') 
 
 
 @cache_control(no_cache=True, must_revalidate=True, no_store=True)

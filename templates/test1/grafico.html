@@ -50,6 +50,9 @@
                                 </div>
                                 <input type="hidden" name="type" value="ingresos">
                                 <button type="submit" class="btn btn-primary">Generar gráfico</button>
+                                <a href="#" class="btn btn-primary">Descargar Informe</a>
+
+
                             </form>
                             {% if graphic %}
                               <div class="text-center">
@@ -97,13 +100,11 @@
         });
         
         </script>
-        <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
-        <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
 
     {% endblock  %} 
+    <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
 </body>
 
 {% endblock %}
-
-
-
