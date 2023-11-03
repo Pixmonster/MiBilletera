@@ -9,6 +9,7 @@
     <link rel="icon" type="image/jpg" href="{% static 'img/favicon.png' %}" />
     <link rel="stylesheet" href="{% static 'css/estilo.css' %}" type="text/css" />
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}"> {% block 'style' %}{% endblock %}
+    
 </head>
 {% block content %}
 {% load humanize %}
@@ -44,6 +45,8 @@
                                     <th class="cole" scope="col">Fecha</th>
                                     <th class="cole" scope="col">Tipo</th>
                                     <th class="cole" scope="col">Monto</th>
+                                    <th class="cole" scope="col">Opciones</th>
+
                                 </tr>
                             </thead>
                             <tbody id="tablebody_ahorros">
@@ -76,18 +79,12 @@
             </div>
         </div>
     </div>
-    <footer class="sticky-footer bg-white">
-        <div class="container my-auto">
-            <div class="copyright text-center my-auto">
-                <span>Copyright &copy; Mi Billetera 2023</span>
-            </div>
-        </div>
-    </footer>
-    <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
-    <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
     <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
     <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.datatables.net/1.13.6/js/dataTables.bootstrap5.min.js"></script>
+    <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
     <script src="{% static 'js/table_ahorros.js' %}"></script>
 </body>
 

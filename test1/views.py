@@ -553,12 +553,11 @@ def generar_grafico(request):
         }
         return render(request, 'test1/grafico.html', context)
     return render(request, 'test1/grafico.html', {})
-import pdb;
 
 @login_required
 def generate_chart(request, option, tipo):
     transacciones = Transacciones.objects.filter(es_ingreso=(option == 'ingresos'))
-
+    group_by =F('fecha')
     if tipo == 'mensual':
         group_by = TruncMonth('fecha')
         xlabel = 'Mes'
@@ -575,9 +574,11 @@ def generate_chart(request, option, tipo):
         tipo = 'mensual'
         xlabel = 'Categoría'
         title = 'Gastos por categoría'
-
     if option == 'gastos_por_categoria':
         transacciones = transacciones.exclude(fk_categoria__isnull=True)
+        tipo = 'mensual'
+        xlabel = 'Categoría'
+        title = 'Gastos por categoría'
 
     data = transacciones.annotate(
         period=group_by

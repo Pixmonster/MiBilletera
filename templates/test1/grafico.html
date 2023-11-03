@@ -43,7 +43,7 @@
                                 <div class="form-group">
                                     <label for="tipo">Seleccione un período:</label>
                                     <select id="tipo" name="tipo" class="form-control">
-                                        <option value="mensual" >Mensual</option>
+                                        <option value="mensual" {% if request.POST.option == "gastos_por_categoria" %}selected{% endif %}>Mensual</option>
                                         <option value="semanal">Semanal</option>
                                         <option value="diario">Diario</option>
                                     </select>
@@ -76,7 +76,7 @@
     </footer>
 
 
-    {% block 'script' %}
+    {% block script %}
         
     <script>
         $(document).ready(function() {
@@ -86,7 +86,7 @@
           
           // Función para mostrar u ocultar las opciones del período según la selección
           function toggleTipoSelect() {
-            if (optionSelect.val() === "gastos_por_categoria") {
+            if (optionSelect.val() == "gastos_por_categoria") {
               tipoSelect.val("mensual");
               tipoSelect.prop('disabled', true); // Deshabilita el select
             } else {
