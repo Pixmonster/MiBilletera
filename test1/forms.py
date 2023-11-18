@@ -131,4 +131,4 @@ class AhorroForm(forms.ModelForm):
     class Meta:
         model = Ahorro
         
-        fields = ['monto', 'tipo']
+        fields = ['fecha', 'monto', 'tipo']

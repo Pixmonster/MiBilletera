@@ -1,5 +1,5 @@
 {% extends 'layout/base.html' %}
-{% load static %}
+{% load widget_tweaks %} {% load static %} {% load humanize %}
 
 <head>
     <meta charset="UTF-8">
@@ -12,7 +12,6 @@
     
 </head>
 {% block content %}
-{% load humanize %}
 
 
 
@@ -79,10 +78,6 @@
             </div>
         </div>
     </div>
-
-    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
-    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
-    <script src="https://cdn.datatables.net/1.13.6/js/dataTables.bootstrap5.min.js"></script>
     <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
     <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
     <script src="{% static 'js/table_ahorros.js' %}"></script>

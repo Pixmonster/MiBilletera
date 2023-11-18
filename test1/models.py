@@ -91,7 +91,7 @@ class Recordatorio(models.Model):
     
 class Ahorro(models.Model):
     tipo = models.CharField(max_length=50, default="Mi ahorro")
-    fecha = models.DateField(auto_now_add=True)
+    fecha = models.DateField(null=True)
     monto = models.DecimalField(max_digits=15, decimal_places=2, blank=False, null=False)
     fk_cuenta = models.ForeignKey(Cuentas, on_delete=models.CASCADE)
 

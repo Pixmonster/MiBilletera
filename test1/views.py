@@ -5,7 +5,7 @@ from django.contrib import messages
 from django.http.response import JsonResponse
 from .models import *
 from .forms import *
-from datetime import datetime
+from datetime import datetime, datetime
 from django.db.models import Sum
 import locale
 import requests
@@ -547,88 +547,80 @@ def generar_grafico(request):
     if request.method == "POST":
         option = request.POST.get('option')
         tipo = request.POST.get('tipo')
-        graphic = generate_chart(request, option, tipo)
-        context = {
-            'graphic': graphic
-        }
+        model = None
+        fields = None
+
+        if option == 'ingresos':
+            model = Transacciones
+            fields = {'es_ingreso': True}
+        elif option == 'gastos':
+            model = Transacciones
+            fields = {'es_ingreso': False}
+        elif option == 'ahorros':
+            model = Ahorro
+            fields = {'monto__isnull': False}  # Ajusta según tus necesidades
+
+
+        graphic = generate_chart(request, option, tipo, model, fields)
+        context = {'graphic': graphic}
         return render(request, 'test1/grafico.html', context)
+
     return render(request, 'test1/grafico.html', {})
 
 @login_required
-def generate_chart(request, option, tipo):
-    transacciones = Transacciones.objects.filter(es_ingreso=(option == 'ingresos'))
-    group_by =F('fecha')
-    if tipo == 'mensual':
-        group_by = TruncMonth('fecha')
-        xlabel = 'Mes'
-        title = 'Ingresos' if option == 'ingresos' else 'Gastos'
-    elif tipo == 'semanal':
-        group_by = TruncWeek('fecha')
-        xlabel = 'Semana'
-        title = 'Ingresos' if option == 'ingresos' else 'Gastos'
-    elif tipo == 'diario':
-        group_by = TruncDay('fecha')
-        xlabel = 'Día'
-        title = 'Ingresos' if option == 'ingresos' else 'Gastos'
-    elif tipo == '' and option == 'gastos_por_categoria':
-        tipo = 'mensual'
-        xlabel = 'Categoría'
-        title = 'Gastos por categoría'
-    if option == 'gastos_por_categoria':
-        transacciones = transacciones.exclude(fk_categoria__isnull=True)
-        tipo = 'mensual'
-        xlabel = 'Categoría'
-        title = 'Gastos por categoría'
+def generate_chart(request, option, tipo, model, fields, group_by_field='fecha'):
+    items = model.objects.filter(**fields)
+    if option == 'ahorros':
+        if tipo == 'mensual':
+            items = items.annotate(period=TruncMonth('fecha')).filter(period__month=datetime.now().month)
+        elif tipo == 'semanal':
+            items = items.annotate(period=TruncWeek('fecha')).filter(period__week=datetime.now().isocalendar()[1])
+        elif tipo == 'diario':
+            items = items.annotate(period=TruncDay('fecha')).filter(period=datetime.now().date())
 
-    data = transacciones.annotate(
-        period=group_by
-    ).values('period').annotate(
-        total=Sum('monto')
-    ).order_by('period')
+        # Filtra por cuenta si es necesario, ajusta según tus necesidades
+        usuario_actual = request.user
+        items = items.filter(fk_cuenta__fk_user=usuario_actual)
 
-    labels = [item['period'].strftime('%b %Y' if tipo == 'mensual' else '%b %d %Y') for item in data]
-    totals = [item['total'] for item in data]
+        xlabel, title = tipo, 'Ahorros'
+    else:
+        if tipo == 'mensual':
+            group_by = TruncMonth(group_by_field)
+            xlabel, title = 'Mes', 'Ingresos' if 'es_ingreso' in fields and fields['es_ingreso'] else 'Gastos'
+        elif tipo == 'semanal':
+            group_by = TruncWeek(group_by_field)
+            xlabel, title = 'Semana', 'Ingresos' if 'es_ingreso' in fields and fields['es_ingreso'] else 'Gastos'
+        elif tipo == 'diario':
+            group_by = TruncDay(group_by_field)
+            xlabel, title = 'Día', 'Ingresos' if 'es_ingreso' in fields and fields['es_ingreso'] else 'Gastos'
 
-    fig, ax = plt.subplots()
-    ax.bar(labels, totals)
-    ax.set_xlabel(xlabel)
-    ax.set_ylabel(f'Total de {title.lower()}')
-    ax.set_title(f'{title} por {xlabel}')
-    plt.xticks(rotation=15, ha='right')
 
-    buffer = BytesIO()
-    fig.savefig(buffer, format='png')
-    buffer.seek(0)
-    image_png = buffer.getvalue()
-    buffer.close()
+        data = items.annotate(
+            period=group_by
+        ).values('period').annotate(
+            total=Sum('monto')
+        ).order_by('period')
+        if not data:
+            print("No hay datos para mostrar.")
 
-    graphic = base64.b64encode(image_png).decode('utf-8')
-    return graphic
+        labels = [item['period'].strftime('%b %Y' if tipo == 'mensual' else '%b %d %Y') for item in data]
+        totals = [item['total'] for item in data]
 
-def descargar_pdf(request):
-    # Llama a la función que genera el archivo de informe
-    archivo = generar_informe()  # Debes implementar esta función
+        fig, ax = plt.subplots()
+        ax.bar(labels, totals)
+        ax.set_xlabel(xlabel)
+        ax.set_ylabel(f'Total de {title.lower()}')
+        ax.set_title(f'{title} {xlabel}')
+        plt.xticks(rotation=15, ha='right')
 
-    # Configura la respuesta HTTP
-    response = HttpResponse(archivo, content_type='application/pdf')
-    response['Content-Disposition'] = f'attachment; filename="{smart_str("informe.pdf")}'
+        buffer = BytesIO()
+        fig.savefig(buffer, format='png')
+        buffer.seek(0)
+        image_png = buffer.getvalue()
+        buffer.close()
 
-    return response
-
-def generar_informe():
-    buffer = BytesIO()
-    p = canvas.Canvas(buffer, pagesize=letter)
-
-    # Agregar contenido al PDF
-    p.drawString(100, 750, "Mi Informe PDF")
-    # Agregar más contenido según tus necesidades
-
-    p.showPage()
-    p.save()
-
-    buffer.seek(0)
-    return buffer.read()
-
+        graphic = base64.b64encode(image_png).decode('utf-8')
+        return graphic
 #endregion
 
 
@@ -641,10 +633,11 @@ def nuevo_ahorro(request):
         form = AhorroForm(request.POST)
         print(form) 
         if form.is_valid():
+            fecha = form.cleaned_data['fecha']
             monto = form.cleaned_data['monto']
             tipo = form.cleaned_data['tipo']
             cuenta_usuario = Cuentas.objects.get(fk_user=usuario_actual) # Se obtiene la cuenta del usuario
-            nuevo_ahorro = Ahorro(monto=monto, tipo=tipo, fk_cuenta=cuenta_usuario)
+            nuevo_ahorro = Ahorro(fecha=fecha, monto=monto, tipo=tipo, fk_cuenta=cuenta_usuario)
             nuevo_ahorro.save()
             cuenta_usuario.saldo -= monto 
             cuenta_usuario.save()
@@ -692,7 +685,7 @@ def ver_ahorros(request):
 @login_required
 def editar_ahorro(request, id):
     usuario_actual = request.user
-    ahorro = Ahorro.objects.get(id=id)  # Reemplaza 'Ahorro' por el nombre de tu modelo
+    ahorro = Ahorro.objects.get(id=id)
     monto_anterior = ahorro.monto  
     cuenta_usuario = Cuentas.objects.get(fk_user=usuario_actual)
     if request.method == 'GET':
@@ -701,7 +694,7 @@ def editar_ahorro(request, id):
             'form': form,
             'id': id,
         }
-        return render(request, 'test1/editar_ahorro.html', context)  # Reemplaza 'tu_app' por el nombre de tu aplicación
+        return render(request, 'test1/editar_ahorro.html', context)
 
     if request.method == 'POST':
         form = AhorroForm(request.POST, instance=ahorro)
@@ -735,6 +728,7 @@ def list_ahorro(request):
     
 
     ahorros_data = []
+
     for ahorro in ahorros:
         ahorro_info = {
             'id': ahorro.id,
@@ -752,3 +746,4 @@ def list_ahorro(request):
     return JsonResponse(context, safe=False)
 
 #endregion
+

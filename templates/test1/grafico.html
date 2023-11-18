@@ -33,17 +33,20 @@
                             <form method="POST" action="{% url 'generar_grafico' %}">
                                 {% csrf_token %}
                                 <div class="form-group">
+                                  <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                                    <h1 class="h2 text-success bg-body p-3 mt-2 text-center mx-auto w-50 "><b>Graficos</b></h1>
+                                </div>
                                     <label for="option">Seleccione una opción de visualizar su resumen: </label>
                                     <select id="option" name="option" class="form-control">
                                         <option value="ingresos">Ingresos</option>
                                         <option value="gastos">Gastos</option>
-                                        <option value="gastos_por_categoria">Gastos por categoría</option>
+                                        <option value="ahorros">Ahorros</option>
                                     </select>
                                 </div>
                                 <div class="form-group">
                                     <label for="tipo">Seleccione un período:</label>
                                     <select id="tipo" name="tipo" class="form-control">
-                                        <option value="mensual" {% if request.POST.option == "gastos_por_categoria" %}selected{% endif %}>Mensual</option>
+                                        <option value="mensual">Mensual</option>
                                         <option value="semanal">Semanal</option>
                                         <option value="diario">Diario</option>
                                     </select>
@@ -78,28 +81,6 @@
 
     {% block script %}
         
-    <script>
-        $(document).ready(function() {
-          // Seleccionar el elemento select de la opción y el elemento select del período
-          var optionSelect = $('#option');
-          var tipoSelect = $('#tipo');
-          
-          // Función para mostrar u ocultar las opciones del período según la selección
-          function toggleTipoSelect() {
-            if (optionSelect.val() == "gastos_por_categoria") {
-              tipoSelect.val("mensual");
-              tipoSelect.prop('disabled', true); // Deshabilita el select
-            } else {
-              tipoSelect.prop('disabled', false); // Habilita el select
-            }
-          }
-        
-          // Llama a la función al cargar la página y cuando cambia la opción
-          toggleTipoSelect();
-          optionSelect.on('change', toggleTipoSelect);
-        });
-        
-        </script>
 
 
     {% endblock  %} 
