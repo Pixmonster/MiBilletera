@@ -544,6 +544,7 @@ def editar_deuda(request, id):
 
 
 def generar_grafico(request):
+    usuario_actual = request.user
     if request.method == "POST":
         option = request.POST.get('option')
         tipo = request.POST.get('tipo')
@@ -562,7 +563,10 @@ def generar_grafico(request):
 
 
         graphic = generate_chart(request, option, tipo, model, fields)
-        context = {'graphic': graphic}
+        context = {
+            'graphic': graphic, 
+            'usuario': usuario_actual
+            }
         return render(request, 'test1/grafico.html', context)
 
     return render(request, 'test1/grafico.html', {})
@@ -623,8 +627,7 @@ def generate_chart(request, option, tipo, model, fields, group_by_field='fecha')
         return graphic
 #endregion
 
-
-#region ahorros
+#region Ahorros
 @cache_control(no_cache=True, must_revalidate=True, no_store=True)
 @login_required
 def nuevo_ahorro(request):
@@ -645,7 +648,7 @@ def nuevo_ahorro(request):
             return redirect('nuevo_ahorro')
     else:
         form = AhorroForm()
-    return render(request, 'test1/nuevo_ahorro.html', {'form': form})
+    return render(request, 'test1/nuevo_ahorro.html', {'form': form, 'usuario': usuario_actual})
 
 
 @cache_control(no_cache=True, must_revalidate=True, no_store=True)
