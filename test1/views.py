@@ -745,5 +745,13 @@ def list_ahorro(request):
     }
     return JsonResponse(context, safe=False)
 
+
+def vista_home(request):
+    ahorros_home = Ahorro.objects.all()
+    print('Estos son los datos: ', ahorros_home )
+    
+
+    return render(request, 'test1/ahorro_home.html', {'ahorros_home': ahorros_home})
+
 #endregion
 

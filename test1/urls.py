@@ -48,6 +48,8 @@ urlpatterns = [
      path('borrar_ahorro/<int:id>/', views.borrar_ahorro, name="borrar_ahorro"),
      path('editar_ahorro/<int:id>', views.editar_ahorro, name="editar_ahorro"),
      path('list_ahorro/', views.list_ahorro, name="list_ahorro"),
+     path('vista_home/', views.vista_home, name="vista_home"),
+     
 
 
 ]

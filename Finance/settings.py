@@ -89,7 +89,16 @@ DATABASES = {
         'PASSWORD': '',
         'HOST': 'localhost',
         'PORT': '3306',
-    }
+    },
+    
+    'test': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'mibilletera_test',
+        'USER': 'root',
+        'PASSWORD': '',
+        'HOST': 'localhost',
+        'PORT': '3306',
+    },
 }
 
 
