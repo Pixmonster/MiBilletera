@@ -567,9 +567,9 @@ def generar_grafico(request):
             'graphic': graphic, 
             'usuario': usuario_actual
             }
-        return render(request, 'test1/grafico.html', context)
+        return render(request, 'test1/home.html', context)
 
-    return render(request, 'test1/grafico.html', {})
+    return render(request, 'test1/home.html', {})
 
 @login_required
 def generate_chart(request, option, tipo, model, fields, group_by_field='fecha'):
@@ -751,7 +751,7 @@ def list_ahorro(request):
 
 def vista_home(request):
     ahorros_home = Ahorro.objects.all()
-    print('Estos son los datos: ', ahorros_home )
+    print('Estos son los datos: ', ahorros_home,{} )
     
 
     return render(request, 'test1/ahorro_home.html', {'ahorros_home': ahorros_home})

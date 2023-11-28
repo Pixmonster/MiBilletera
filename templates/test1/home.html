@@ -37,11 +37,7 @@
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800"></h1>
-                        <a href="{% url 'generar_grafico' %}" class="d-none d-sm-inline-block btn btn-sm btn-success shadow-sm"><i
-                                class="fas fa-download fa-sm text-white-50"></i> Generar Reporte</a>
-                    </div>
+
 
                     {% if messages %}
                     <ul class="messages">
@@ -177,12 +173,26 @@
                                     <h6 class="m-0 font-weight-bold text-success">Deudas</h6>
                                 </div>
                                 <div class="card-body">
-                                    {% for ahorro in ahorros_home %}
-                                        <h4 class="small font-weight-bold">{{ ahorro.tipo }} - {{ ahorro.fecha }} <span class="float-right">{{ ahorro.monto }}%</span></h4>
-                                        <div class="progress mb-4">
-                                            <div class="progress-bar" role="progressbar" style="width: {{ ahorro.monto }}%" aria-valuenow="{{ ahorro.monto }}" aria-valuemin="0" aria-valuemax="100"></div>
-                                        </div>
-                                    {% endfor %}
+                                    <h4 class="small font-weight-bold">Ahorro Casa <span class="float-right">20%</span></h4>
+                                    <div class="progress mb-4">
+                                        <div class="progress-bar bg-danger" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <h4 class="small font-weight-bold">Ahorro Comprar Computador <span class="float-right">40%</span></h4>
+                                    <div class="progress mb-4">
+                                        <div class="progress-bar bg-warning" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <h4 class="small font-weight-bold">Ahorro Comprar Moto <span class="float-right">60%</span></h4>
+                                    <div class="progress mb-4">
+                                        <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <h4 class="small font-weight-bold">Ahorro Comprar Moto <span class="float-right">60%</span></h4>
+                                    <div class="progress mb-4">
+                                        <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <h4 class="small font-weight-bold">Ahorro Comprar Moto <span class="float-right">60%</span></h4>
+                                    <div class="progress mb-4">
+                                        <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -292,11 +302,46 @@
                     <div class="row">
 
                         <!-- Content Column -->
-                        <div class="col-lg-6 mb-4">
+                        <div class="col-xl-12 col-lg-12">
+                            <div class="card shadow mb-10">
+                                <div class="card-body">
+                                    <form method="POST" action="{% url 'generar_grafico' %}">
+                                        {% csrf_token %}
+                                        <div class="form-group">
+                                          <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                                            <h1 class="h2 text-success bg-body p-3 mt-2 text-center mx-auto w-50 "><b>Genera Tus Gráficos</b></h1>
+                                        </div>
+                                            <label for="option">Seleccione una opción de visualizar su resumen: </label>
+                                            <select id="option" name="option" class="form-control">
+                                                <option value="ingresos">Ingresos</option>
+                                                <option value="gastos">Gastos</option>
+                                                <option value="ahorros">Ahorros</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="tipo">Seleccione un período:</label>
+                                            <select id="tipo" name="tipo" class="form-control">
+                                                <option value="mensual">Mensual</option>
+                                                <option value="semanal">Semanal</option>
+                                                <option value="diario">Diario</option>
+                                            </select>
+                                        </div>
+                                        <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                                            <h1 class="h3 mb-0 text-gray-800"></h1>
+                                            <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-success shadow-sm"><i
+                                                    class="fas fa-download fa-sm text-white-50"></i> Generar Reporte</a>
+                                        </div>
+                                        <input type="hidden" name="type" value="ingresos">
+                                        <button type="submit" class="btn btn-primary">Generar gráfico</button>
+                                    </form>
+                                    {% if graphic %}
+                                      <div class="text-center">
+                                        <img src="data:image/png;base64,{{ graphic }}" alt="Gráficos" class="img-fluid">
+                                      </div>
+                                    {% endif %}
 
-                            <!-- Project Card Example -->
-
-
+                                </div>
+                            </div>
                         </div>
                         <!-- /.container-fluid -->
 
